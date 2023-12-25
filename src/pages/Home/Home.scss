@@ -1,0 +1,1257 @@
+/* === animation image === */
+@keyframes animationTwo {
+    0% {
+        left: 0px;
+    }
+
+    50% {
+        left: 10px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+/* === End of animation image === */
+
+.header-slider {
+    width: 100%;
+    height: 947px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    transition: opacity 1s ease, transform 8s ease;
+    transform: scale(1);
+}
+
+.slide img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.slide.active {
+    opacity: 0.9;
+    transform: scale(1.1);
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 0;
+    width: 100%;
+    height: 947px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+}
+
+.header-content {
+    width: 100vw;
+}
+
+header {
+    padding-top: 5px;
+}
+
+.navbar-brand img {
+    width: 200px;
+}
+
+header nav a {
+    padding: 0 4px !important;
+}
+
+header nav a:hover {
+    color: #fb8e26 !important;
+}
+
+header .nav-item {
+    position: relative;
+    cursor: pointer;
+    padding: 20px 0 24px 0;
+}
+
+.nav-link {
+    color: #ffffff !important;
+}
+
+/* ====== 1.2 hero section ====== */
+#hero {
+    padding: 90px 0 0 0;
+    margin-top: 105px;
+}
+
+#hero h1:first-child {
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+    font-size: 150px;
+}
+
+#hero h1 {
+    color: #ffffff;
+    text-align: center;
+}
+
+#hero p {
+    color: #ffffff;
+    padding: 20px 170px 20px 170px;
+    text-align: center;
+}
+
+/* ====== End 1.2 Hero section ====== */
+
+
+/* ====== 1.3 features section ====== */
+#features {
+    margin-top: -207px;
+    background-color: rgba(2, 31, 65, 0.7);
+    padding: 31px 0 30px 0;
+    position: relative;
+    z-index: 1;
+}
+
+#features h6 {
+    padding: 8px 0 5px 0;
+    color: #ffffff;
+    text-align: left;
+}
+
+#features p {
+    padding: 5px 0;
+    color: #ffffff;
+    text-align: left;
+}
+
+#features .col-md-3 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 20px 0 0;
+}
+
+#features .col-md-3 {
+    position: relative;
+    display: inline-block;
+}
+
+#features .col-md-3::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 11px;
+    display: block;
+    width: 0;
+    height: 5px;
+    background: #fb8e26;
+    transition: width 0.5s ease-in-out;
+}
+
+#features .col-md-3:hover::after {
+    width: 91%;
+    transform: scaleY(1);
+}
+
+img[alt="featureIcon"]:hover {
+    position: relative;
+    animation-name: animation;
+    animation-duration: 0.5s;
+    animation-iteration-count: 2;
+}
+
+/* ====== End 1.3 features section ====== */
+
+/* ====== 1.4 about section ====== */
+#about {
+    margin-bottom: 100px;
+}
+
+#about .blueBg {
+    background-color: #0a1727;
+    height: 203px;
+}
+
+#about form {
+    background-color: #ffffff;
+    padding: 42px 20px;
+    margin-top: -5.5rem;
+    box-shadow: 0px 4px 39px 0px rgba(0, 0, 0, 0.14);
+}
+
+#about input,
+#about select {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-family: "Open Sans", sans-serif;
+    border-bottom: 1px solid #9b9b9b;
+    color: #9b9b9b !important;
+}
+
+#about input,
+#about input:hover,
+#about input:focus,
+#about input:active {
+    -webkit-text-fill-color: #9b9b9b !important;
+}
+
+#about input {
+    padding: 3px 0 10px 0;
+    width: 139px;
+}
+
+#about input:hover,
+#about select:hover {
+    border-bottom: 1px solid #fb8e26;
+}
+
+#about select {
+    cursor: pointer;
+    width: 154px;
+    padding: 5px 10px 5px 0;
+}
+
+input[type="date"]:hover {
+    cursor: pointer;
+}
+
+input[type="date"] {
+    color: #9b9b9b !important;
+}
+
+#about form button {
+    color: #fb8e26;
+    border-radius: 40px;
+    background-color: transparent;
+    transition: 0.7s ease-in-out;
+}
+
+#about form li {
+    border: none !important;
+}
+
+#about form button:hover {
+    color: #ffffff;
+}
+
+#about-message {
+    position: fixed;
+    display: none;
+    background-color: rgba(255, 255, 255);
+    color: #000000;
+    box-shadow: 0px 10px 39px -4px rgba(24, 39, 75, 0.1),
+        0px 5.747572422027588px 12.932037353515625px -4.310678958892822px rgba(24, 39, 75, 0.12);
+    text-align: center;
+    width: 60%;
+    padding: 103px 0;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 40px;
+    top: 23%;
+    z-index: 3;
+    right: 19%;
+    border-radius: 40px;
+}
+
+#about form h6 {
+    color: #fb8e26;
+    padding-bottom: 15px;
+}
+
+.aboutImg img {
+    width: 100%;
+}
+
+.aboutImg img:hover {
+    position: relative;
+    animation-name: animationTwo;
+    animation-duration: 0.5s;
+    animation-iteration-count: 2;
+}
+
+#about .aboutImg {
+    margin-top: -5.5rem;
+    position: relative;
+}
+
+#about .customer {
+    background-color: #021f41;
+    padding: 20px 0;
+}
+
+#about .customer,
+#about .experience h2 {
+    color: #ffffff;
+}
+
+#about .experience p {
+    text-align: center;
+    color: #ffffff;
+}
+
+#about .experience {
+    background-color: #fb8e26;
+    width: 195px;
+    padding: 47px 36px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 60px;
+    left: -134px;
+}
+
+#about h4 {
+    color: #fb8e26;
+    padding: 70px 0 20px 0;
+}
+
+#about .col-md-9 p {
+    color: #9b9b9b;
+    padding: 20px 0 10px 0;
+}
+
+.about {
+    margin-bottom: 0 !important;
+}
+
+#about .customer h2{
+    color:white;
+}
+
+/* ====== End 1.4 about section ====== */
+
+/* ====== 1.5 special offer section ====== */
+#special {
+    margin: 50px 0 0 0;
+    background-color: #021f41;
+    padding: 100px 0;
+}
+
+#special img {
+    width: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+#special h3 {
+    color: #fb8e26;
+    padding: 35px 0 20px 20px;
+}
+
+#special p {
+    padding: 0 0 20px 20px;
+    color: #ffffff;
+}
+
+.offer {
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s ease;
+}
+
+.offer img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.overlaytwo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(360deg,
+            #021f41 0%,
+            rgb(255 255 255 / 11%) 80%,
+            transparent 100%);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 0.4s ease;
+}
+
+.offer:hover {
+    transform: scale(0.9);
+}
+
+.offer:hover .overlaytwo {
+    height: 100%;
+}
+
+.overlaytwo .overlay_text {
+    position: absolute;
+    width: 100%;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlaytwo .overlay_text h3 {
+    color: #ffffff !important;
+    padding: 0 !important;
+}
+
+.overlaytwo .overlay_text a {
+    color: #ffffff;
+    border-radius: 40px;
+    margin-top: 50px;
+}
+
+.special {
+    background-color: transparent !important;
+    padding: 0 0 50px 0 !important;
+    margin: 0 0 50px 0 !important;
+}
+
+.special p {
+    color: #262626 !important;
+}
+
+/* ====== End 1.5 special offer section ====== */
+
+/* ====== 1.6 tours section ====== */
+#tour {
+    // background-image: url(../images/bg/bg-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding: 100px 0;
+}
+
+#tour h4 {
+    color: #fb8e26;
+    padding-bottom: 20px;
+}
+
+#tour h2 {
+    color: #262626;
+}
+
+#tour p:first-child {
+    color: #9b9b9b;
+}
+
+#tour .tourPara {
+    width: 70%;
+}
+
+.tourCards img {
+    width: 100%;
+    transition: 0.3s ease;
+}
+
+.tourCards img:hover {
+    transform: scale(0.9);
+}
+
+.tourCards .row {
+    justify-content: space-between;
+    padding-right: 13px !important;
+    padding-left: 13px !important;
+}
+
+.tourCards .col-md-4 {
+    background-color: #ffffff;
+    padding: 0 !important;
+    padding-bottom: 30px !important;
+    box-shadow: 0px 10px 39px -4px rgba(24, 39, 75, 0.1),
+        0px 6px 14px -6px rgba(24, 39, 75, 0.12);
+}
+
+.tourCards h6 {
+    color: #fb8e26;
+    padding: 25px 30px 0 30px !important;
+}
+
+.tourCards p {
+    padding: 10px 30px 20px 30px !important;
+}
+
+.tourCards a {
+    margin-left: 30px;
+    color: #000000;
+    padding: 0 !important;
+}
+
+.tourCards a:hover i {
+    transform: translateX(7px);
+}
+
+.tourCards a:hover {
+    color: #fb8e26;
+}
+
+.tourCards a:hover i {
+    color: #fb8e26;
+}
+
+.tourCards i {
+    color: #000000;
+    transition: 0.3s ease-in-out;
+    margin-left: 4px;
+}
+
+/* ====== End 1.6 tours section ====== */
+
+/* ====== 1.7 why choose us section ====== */
+#choose {
+    margin: 0 0 100px 0;
+}
+
+.chooseBg {
+    position: relative;
+    padding: 100px 300px 260px 300px;
+    text-align: center;
+}
+
+.chooseBg::before {
+    content: "";
+    // background: url("../images/index/choose-img.png") no-repeat center center/cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.chooseBg::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#choose h4 {
+    color: #fb8e26;
+    padding-bottom: 6px;
+}
+
+#choose h2 {
+    color: #ffffff;
+}
+
+#choose h6 {
+    color: #fb8e26;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+#choose a {
+    color: #ffffff;
+}
+
+#choose a:hover {
+    border: 1px solid #fb8e26;
+}
+
+.chooseCrads {
+    margin-top: -10rem;
+}
+
+.chooseCrads .col-md-4 div {
+    background: linear-gradient(180deg, #fff 0%, #fcf7e2 100%);
+    text-align: center;
+    padding: 40px 30px;
+}
+
+.chooseCrads .col-md-4 div:hover {
+    box-shadow: 0px 10px 39px -4px rgba(24, 39, 75, 0.12);
+}
+
+.chooseCrads .col-md-4 {
+    display: flex;
+    justify-content: center;
+}
+
+.chooseCrads figure {
+    background-color: #fb8e26;
+    display: inline-block;
+    padding: 14px 14px;
+    border-radius: 50%;
+}
+
+.chooseCrads img {
+    width: 40px;
+}
+
+.chooseCrads .col-md-4:hover figure {
+    position: relative;
+    animation-name: animation;
+    animation-duration: 0.5s;
+    animation-iteration-count: 2;
+}
+
+.chooseCrads p {
+    color: #9b9b9b;
+    text-align: center;
+}
+
+/* ====== End 1.7 why choose us section ====== */
+
+/* ====== 1.8 services section ====== */
+#services h4 {
+    color: #fb8e26;
+}
+
+#services h2 {
+    padding: 20px 118px 20px 0;
+}
+
+#services p {
+    color: #9b9b9b;
+    padding: 0 169px 40px 0;
+}
+
+#services h6 {
+    font-size: 20px;
+    padding: 15px 0 20px 0;
+    color: #262626;
+}
+
+img[alt="servicesIcon"] {
+    width: 70px;
+}
+
+img[alt="servicesIcon"]:hover {
+    position: relative;
+    animation-name: animation;
+    animation-duration: 0.5s;
+    animation-iteration-count: 2;
+}
+
+img[alt="service-img"] {
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+img[alt="ser-Camera"] {
+    width: 70%;
+    margin: -168px 0 0 -81px;
+}
+
+img[alt="ser-Camera"]:hover {
+    position: relative;
+    animation-name: animation;
+    animation-duration: 0.5s;
+    animation-iteration-count: 2;
+}
+
+.services {
+    // background-image: url(../images/bg/bg-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding: 100px 0 70px 0;
+}
+
+.services .col-md-3:nth-child(5) {
+    margin: 0;
+    padding: 0;
+}
+
+.services .col-md-3:nth-child(5) img {
+    width: 58px;
+}
+
+/* ====== End 1.8 services section ====== */
+
+/* ====== 1.9 what we do section ====== */
+#weDo {
+    margin: 50px 0;
+}
+
+.weDo-video {
+    object-fit: cover;
+    position: relative;
+}
+
+#weDo img {
+    width: 100%;
+}
+
+#weDo .col-md-6 {
+    padding: 0;
+}
+
+.video-play-button {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    box-sizing: content-box;
+    display: block;
+    width: 3px;
+    height: 27px;
+    border-radius: 50%;
+    padding: 18px 20px 18px 28px;
+    border: 1px solid #fb8e26;
+}
+
+.video-play-button:before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #fb8e26;
+    border-radius: 50%;
+    animation: pulse-border 1500ms ease-out infinite;
+}
+
+.video-play-button:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: all 200ms;
+    background-color: #fb8e26;
+}
+
+.video-play-button span {
+    color: #ffffff;
+    display: block;
+    position: relative;
+    z-index: 3;
+    margin-top: 3px;
+    width: 0;
+    height: 0;
+    font-size: 30px;
+    left: -7px;
+    top: -3px;
+}
+
+.weDo-content {
+    background-color: #021f41;
+}
+
+#weDo h2 {
+    color: #ffffff;
+    padding: 0 64px 0 45px;
+}
+
+#weDo h4 {
+    color: #fb8e26;
+    margin: 0 0 15px 45px;
+}
+
+#weDo p {
+    color: #ffffff;
+    margin: 25px 0 25px 0;
+    padding: 0 78px 0 45px;
+}
+
+#weDo .globalBtnActive {
+    margin-left: 50px;
+}
+
+.weDo {
+    // background-image: url(../images/bg/bg-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 100px;
+    margin-bottom: 0 !important;
+}
+
+/* ====== End 1.9 what we do section ====== */
+
+/* ====== 1.10 our team section ====== */
+#team {
+    margin: 50px 0;
+    padding: 50px 0;
+}
+
+#team h2 {
+    padding: 20px 0 30px 0;
+}
+
+#team h4 {
+    color: #fb8e26;
+}
+
+#team .row {
+    padding: 0 14px;
+}
+
+#team .col-md-4 {
+    background-color: #ffffff;
+    padding: 0 0 9px 0;
+    box-shadow: 0px 10px 39px -4px rgba(24, 39, 75, 0.1),
+        0px 5.747572422027588px 12.932037353515625px -4.310678958892822px rgba(24, 39, 75, 0.12);
+}
+
+.teamCard {
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s ease;
+}
+
+#team img {
+    width: 100%;
+    transition: 0.3s ease-in-out;
+    object-fit: cover;
+}
+
+#team h6:first-child {
+    color: #000000;
+    padding: 40px 0 0 20px;
+}
+
+#team p {
+    color: #fb8e26;
+    padding: 9px 0 31px 20px;
+}
+
+.overlaythree {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(356deg,
+            rgba(2, 0, 36, 1) 0%,
+            rgba(2, 31, 65, 0.6) 35%,
+            transparent 100%);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 0.4s ease;
+}
+
+.teamCard:hover {
+    transform: scale(0.9);
+}
+
+.teamCard:hover .overlaythree {
+    height: 100%;
+}
+
+.overlay_text {
+    position: absolute;
+    width: 100%;
+    bottom: 36%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#team a {
+    padding: 0;
+    background-color: transparent !important;
+}
+
+.overlay_text i {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    padding: 9px 11px 9px 10px;
+    font-size: 21px;
+    border-radius: 50%;
+    transition: 400ms;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.overlay_text a:first-child i {
+    padding: 9px 13px 9px 13px;
+}
+
+.overlay_text a:nth-child(2) i {
+    padding: 9px 10px 10px 11px;
+}
+
+.overlay_text i:hover {
+    color: #fb8e26;
+    background-color: #ffffff;
+    transition: 400ms;
+}
+
+.team-cards {
+    margin-top: 80px !important;
+}
+
+/* ====== End 1.10 our team section ====== */
+
+/* ====== 1.11 faq section ====== */
+#faq {
+    // background-image: url("../images/index/faq-img.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
+#faq .accordion-button:not(.collapsed) {
+    color: #fb8e26;
+    background-color: #ffffff;
+    box-shadow: none;
+}
+
+#faq p {
+    color: #9b9b9b;
+}
+
+.accordion-body {
+    padding: 0 1.25rem 1.25rem 1.25rem;
+}
+
+#faq .accordion-button {
+    color: #262626;
+    background-color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#faq .accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-item {
+    border: none;
+}
+
+#faq .accordion {
+    --bs-accordion-border-color: none;
+    border: none;
+    padding-top: 20px;
+}
+
+#faq .accordion-button:not(.collapsed)::after {
+    // background-image: url("../images/icon/line.png") !important;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 20px;
+    height: 3px;
+}
+
+#faq .accordion-button::after {
+    // background-image: url("../images/icon/plus2.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#faq .container {
+    padding: 0 166px;
+}
+
+.faq-section {
+    background-color: #ffffff;
+    padding: 60px 60px 50px 60px;
+}
+
+#faq h4 {
+    color: #fb8e26;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#faq h2 {
+    text-align: center !important;
+    color: #262626;
+}
+
+.faq {
+    background-image: none !important;
+    background-color: #ffffff;
+    margin-bottom: 0 !important;
+    padding: 40px 0 50px 0;
+}
+
+/* ====== End 1.11 faq section ====== */
+
+/* ====== 1.12 testimonials section ====== */
+#testimonials {
+    margin: 100px 0;
+}
+
+#testimonials p {
+    color: #9b9b9b;
+    text-align: center;
+}
+
+#testimonials h4 {
+    color: #fb8e26;
+}
+
+#testimonials h2 {
+    padding: 20px 450px 40px 0;
+    color: #262626;
+}
+
+#testimonials .col-md-4 {
+    background-color: #ffffff;
+    padding: 30px 30px;
+    box-shadow: 0px 10px 39px -4px rgba(24, 39, 75, 0.1),
+        0px 5.747572422027588px 12.932037353515625px -4.310678958892822px rgba(24, 39, 75, 0.12);
+}
+
+#testimonials img {
+    clip-path: circle(50% at 50% 50%);
+    width: 65px;
+}
+
+#testimonials h6 {
+    padding: 14px 0 4px 0;
+}
+
+#testimonials i {
+    font-size: 20px;
+    color: #fb8e26;
+}
+
+.testimonial-card {
+    margin-top: 80px !important;
+}
+
+/* ====== End 1.12 testimonials section ====== */
+
+/* ====== 1.13 logoipsum section ====== */
+#logoipsum {
+    margin: 50px 0 0 0;
+    padding: 60px 0;
+    background-color: #ffffff;
+}
+
+#logoipsum img {
+    width: 180px;
+}
+
+/* ====== End 1.13 logoipsum section ====== */
+
+/* ====== 1.14 start planning section ====== */
+#planning {
+    position: relative;
+    padding: 120px 340px;
+}
+
+#planning::before {
+    content: "";
+    // background: url("../images/index/planning-img.png") no-repeat center center/cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+#planning::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.planningContent {
+    position: relative;
+    z-index: 3;
+}
+
+#planning h3 {
+    color: #ffffff;
+    padding: 0 60px;
+    text-align: center;
+}
+
+#planning h3 span {
+    color: #fb8e26;
+}
+
+#planning p {
+    text-align: center;
+    padding: 20px 105px 15px 105px;
+    color: #ffffff;
+}
+
+/* ====== End 1.14 start planning section ====== */
+
+/* ====== 1.15 blog section ====== */
+#blog {
+    padding: 100px 0 90px 0;
+    background-color: #ffffff;
+}
+
+#blog h4 {
+    color: #fb8e26;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+#blog h2 {
+    color: #262626;
+    text-align: center;
+    padding: 0 160px;
+}
+
+#blog p {
+    color: #9b9b9b;
+}
+
+.blogCards img {
+    width: 100%;
+    transition: 0.5s ease;
+}
+
+.blogCards .col-md-4:hover img {
+    transform: scale(0.9);
+}
+
+.blogCards .row {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.blogCards .col-md-4 {
+    padding: 0 !important;
+    padding-bottom: 15px !important;
+}
+
+.blogCards h6 {
+    padding: 6px 5px 0 0 !important;
+}
+
+.blogCards p {
+    padding: 15px 5px 13px 0;
+}
+
+.blogCategory {
+    padding: 21px 5px 0 0 !important;
+    color: #fb8e26 !important;
+    transition: 0.3s ease-in-out;
+}
+
+.blogCategory:hover {
+    color: #021f41 !important;
+}
+
+.blogCards a {
+    color: #021f41;
+    padding: 0 !important;
+}
+
+.blogCards a:hover {
+    color: #fb8e26;
+}
+
+.blogCards i {
+    color: #021f41;
+    transition: 0.3s ease-in-out;
+    margin-left: 4px;
+}
+
+.blogCards a:hover i {
+    transform: translateX(7px);
+    color: #fb8e26;
+}
+
+/* ====== End 1.15 blog section ====== */
+
+/* ====== 1.16 newsletter section ====== */
+#newsletter {
+    padding: 60px 0;
+}
+
+#newsletter h4 {
+    color: #fb8e26;
+}
+
+#newsletter h2 {
+    color: #262626;
+    padding: 20px 350px 30px 0;
+}
+
+#newsletter p {
+    color: #9b9b9b;
+}
+
+#newsletter form {
+    display: flex;
+}
+
+#newsletter input {
+    border: 1px solid #fb8e26;
+    outline: none;
+    padding: 17px 163px 19px 20px;
+    padding: 16px 20px 17px 20px;
+    border-radius: 40px;
+    margin-right: 8px;
+    width: 350px;
+    font-size: 16px;
+}
+
+#newsletter li {
+    border: none !important;
+}
+
+#newsletter button {
+    color: #ffffff;
+    border-radius: 40px;
+    background-color: transparent;
+    transition: 0.7s ease-in-out;
+}
+
+#newsletter button:hover {
+    color: #fb8e26;
+}
+
+#newsletter-message {
+    position: fixed;
+    display: none;
+    display: none;
+    background-color: rgba(255, 255, 255);
+    color: #000000;
+    box-shadow: 0px 10px 39px -4px rgba(24, 39, 75, 0.1),
+        0px 5.747572422027588px 12.932037353515625px -4.310678958892822px rgba(24, 39, 75, 0.12);
+    text-align: center;
+    width: 60%;
+    padding: 103px 0;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 40px;
+    top: 23%;
+    z-index: 3;
+    right: 19%;
+    border-radius: 40px;
+}
+
+/* ====== End 1.16 newsletter section ====== */

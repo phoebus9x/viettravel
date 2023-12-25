@@ -1,0 +1,167 @@
+/* === Global buttons start ==== */
+.globalBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.globalBtn .link {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: capitalize;
+    padding: 16px 36px !important;
+}
+
+.globalBtn li {
+    list-style-type: none;
+    cursor: pointer;
+    color: #fb8e26;
+    border: 2px solid #ffffff;
+    border-radius: 0.5em;
+    font-weight: bold;
+    text-align: center;
+    line-height: 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    color: #ffffff;
+    border-radius: 48px;
+}
+
+.globalBtn li:hover {
+    border: 2px solid #fb8e26;
+}
+
+.globalBtn li:hover .link {
+    color: #ffffff !important;
+}
+
+.globalBtn button {
+    border: 1px solid #fb8e26;
+    padding: 16px 36px !important;
+}
+
+.globalBtn li span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: #fb8e26;
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.7s ease-in-out;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+.globalBtn li:hover span {
+    transform: translateY(0) scale(2);
+}
+
+.globalBtn li span:nth-child(1) {
+    --n: 1;
+}
+
+.globalBtn li span:nth-child(2) {
+    --n: 2;
+}
+
+.globalBtn li span:nth-child(3) {
+    --n: 3;
+}
+
+.globalBtn li span:nth-child(4) {
+    --n: 4;
+}
+
+.globalBtnActive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.globalBtnActive .link {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: capitalize;
+    padding: 16px 36px !important;
+}
+
+.globalBtnActive .link:hover {
+    color: #fb8e26;
+}
+
+.globalBtnActive button {
+    border: 1px solid #fb8e26 !important;
+    padding: 16px 36px !important;
+}
+
+.globalBtnActive li {
+    list-style-type: none;
+    cursor: pointer;
+    border: 2px solid #fb8e26 !important;
+    color: #fb8e26;
+    font-size: 16px;
+    border-radius: 0.5em;
+    font-weight: bold;
+    text-align: center;
+    line-height: 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    border-radius: 48px;
+}
+
+.globalBtnActive i {
+    margin-left: 11px;
+    transition: 0.3s ease-in-out;
+}
+
+.globalBtnActive:hover i {
+    transform: translateX(7px);
+}
+
+.globalBtnActive li span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: #fb8e26;
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.9s ease;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+.globalBtnActive li:hover .globalBtnActive .link {
+    color: #fb8e26 !important;
+}
+
+.globalBtnActive li span {
+    transform: translateY(0) scale(2);
+}
+
+.globalBtnActive li:hover span {
+    transform: translateY(45px) scale(0);
+}
+
+.globalBtnActive li span:nth-child(1) {
+    --n: 1;
+}
+
+.globalBtnActive li span:nth-child(2) {
+    --n: 2;
+}
+
+.globalBtnActive li span:nth-child(3) {
+    --n: 3;
+}
+
+.globalBtnActive li span:nth-child(4) {
+    --n: 4;
+}
+
+/* === Global buttons end === */

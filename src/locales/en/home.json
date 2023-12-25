@@ -1,0 +1,16 @@
+{
+    "explore":"EXPLORE",
+    "the world":"THE WORLD",
+    "map location":"Map Location",
+    "traveling bag":"Traveling Bag",
+    "photography":"Photography",
+    "affordable prices":"Affordable Prices",
+    "about us": {
+        "name":"Name",
+        "destination":"Destination",
+        "tour days": "Tour Days",
+        "book now": "Book Now",
+        "about us":"About Us",
+        "happy customers": "Happy Customers"
+    }
+}
