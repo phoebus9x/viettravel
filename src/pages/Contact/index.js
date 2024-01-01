@@ -10,6 +10,7 @@ import images from "~/assets/images";
 import Navbar from "~/Layout/components/Navbar";
 import Button from "~/components/Button";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 // import "~/components/GlobalStyles/GlobalStyles.scss";
 
 import feature1 from "~/assets/images/icon/feature-1.svg";
@@ -32,6 +33,7 @@ import logoipsum5 from "~/assets/images/icon/logoipsum-5.svg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faAnglesRight,
   faArrowRight,
   faPlay,
   faStar,
@@ -109,15 +111,15 @@ function Contact() {
                   data-aos="fade"
                 >
                   <div>
-                    <h1>EXPLORE</h1>
-                    <h1>THE WORLD</h1>
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s,
-                    </p>
-                    <div className="mt-4">
-                      <Button>Discover Now</Button>
+                    <h1>My Contacts</h1>
+                    <div class="d-flex justify-content-center gap-4 pt-4">
+                      <nav aria-label="breadcrumb">
+                        <div class="breadcrumb d-flex gap-4 align-items-center">
+                          <div class="breadcrumb-item"><Link to="/">Home</Link></div>
+                          <FontAwesomeIcon icon={faAnglesRight} />
+                          <div class="breadcrumb-item" aria-current="page">Contact</div>
+                        </div>
+                      </nav>
                     </div>
                   </div>
                 </div>
@@ -231,8 +233,8 @@ function Contact() {
       </section>
       {/* <!-- ====== End 1.4 about section ====== --> */}
 
-            {/* <!-- ====== 1.9 what we do section ====== --> */}
-            <section id="weDo">
+      {/* <!-- ====== 1.9 what we do section ====== --> */}
+      <section id="weDo">
         <div className="container">
           <div className="row">
             <div className="col-md-6 d-flex justify-content-center">
