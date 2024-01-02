@@ -329,8 +329,8 @@ input[type="date"] {
     margin-bottom: 0 !important;
 }
 
-#about .customer h2{
-    color:white;
+#about .customer h2 {
+    color: white;
 }
 
 /* ====== End 1.4 about section ====== */
@@ -1255,3 +1255,97 @@ img[alt="ser-Camera"]:hover {
 }
 
 /* ====== End 1.16 newsletter section ====== */
+
+/* ====== End 2.1 hero section ====== */
+.header-about {
+    position: relative;
+}
+
+.header-about::before {
+    content: "";
+    // background: url('../images/about/about-hero-img.png') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+.header-about::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.hero {
+    padding: 90px 0 90px 0;
+}
+
+.hero h2 {
+    color: #FFFFFF;
+}
+
+.hero a {
+    color: #FFFFFF;
+    padding: 0 !important;
+}
+
+.hero a:hover {
+    color: #FB8E26
+}
+
+.hero li {
+    color: #FFFFFF !important;
+    font-weight: 700;
+}
+
+.hero i {
+    color: #FB8E26;
+    font-size: 18px;
+}
+
+.breadcrumb-item {
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* ====== End 2.1 hero section ====== */
+
+
+
+
+/* ====== 4.1 hero section ====== */
+.header-blog {
+    position: relative;
+}
+
+.header-blog::before {
+    content: "";
+    // background: url('../images/blog/blog-hero-img.png') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+.header-blog::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* ====== End 4.1 hero section ====== */

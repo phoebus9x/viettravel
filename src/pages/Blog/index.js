@@ -10,6 +10,7 @@ import images from "~/assets/images";
 import Navbar from "~/Layout/components/Navbar";
 import Button from "~/components/Button";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 // import "~/components/GlobalStyles/GlobalStyles.scss";
 
 import feature1 from "~/assets/images/icon/feature-1.svg";
@@ -32,6 +33,7 @@ import logoipsum5 from "~/assets/images/icon/logoipsum-5.svg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  faAnglesRight,
   faArrowRight,
   faPlay,
   faStar,
@@ -42,7 +44,7 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 
-function Home() {
+function Blog() {
   const { t } = useTranslation("home");
   // {t("key")}
 
@@ -96,81 +98,35 @@ function Home() {
 
   return (
     <div className={"site-wrapper"}>
-      <div className={"header-slider"}>{showSlide()}</div>
-      <div className={"overlay"}>
-        <div className={"header-content"}>
-          <Navbar />
-          {/* <!-- ====== 1.2 hero section ====== --> */}
-          <section id="hero">
-            <div className="container">
-              <div className="row justify-content-center">
-                <div
-                  className="col-lg-11 col-md-12 text-center"
-                  data-aos="fade"
-                >
-                  <div>
-                    <h1>EXPLORE</h1>
-                    <h1>THE WORLD</h1>
-                    <p>
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s,
-                    </p>
-                    <div className="mt-4">
-                      <Button>Discover Now</Button>
-                    </div>
+      <div className={"header-blog"}>
+        <Navbar />
+        {/* <!-- ====== 1.2 hero section ====== --> */}
+        <section id="hero">
+          <div className="container">
+            <div className="row justify-content-center">
+              <div
+                className="col-lg-11 col-md-12 text-center"
+                data-aos="fade"
+              >
+                <div>
+                  <h2>Our Blogs</h2>
+                  <div class="d-flex justify-content-center gap-4 pt-4">
+                    <nav aria-label="breadcrumb">
+                      <div class="breadcrumb d-flex gap-4 align-items-center">
+                        <div class="breadcrumb-item"><Link to="/">Home</Link></div>
+                        <FontAwesomeIcon icon={faAnglesRight} />
+                        <div class="breadcrumb-item" aria-current="page">Blog</div>
+                      </div>
+                    </nav>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
-          {/* <!-- ====== End 1.2 hero section ====== --> */}
-        </div>
-      </div>
-      {/* <!-- ====== 1.3 features section ====== --> */}
-      <section id="features">
-        <div className="container card-text">
-          <div className="row">
-            <div className="col-md-3" data-aos="fade-up" data-aos-delay="100">
-              <div>
-                <figure>
-                  <img src={feature1} alt="featureIcon" />
-                </figure>
-                <h6>Map Location</h6>
-                <p>Lorem Ipsum is simply dummy text of the printing.</p>
-              </div>
-            </div>
-            <div className="col-md-3" data-aos="fade-up" data-aos-delay="500">
-              <div>
-                <figure>
-                  <img src={feature2} alt="featureIcon" />
-                </figure>
-                <h6>Traveling Bag</h6>
-                <p>Lorem Ipsum is simply dummy text of the printing.</p>
-              </div>
-            </div>
-            <div className="col-md-3" data-aos="fade-up" data-aos-delay="900">
-              <div>
-                <figure>
-                  <img src={feature3} alt="featureIcon" />
-                </figure>
-                <h6>photography</h6>
-                <p>Lorem Ipsum is simply dummy text of the printing.</p>
-              </div>
-            </div>
-            <div className="col-md-3" data-aos="fade-up" data-aos-delay="1300">
-              <div>
-                <figure>
-                  <img src={feature4} alt="featureIcon" />
-                </figure>
-                <h6>Affordable Prices</h6>
-                <p>Lorem Ipsum is simply dummy text of the printing.</p>
-              </div>
-            </div>
           </div>
-        </div>
-      </section>
-      {/* <!-- ====== End 1.3 features section ====== --> */}
+        </section>
+        {/* <!-- ====== End 1.2 hero section ====== --> */}
+      </div>
+
 
       {/* <!-- ====== 1.4 about section ====== --> */}
       <section id="about">
@@ -274,191 +230,44 @@ function Home() {
       </section>
       {/* <!-- ====== End 1.4 about section ====== --> */}
 
-      {/* <!-- ====== 1.5 special offer section ====== --> */}
-      <section id="special">
+      {/* <!-- ====== 1.9 what we do section ====== --> */}
+      <section id="weDo">
         <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-md-6" data-aos="fade-down">
-              <h3>Special Offer for Couples</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt.
-              </p>
-              <div className="offer">
-                <img src={images.special1} alt="discount" />
-                <div className="overlaytwo">
-                  <div className="overlay_text">
-                    <h3>Discount up 50%</h3>
-                    <div className="mt-lg-5 mt-4">
-                      <Button>Book Now</Button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 mt-md-0 mt-4" data-aos="fade-up">
-              <div className="offer">
-                <img src={images.special2} alt="discount" />
-                <div className="overlaytwo">
-                  <div className="overlay_text">
-                    <h3>Discount up 50%</h3>
-                    <div className="mt-lg-5 mt-4">
-                      <Button>Book Now</Button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <h3>Special Offer on Adventure tours</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* <!-- ====== End 1.5 special offer section ====== --> */}
-
-      {/* <!-- ====== 1.6 tours section ====== --> */}
-      <section id="tour">
-        <div className="container">
-          <div data-aos="fade" data-aos-duration="2000">
-            <h4>Tour</h4>
-            <h2>Live Your Life Through Travel</h2>
-            <div className="d-flex flex-md-row flex-column gap-3 justify-content-between align-items-center mt-3">
-              <div className="tourPara">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-              <Button className="globalBtnActive" to="/destinations">
-                View all
-              </Button>
-            </div>
-          </div>
-          <div className="tourCards card-text mt-5">
-            <div className="row gap-4">
-              <div
-                className="col-md-4 col-sm-5 col-11"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
+          <div className="row">
+            <div className="col-md-6 d-flex justify-content-center">
+              <div className="weDo-video">
                 <div>
-                  <figure>
-                    <img src={images.tour1} alt="tour-img" />
-                  </figure>
-                  <h6>Explore beauty of Turkey</h6>
-                  <p>
-                    Lorem ipsum dolor sit amet, sit consecte adipiscing elit,
-                    sed
-                  </p>
-                  <a href="#">
-                    Learn More <FontAwesomeIcon icon={faArrowRight} />
+                  <a className="video-play-button" href="#">
+                    <span className="fa-solid fa-play"></span>
                   </a>
                 </div>
+                <figure>
+                  <img src={images.weDo} alt="weDo" />
+                </figure>
               </div>
-              <div
-                className="col-md-4 col-sm-5 col-11"
-                data-aos="fade-up"
-                data-aos-delay="500"
-              >
-                <div>
-                  <figure>
-                    <img src={images.tour2} alt="tour-img" />
-                  </figure>
-                  <h6>Explore beauty of Sweden</h6>
+            </div>
+            <div className="col-md-6 d-flex justify-content-center align-content-center">
+              <div className="weDo-content d-flex flex-column justify-content-center align-items-start">
+                <div data-aos="fade" data-aos-duration="2000">
+                  <h4>What We Do</h4>
+                  <h2>Exploring The World Without Limits</h2>
                   <p>
-                    Lorem ipsum dolor sit amet, sit consecte adipiscing elit,
-                    sed
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam.
                   </p>
-                  <a href="#">
-                    Learn More <FontAwesomeIcon icon={faArrowRight} />
-                  </a>
                 </div>
-              </div>
-              <div
-                className="col-md-4 col-sm-5 col-11"
-                data-aos="fade-up"
-                data-aos-delay="900"
-              >
-                <div>
-                  <figure>
-                    <img src={images.tour3} alt="tour-img" />
-                  </figure>
-                  <h6>Explore beauty of Indonesia</h6>
-                  <p>
-                    Lorem ipsum dolor sit amet, sit consecte adipiscing elit,
-                    sed
-                  </p>
-                  <a href="#">
-                    Learn More <FontAwesomeIcon icon={faArrowRight} />
-                  </a>
-                </div>
-              </div>
-              <div
-                className="col-md-4 col-sm-5 col-11"
-                data-aos="fade-up"
-                data-aos-delay="100"
-              >
-                <div>
-                  <figure>
-                    <img src={images.tour4} alt="tour-img" />
-                  </figure>
-                  <h6>Explore beauty of Pakistan</h6>
-                  <p>
-                    Lorem ipsum dolor sit amet, sit consecte adipiscing elit,
-                    sed
-                  </p>
-                  <a href="#">
+                <div className="mt-3" data-aos="fade" data-aos-duration="2000">
+                  <Button className="globalBtnActive" to="/services">
                     Learn More
-                    <FontAwesomeIcon icon={faArrowRight} />
-                  </a>
-                </div>
-              </div>
-              <div
-                className="col-md-4 col-sm-5 col-11"
-                data-aos="fade-up"
-                data-aos-delay="500"
-              >
-                <div>
-                  <figure>
-                    <img src={images.tour5} alt="tour-img" />
-                  </figure>
-                  <h6>Explore beauty of Dubai</h6>
-                  <p>
-                    Lorem ipsum dolor sit amet, sit consecte adipiscing elit,
-                    sed
-                  </p>
-                  <a href="#">
-                    Learn More <FontAwesomeIcon icon={faArrowRight} />
-                  </a>
-                </div>
-              </div>
-              <div
-                className="col-md-4 col-sm-5 col-11"
-                data-aos="fade-up"
-                data-aos-delay="900"
-              >
-                <div>
-                  <figure>
-                    <img src={images.tour6} alt="tour-img" />
-                  </figure>
-                  <h6>Explore beauty of Paris</h6>
-                  <p>
-                    Lorem ipsum dolor sit amet, sit consecte adipiscing elit,
-                    sed
-                  </p>
-                  <a href="#">
-                    Learn More <FontAwesomeIcon icon={faArrowRight} />
-                  </a>
+                  </Button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      {/* <!-- ====== End 1.6 tours section ====== --> */}
+      {/* <!-- ====== End 1.9 what we do section ====== --> */}
 
       {/* <!-- ====== 1.7 why choose us section ====== --> */}
       <section id="choose">
@@ -547,110 +356,6 @@ function Home() {
         </div>
       </section>
       {/* <!-- ====== End 1.7 why choose us section ====== --> */}
-
-      {/* <!-- ====== 1.8 services section ====== --> */}
-      <section id="services">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-7">
-              <div data-aos="fade" data-aos-duration="2000">
-                <h4>Our Services</h4>
-                <h2>Join The Adventure With Stories</h2>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s,
-                </p>
-                <div className="row align-items-center gap-lg-3 gap-md-4 text-lg-start text-center">
-                  <div className="col-md-3">
-                    <div>
-                      <figure>
-                        <img src={service1} alt="servicesIcon" />
-                      </figure>
-                      <h6>Custom Destinations</h6>
-                    </div>
-                  </div>
-                  <div className="col-md-3">
-                    <div>
-                      <figure>
-                        <img src={service3} alt="servicesIcon" />
-                      </figure>
-                      <h6>Unforgettable Moments</h6>
-                    </div>
-                  </div>
-                  <div className="col-md-3">
-                    <div>
-                      <figure>
-                        <img src={service2} alt="servicesIcon" />
-                      </figure>
-                      <h6>Competitive Pricings</h6>
-                    </div>
-                  </div>
-                </div>
-                <div className="d-flex justify-content-md-start justify-content-center mt-lg-3 mt-md-3 mt-4">
-                  <Button className="globalBtnActive" to="/services">
-                    See all services
-                  </Button>
-                </div>
-              </div>
-            </div>
-            <div
-              className="col-md-5 mt-md-0 mt-5"
-              data-aos="fade-up"
-              data-aos-easing="ease-in-out-quad"
-            >
-              <div>
-                <figure>
-                  <img src={images.service1} alt="service-img" />
-                </figure>
-                <figure>
-                  <img src={images.service2} alt="ser-Camera" />
-                </figure>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* <!-- ====== End 1.8 services section ====== --> */}
-
-      {/* <!-- ====== 1.9 what we do section ====== --> */}
-      <section id="weDo">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-6 d-flex justify-content-center">
-              <div className="weDo-video">
-                <div>
-                  <a className="video-play-button" href="#">
-                    <span className="fa-solid fa-play"></span>
-                  </a>
-                </div>
-                <figure>
-                  <img src={images.weDo} alt="weDo" />
-                </figure>
-              </div>
-            </div>
-            <div className="col-md-6 d-flex justify-content-center align-content-center">
-              <div className="weDo-content d-flex flex-column justify-content-center align-items-start">
-                <div data-aos="fade" data-aos-duration="2000">
-                  <h4>What We Do</h4>
-                  <h2>Exploring The World Without Limits</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam.
-                  </p>
-                </div>
-                <div className="mt-3" data-aos="fade" data-aos-duration="2000">
-                  <Button className="globalBtnActive" to="/services">
-                    Learn More
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* <!-- ====== End 1.9 what we do section ====== --> */}
 
       {/* <!-- ====== 1.10 our team section ====== --> */}
       <section id="team">
@@ -1164,4 +869,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default Blog;
