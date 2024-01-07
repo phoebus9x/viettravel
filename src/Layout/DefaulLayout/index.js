@@ -1,4 +1,3 @@
-import Header from "~/Layout/components/Header";
 import Navbar from "~/Layout/components/Navbar";
 import Footer from "~/Layout/components/Footer";
 import BtnBackToTop from "~/components/BtnBackToTop";

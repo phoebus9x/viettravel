@@ -1349,3 +1349,192 @@ img[alt="ser-Camera"]:hover {
 }
 
 /* ====== End 4.1 hero section ====== */
+
+/* ====== 9.2 contact section ====== */
+#contact {
+    background: linear-gradient(to bottom, #021F41 70%, #FFFFFF 70%);
+    padding: 70px 0 70px 0;
+}
+
+#contact h4 {
+    color: #FB8E26;
+    padding-bottom: 25px;
+}
+
+#contact h2 {
+    color: #FFFFFF;
+    padding-bottom: 20px;
+}
+
+#contact p {
+    color: #FFFFFF;
+    padding: 0 500px 30px 0;
+}
+
+#contact h5 {
+    color: #FB8E26;
+}
+
+#contact .fa-regular {
+    color: #FB8E26;
+    font-size: 30px;
+}
+
+#contact .row {
+    margin: 0;
+}
+
+#contact .col-md-8 {
+    padding: 40px 60px;
+}
+
+#contact input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #FB8E26;
+    width: 100%;
+    color: #9b9b9b;
+    padding-bottom: 6px
+}
+
+#contact input,
+#contact input:hover,
+#contact input:focus,
+#contact input:active {
+    -webkit-text-fill-color: #9B9B9B !important;
+
+}
+
+#contact form div {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+textarea {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #FB8E26;
+    width: 100%;
+    color: #9b9b9b;
+    padding-bottom: 0;
+}
+
+#contact .globalBtnActive li {
+    border: none !important;
+}
+
+#contact .globalBtnActive button {
+    width: 100%;
+}
+
+#contact ul {
+    width: 100%;
+}
+
+#contact .col-md-4 {
+    background-color: #FB8E26;
+    padding: 0 100px;
+}
+
+#contact .col-md-4 i {
+    color: #FFFFFF;
+    font-size: 17px;
+}
+
+#contact .col-md-4 i:hover {
+    color: #021F41;
+}
+
+#contact .address p {
+    padding: 0 !important;
+}
+
+.address div {
+    gap: 10px;
+}
+
+.address a:hover p {
+    color: #021F41 !important;
+}
+
+#contact .col-md-4 h3 {
+    color: #FFFFFF;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+#contact .col-md-4 a {
+    padding: 0 !important;
+}
+
+#contact button {
+    color: #FFFFFF;
+    border-radius: 40px;
+    background-color: transparent;
+    transition: 0.7s ease-in-out;
+}
+
+#contact button:hover {
+    color: #FB8E26;
+}
+
+#contact .col-md-8,
+#contact .col-md-4 {
+    box-shadow: 0px 10px 39px -4px rgba(24, 39, 75, 0.10), 0px 5.747572422027588px 12.932037353515625px -4.310678958892822px rgba(24, 39, 75, 0.12);
+}
+
+#contact .address {
+    div {
+        display: flex;
+        align-items: center;
+        padding-bottom: 12px;
+    }
+
+    .icon {
+        color: #ffffff;
+    }
+
+    p {
+        color: #ffffff;
+        padding-left: 17px;
+        transition: 0.3s ease;
+
+        &:hover {
+            color: #000000;
+        }
+    }
+}
+
+#contact-message {
+    position: fixed;
+    display: none;
+    visibility: hidden;
+    display: none;
+    background-color: rgba(255, 255, 255);
+    color: #000000;
+    box-shadow: 0px 10px 39px -4px rgba(24, 39, 75, 0.10), 0px 5.747572422027588px 12.932037353515625px -4.310678958892822px rgba(24, 39, 75, 0.12);
+    text-align: center;
+    width: 60%;
+    padding: 103px 0 !important;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 40px;
+    top: 23%;
+    z-index: 3;
+    right: 19%;
+    border-radius: 40px;
+}
+
+#contact .link {
+    color: #ffffff;
+    padding-left: 17px;
+    transition: 0.3s ease;
+
+    &:hover {
+        color: #000000;
+    }
+}
+
+/* ====== End 9.2 contact section ====== */

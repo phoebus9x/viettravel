@@ -10,12 +10,16 @@ import Login from "~/pages/Login";
 import Signup from "~/pages/Signup";
 import { HeaderOnly } from "~/Layout";
 import Test from "~/pages/Test";
+import Destinations from "~/pages/Destinations";
+import Services from "~/pages/Services";
 
 const publicRoutes = [
   { path: "/", component: Home },
   { path: "/about", component: About },
   { path: "/blog", component: Blog },
   { path: "/contact", component: Contact },
+  { path: "/services", component: Services },
+  { path: "/destinations", component: Destinations },
   { path: "/following", component: Following },
   { path: "/profile", component: Profile, layout: null },
   { path: "/upload", component: Upload, layout: HeaderOnly },

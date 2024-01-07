@@ -4,10 +4,12 @@ import images from "~/assets/images";
 import Button from "~/components/Button";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 import { locales } from "~/i18n/i18n";
 // className=)}
 function Navbar() {
+  const location = useLocation();
   const { i18n } = useTranslation();
   const { t } = useTranslation("home");
   const currentLanguage = locales[i18n.language];
@@ -48,7 +50,7 @@ function Navbar() {
               <ul className="navbar-nav position-relative ms-auto mx-4 mb-2 mb-lg-0 d-flex gap-4 justify-content-center align-items-center">
                 <li className="nav-item">
                   <Link
-                    className="header-link nav-link active"
+                    className={`header-link nav-link ${location.pathname === '/' ? 'active' : ''}`}
                     aria-current="page"
                     to="/"
                   >
@@ -56,17 +58,17 @@ function Navbar() {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="header-link nav-link" to="/about">
+                  <Link className={`header-link nav-link ${location.pathname === '/about' ? 'active' : ''}`} to="/about">
                     About
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="header-link nav-link" to="/blog">
+                  <Link className={`header-link nav-link ${location.pathname === '/blog' ? 'active' : ''}`} to="/blog">
                     Blog
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="header-link nav-link" to="/contact">
+                  <Link className={`header-link nav-link ${location.pathname === '/contact' ? 'active' : ''}`} to="/contact">
                     Contact
                   </Link>
                 </li>
