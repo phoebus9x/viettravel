@@ -747,7 +747,6 @@ function Home() {
           </div>
         </div>
       </section>
-
       {/* <!-- ====== End 1.10 our team section ====== --> */}
 
       {/* <!-- ====== 1.11 faq section ====== --> */}

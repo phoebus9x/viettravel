@@ -11,12 +11,7 @@ import Navbar from '~/Layout/components/Navbar';
 import Button from '~/components/Button';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-// import "~/components/GlobalStyles/GlobalStyles.scss";
 
-import feature1 from '~/assets/images/icon/feature-1.svg';
-import feature2 from '~/assets/images/icon/feature-2.svg';
-import feature3 from '~/assets/images/icon/feature-3.svg';
-import feature4 from '~/assets/images/icon/feature-4.svg';
 import choose1 from '~/assets/images/icon/choose-1.svg';
 import choose2 from '~/assets/images/icon/choose-2.svg';
 import choose3 from '~/assets/images/icon/choose-3.svg';
@@ -24,16 +19,9 @@ import choose4 from '~/assets/images/icon/choose-4.svg';
 import service1 from '~/assets/images/icon/services-1.svg';
 import service2 from '~/assets/images/icon/services-2.svg';
 import service3 from '~/assets/images/icon/services-3.svg';
-import service4 from '~/assets/images/icon/services-4.svg';
-import logoipsum1 from '~/assets/images/icon/logoipsum-1.svg';
-import logoipsum2 from '~/assets/images/icon/logoipsum-2.svg';
-import logoipsum3 from '~/assets/images/icon/logoipsum-3.svg';
-import logoipsum4 from '~/assets/images/icon/logoipsum-4.svg';
-import logoipsum5 from '~/assets/images/icon/logoipsum-5.svg';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAnglesRight, faArrowRight, faPlay, faStar } from '@fortawesome/free-solid-svg-icons';
-import { faFacebookF, faPinterestP, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 function Services() {
     const { t } = useTranslation('home');
