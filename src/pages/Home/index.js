@@ -172,7 +172,7 @@ function Home() {
                                 <div id="about-message"></div>
                                 <div>
                                     <h6>{t('name')}</h6>
-                                    <input type="text" name="name" placeholder="Your Name" required />
+                                    <input type="text" name="name" placeholder={t('your name')} required />
                                 </div>
                                 <div>
                                     <h6>{t('destination')}</h6>
@@ -1003,7 +1003,7 @@ function Home() {
                                         type="email"
                                         name="email"
                                         id="email"
-                                        placeholder="Enter Your Email Address"
+                                        placeholder={t('enter your email address')}
                                         required
                                     />
                                     <div className="globalBtnActive">
