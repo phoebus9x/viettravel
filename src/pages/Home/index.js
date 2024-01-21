@@ -97,11 +97,7 @@ function Home() {
                                     <div>
                                         <h1>EXPLORE</h1>
                                         <h1>THE WORLD</h1>
-                                        <p>
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem Ipsum has been the industry's standard dummy text ever since the
-                                            1500s,
-                                        </p>
+                                        <p>{t('unlock the wonders of the world')}</p>
                                         <div className="mt-4">
                                             <Button>{t('discover now')}</Button>
                                         </div>
@@ -206,16 +202,7 @@ function Home() {
                                 <div>
                                     <h4>{t('about us')}</h4>
                                     <h2>{t('with us, you are always in for a pleasant surprise')}</h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                    </p>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                    </p>
+                                    <p>{t('With us, you will always experience delightful surprises.')}</p>
                                     <div className="justify-content-md-start justify-content-center mt-4">
                                         <Button className="globalBtnActive" to="/about">
                                             {t('learn more')}
@@ -259,10 +246,7 @@ function Home() {
                     <div className="row justify-content-center">
                         <div className="col-md-6" data-aos="fade-down">
                             <h3>{t('special offer for couples')}</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt.
-                            </p>
+                            <p>{t('Enjoy in a romantic getaway tailored exclusively for you and your loved one.')}</p>
                             <div className="offer">
                                 <img src={images.special1} alt="discount" />
                                 <div className="overlaytwo">
@@ -289,8 +273,9 @@ function Home() {
                             </div>
                             <h3>{t('special offer on adventure tours')}</h3>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt.
+                                {t(
+                                    'Discover new horizons and surpass your limits with our discounted adventure tours.',
+                                )}
                             </p>
                         </div>
                     </div>
@@ -809,10 +794,7 @@ function Home() {
                                     <FontAwesomeIcon icon={faStar} />
                                     <FontAwesomeIcon icon={faStar} />
                                 </div>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt
-                                </p>
+                                <p>{t('cmt1')}</p>
                             </div>
                         </div>
                         <div className="col-md-4 col-sm-8 col-11" data-aos="fade-up" data-aos-delay="500">
@@ -829,10 +811,7 @@ function Home() {
                                     <FontAwesomeIcon icon={faStar} />
                                     <FontAwesomeIcon icon={faStar} />
                                 </div>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt
-                                </p>
+                                <p>{t('cmt2')}</p>
                             </div>
                         </div>
                         <div className="col-md-4 col-sm-8 col-11" data-aos="fade-up" data-aos-delay="900">
@@ -849,10 +828,7 @@ function Home() {
                                     <FontAwesomeIcon icon={faStar} />
                                     <FontAwesomeIcon icon={faStar} />
                                 </div>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt
-                                </p>
+                                <p>{t('cmt3')}</p>
                             </div>
                         </div>
                     </div>

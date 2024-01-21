@@ -33,16 +33,16 @@ function Blog() {
                         <div className="row justify-content-center">
                             <div className="col-lg-11 col-md-12 text-center" data-aos="fade">
                                 <div>
-                                    <h2>Our Blogs</h2>
+                                    <h2>{t('our blogs')}</h2>
                                     <div className="d-flex justify-content-center gap-4 pt-4">
                                         <nav aria-label="breadcrumb">
                                             <div className="breadcrumb d-flex gap-4 align-items-center">
                                                 <div className="breadcrumb-item">
-                                                    <Link to="/">Home</Link>
+                                                    <Link to="/">{t('home')}</Link>
                                                 </div>
                                                 <FontAwesomeIcon icon={faAnglesRight} />
                                                 <div className="breadcrumb-item" aria-current="page">
-                                                    Blog
+                                                    {t('blog')}
                                                 </div>
                                             </div>
                                         </nav>
@@ -59,8 +59,8 @@ function Blog() {
             <section id="blog">
                 <div className="container">
                     <div data-aos="fade" data-aos-duration="2000">
-                        <h4>Our Blogs</h4>
-                        <h2>Timeless Adventures Await with Timeless Stories.</h2>
+                        <h4>{t('our blogs')}</h4>
+                        <h2>{t('timeless adventures await with timeless stories')}</h2>
                     </div>
                     <div className="blogCards mt-lg-5 mt-md-4">
                         <div className="row gap-4 justify-content-center card-text">

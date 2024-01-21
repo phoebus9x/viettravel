@@ -10,6 +10,12 @@
     "faq":"Hỏi Đáp",
     "team":"Đội Ngũ",
 
+    "unlock the wonders of the world":"Mở Khóa Những Kỳ Quan Của Thế Giới",
+    "With us, you will always experience delightful surprises.":"Chúng tôi là đội ngũ chuyên gia du lịch có kinh nghiệm, sẵn sàng tổ chức những hành trình không thể quên dựa trên sở thích của bạn. Chúng tôi tin rằng việc tạo ra những mối kết nối ý nghĩa thông qua những trải nghiệm du lịch chân thực là điều quan trọng. Khám phá một thế giới với vô số khả năng khi chúng tôi hướng dẫn bạn đến những điểm đến quyến rũ nhất. Hãy để chúng tôi lo lắng về những chi tiết, từ việc đặt phòng cho đến lịch trình, trong khi bạn tập trung vào việc tạo dựng những kỷ niệm vĩnh cửu. Với chúng tôi, bạn sẽ có người bạn đồng hành tin cậy trong những cuộc phiêu lưu du lịch của bạn, và được trải nghiệm sự chăm sóc cá nhân và dịch vụ tuyệt vời từ đội ngũ của chúng tôi. Hãy cùng chúng tôi khám phá những điều phi thường và ôm trọn bản chất của niềm khao khát khám phá.",
+    "Enjoy in a romantic getaway tailored exclusively for you and your loved one.":"Tận hưởng một kỳ nghỉ lãng mạn được thiết kế riêng cho bạn và người thân yêu.",
+    "Discover new horizons and surpass your limits with our discounted adventure tours.":"Khám phá những chân trời mới, vượt qua giới hạn của bản thân cùng với những chuyến tham quan mạo hiểm đầy ưu đãi của chúng tôi",
+
+
     "explore":"EXPLORE",
     "the world":"THE WORLD",
     "discover now":"Khám Phá Ngay",
@@ -71,7 +77,20 @@
     "subscribe":"Đăng Ký",
     "quick links":"Liên Kết Nhanh",
     "contact info":"Thông tin liên hệ",
+    "my address":"Xã An Ninh, Huyện Quỳnh Phụ, Tỉnh Thái Bình",
     "make a reservation":"Đặt Chỗ",
     "our support & sales team is available 24/7 to answer your queries":"Đội ngũ Hỗ trợ và Bán hàng của chúng tôi có sẵn 24/7 để trả lời các câu hỏi của bạn.",
-    "copyright © 2023 viettravel by datu. all rights reserved.":"Bản quyền © 2023 Viettravel bởi DaTu. Đã đăng ký bảo lưu mọi quyền."
+    "copyright © 2023 viettravel by datu. all rights reserved.":"Bản quyền © 2023 Viettravel bởi DaTu. Đã đăng ký bảo lưu mọi quyền.",
+
+    "cmt1":"VietTravel đã linh hoạt đổi phòng cho tôi mà không tính phí, còn trả lại phần tiền chênh lệch nữa chứ! Rất cảm ơn đội ngũ nhân viên của VietTravel.",
+    "cmt2":"Tôi đã săn được gói cặp đôi đặc biệt phút chót của VietTravel. Phòng ốc thoải mái, ấm cúng, màn check-in phòng cho cặp đôi siêu tuyệt vời.",
+    "cmt3":"Tôi đã rất sợ khi ban đầu sử dụng dịch vụ của VietTravel vì sợ họ không hiểu được hết ý của tôi,  nhưng đội ngũ của VietTravel rất chuyên nghiệp, tận tình.",
+    
+    "get in touch":"Liên hệ với chúng tôi",
+    "send us a message":"Gửi tin nhắn cho chúng tôi",
+    "email address":"Địa chỉ email",
+    "phone number":"Số điện thoại",
+    "address":"Địa chỉ",
+    "message":"Tin nhắn",
+    "submit":"Gửi"
 }

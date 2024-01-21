@@ -10,7 +10,6 @@ import Navbar from '~/Layout/components/Navbar';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAnglesRight, faArrowRight, faPlay, faStar } from '@fortawesome/free-solid-svg-icons';
 
@@ -32,16 +31,16 @@ function FAQ() {
                         <div className="row justify-content-center">
                             <div className="col-lg-11 col-md-12 text-center" data-aos="fade">
                                 <div>
-                                    <h2>FAQ</h2>
+                                    <h2> {t('faq')}</h2>
                                     <div className="d-flex justify-content-center gap-4 pt-4">
                                         <nav aria-label="breadcrumb">
                                             <div className="breadcrumb d-flex gap-4 align-items-center">
                                                 <div className="breadcrumb-item">
-                                                    <Link to="/">Home</Link>
+                                                    <Link to="/"> {t('home')}</Link>
                                                 </div>
                                                 <FontAwesomeIcon icon={faAnglesRight} />
                                                 <div className="breadcrumb-item" aria-current="page">
-                                                    FAQ
+                                                    {t('faq')}
                                                 </div>
                                             </div>
                                         </nav>
@@ -59,8 +58,8 @@ function FAQ() {
                 <div className="container">
                     <div className="faq-section">
                         <div data-aos="fade">
-                            <h4>FAQ</h4>
-                            <h2>Have Answers, Will Travel.</h2>
+                            <h4>{t('faq')}</h4>
+                            <h2>{t('have answers, will travel')}</h2>
                         </div>
                         <div className="accordion" id="accordionExample" data-aos="fade">
                             <div className="accordion-item">
@@ -84,11 +83,10 @@ function FAQ() {
                                 >
                                     <div className="accordion-body">
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                            sed do eiusmod tempor incididunt ut labore et dolore magna
-                                            aliqua. In vitae turpis massa sed elementum tempus egestas
-                                            sed. Diam in arcu cursus euismod. Dolor sed viverra ipsum
-                                            nunc aliquet bibendum enim facilisis gravida
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. In vitae turpis massa
+                                            sed elementum tempus egestas sed. Diam in arcu cursus euismod. Dolor sed
+                                            viverra ipsum nunc aliquet bibendum enim facilisis gravida
                                         </p>
                                     </div>
                                 </div>
@@ -114,11 +112,10 @@ function FAQ() {
                                 >
                                     <div className="accordion-body">
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                            sed do eiusmod tempor incididunt ut labore et dolore magna
-                                            aliqua. In vitae turpis massa sed elementum tempus egestas
-                                            sed. Diam in arcu cursus euismod. Dolor sed viverra ipsum
-                                            nunc aliquet bibendum enim facilisis gravida
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. In vitae turpis massa
+                                            sed elementum tempus egestas sed. Diam in arcu cursus euismod. Dolor sed
+                                            viverra ipsum nunc aliquet bibendum enim facilisis gravida
                                         </p>
                                     </div>
                                 </div>
@@ -144,11 +141,10 @@ function FAQ() {
                                 >
                                     <div className="accordion-body">
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                            sed do eiusmod tempor incididunt ut labore et dolore magna
-                                            aliqua. In vitae turpis massa sed elementum tempus egestas
-                                            sed. Diam in arcu cursus euismod. Dolor sed viverra ipsum
-                                            nunc aliquet bibendum enim facilisis gravida
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. In vitae turpis massa
+                                            sed elementum tempus egestas sed. Diam in arcu cursus euismod. Dolor sed
+                                            viverra ipsum nunc aliquet bibendum enim facilisis gravida
                                         </p>
                                     </div>
                                 </div>
@@ -174,11 +170,10 @@ function FAQ() {
                                 >
                                     <div className="accordion-body">
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                            sed do eiusmod tempor incididunt ut labore et dolore magna
-                                            aliqua. In vitae turpis massa sed elementum tempus egestas
-                                            sed. Diam in arcu cursus euismod. Dolor sed viverra ipsum
-                                            nunc aliquet bibendum enim facilisis gravida
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. In vitae turpis massa
+                                            sed elementum tempus egestas sed. Diam in arcu cursus euismod. Dolor sed
+                                            viverra ipsum nunc aliquet bibendum enim facilisis gravida
                                         </p>
                                     </div>
                                 </div>

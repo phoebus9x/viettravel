@@ -81,16 +81,16 @@ function About() {
                         <div className="row justify-content-center">
                             <div className="col-lg-11 col-md-12 text-center" data-aos="fade">
                                 <div>
-                                    <h2>About Us</h2>
+                                    <h2>{t('about us')}</h2>
                                     <div className="d-flex justify-content-center gap-4 pt-4">
                                         <nav aria-label="breadcrumb">
                                             <div className="breadcrumb d-flex gap-4 align-items-center">
                                                 <div className="breadcrumb-item">
-                                                    <Link to="/">Home</Link>
+                                                    <Link to="/">{t('home')}</Link>
                                                 </div>
                                                 <FontAwesomeIcon icon={faAnglesRight} />
                                                 <div className="breadcrumb-item" aria-current="page">
-                                                    About
+                                                    {t('about')}
                                                 </div>
                                             </div>
                                         </nav>
@@ -110,21 +110,12 @@ function About() {
                         <div className="col-lg-8 col-md-9">
                             <div className="col-lg-10 col-md-9" data-aos="fade" data-aos-duration="2000">
                                 <div>
-                                    <h4>About Us</h4>
-                                    <h2>With Us, You Are Always In For A Pleasant Surprise</h2>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                    </p>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                    </p>
+                                    <h4>{t('about us')}</h4>
+                                    <h2>{t('with us, you are always in for a pleasant surprise')}</h2>
+                                    <p>{t('With us, you will always experience delightful surprises.')}</p>
                                     <div className="justify-content-md-start justify-content-center mt-3">
                                         <Button className="globalBtnActive" to="/destinations">
-                                            Destinations
+                                            {t('destinations')}
                                         </Button>
                                     </div>
                                 </div>
@@ -140,7 +131,7 @@ function About() {
                                         <h2 className="count">25</h2>
                                         <h2>K+</h2>
                                     </div>
-                                    <p>Happy Customers</p>
+                                    <p>{t('happy customers')}</p>
                                 </div>
                                 <div
                                     className="experience d-flex flex-column justify-content-between align-items-center"
@@ -150,7 +141,7 @@ function About() {
                                         <h2 className="count">15</h2>
                                         <h2>+</h2>
                                     </div>
-                                    <p>Years of experience</p>
+                                    <p>{t('years of experience')}</p>
                                 </div>
                             </div>
                         </div>
@@ -178,8 +169,8 @@ function About() {
                         <div className="col-md-6 d-flex justify-content-center align-content-center">
                             <div className="weDo-content d-flex flex-column justify-content-center align-items-start">
                                 <div data-aos="fade" data-aos-duration="2000">
-                                    <h4>What We Do</h4>
-                                    <h2>Exploring The World Without Limits</h2>
+                                    <h4>{t('what we do')}</h4>
+                                    <h2>{t('exploring the world without limits')}</h2>
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
@@ -187,7 +178,7 @@ function About() {
                                 </div>
                                 <div className="mt-3" data-aos="fade" data-aos-duration="2000">
                                     <Button className="globalBtnActive" to="/services">
-                                        Learn More
+                                        {t('learn more')}
                                     </Button>
                                 </div>
                             </div>
@@ -201,10 +192,10 @@ function About() {
             <section id="choose">
                 <div className="chooseBg">
                     <div className="position-relative z-2" data-aos="fade" data-aos-duration="2000">
-                        <h4>Why choose us</h4>
-                        <h2>Let Us Show You The Beauty Of The World</h2>
+                        <h4>{t('why choose us')}</h4>
+                        <h2>{t('let us show you the beauty of the world')}</h2>
                         <div className="mt-lg-5 mt-md-5">
-                            <Button to="/contact">Contact Us</Button>
+                            <Button to="/contact">{t('contact us')}</Button>
                         </div>
                     </div>
                 </div>
@@ -216,7 +207,7 @@ function About() {
                                     <figure>
                                         <img src={choose1} alt="chooseIcon" />
                                     </figure>
-                                    <h6>Tour and Travel</h6>
+                                    <h6>{t('tour and travel')}</h6>
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor
                                         incididunt
@@ -228,7 +219,7 @@ function About() {
                                     <figure>
                                         <img src={choose2} alt="chooseIcon" />
                                     </figure>
-                                    <h6>campus</h6>
+                                    <h6>{t('campus')}</h6>
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor
                                         incididunt
@@ -240,7 +231,7 @@ function About() {
                                     <figure>
                                         <img src={choose3} alt="chooseIcon" />
                                     </figure>
-                                    <h6>Adventure Tour</h6>
+                                    <h6>{t('adventure tour')}</h6>
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor
                                         incididunt
@@ -256,7 +247,7 @@ function About() {
                                     <figure>
                                         <img src={choose4} alt="chooseIcon" />
                                     </figure>
-                                    <h6>photography</h6>
+                                    <h6>{t('photography')}</h6>
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor
                                         incididunt
@@ -273,8 +264,8 @@ function About() {
             <section id="team">
                 <div className="container">
                     <div data-aos="fade" data-aos-duration="2000">
-                        <h4>Our Team</h4>
-                        <h2>Experience The World With Us</h2>
+                        <h4>{t('our team')}</h4>
+                        <h2>{t('experience the world with us')}</h2>
                     </div>
                     <div className="row justify-content-md-between justify-content-center gap-md-0 gap-4">
                         <div className="col-md-4 col-sm-8 col-10" data-aos="fade-up" data-aos-delay="100">
@@ -298,7 +289,7 @@ function About() {
                             </div>
                             <div>
                                 <h6>James Bowel</h6>
-                                <p>Tour Guide</p>
+                                <p>{t('tour guide')}</p>
                             </div>
                         </div>
                         <div className="col-md-4 col-sm-8 col-10" data-aos="fade-up" data-aos-delay="500">
@@ -322,7 +313,7 @@ function About() {
                             </div>
                             <div>
                                 <h6>Lucy Amanda</h6>
-                                <p>Tour Guide</p>
+                                <p>{t('tour guide')}</p>
                             </div>
                         </div>
                         <div className="col-md-4 col-sm-8 col-10" data-aos="fade-up" data-aos-delay="900">
@@ -346,7 +337,7 @@ function About() {
                             </div>
                             <div>
                                 <h6>Victoria Bells</h6>
-                                <p>Tour Guide</p>
+                                <p>{t('tour guide')}</p>
                             </div>
                         </div>
                     </div>
@@ -366,7 +357,7 @@ function About() {
                         labore et dolore magna aliqua. Ut enim ad minim veniam
                     </p>
                     <div className="mt-lg-4 mt-3">
-                        <Button to="/contact">Book Now</Button>
+                        <Button to="/contact">{t('book now')}</Button>
                     </div>
                 </div>
             </section>

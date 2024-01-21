@@ -39,7 +39,7 @@ function Footer() {
                             <div className={cx('address')}>
                                 <div>
                                     <FontAwesomeIcon className={cx('icon')} icon={faHouse} />
-                                    <p>Xã An Ninh, huyện Quỳnh Phụ, Tỉnh Thái Bình</p>
+                                    <p>{t('my address')}</p>
                                 </div>
                                 <div>
                                     <FontAwesomeIcon className={cx('icon')} icon={faEnvelope} />
