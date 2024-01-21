@@ -2,6 +2,8 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import HOME_EN from "~/locales/en/home.json";
 import HOME_VI from "~/locales/vi/home.json";
+import HOME_RU from "~/locales/ru/home.json";
+
 
 export const locales = {
   vi: "Tiếng Việt",
@@ -18,7 +20,9 @@ const resources = {
   vi: {
     home: HOME_VI,
   },
-  ru: {},
+  ru: {
+    home: HOME_RU,
+  },
 };
 
 const defaultNS = "home";
