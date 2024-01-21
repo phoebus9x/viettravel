@@ -1,16 +1,76 @@
 {
+    "home":"Home",
+    "about":"About",
+    "blog":"Blog",
+    "contact":"Contact",
+    "pages":"Pages",
+    "services":"Services",
+    "destinations":"Destinations",
+    "testimonials":"Testimonials",
+    "faq":"FAQ",
+    "team":"Team",
+
     "explore":"EXPLORE",
     "the world":"THE WORLD",
+    "discover now":"Discover Now",
     "map location":"Map Location",
     "traveling bag":"Traveling Bag",
     "photography":"Photography",
     "affordable prices":"Affordable Prices",
-    "about us": {
-        "name":"Name",
-        "destination":"Destination",
-        "tour days": "Tour Days",
-        "book now": "Book Now",
-        "about us":"About Us",
-        "happy customers": "Happy Customers"
-    }
+    "name":"Name",
+    "destination":"Destination",
+    "tour days": "Tour Days",
+    "book now": "Book Now",
+    "about us":"About Us",
+    "happy customers": "Happy Customers",
+    "years of experience":"Years of experience",
+    "with us, you are always in for a pleasant surprise":"With Us, You Are Always In For A Pleasant Surprise",
+    "learn more":"Learn More",
+
+    "special offer for couples":"Special Offer for Couples",
+    "special offer on adventure tours":"Special Offer on Adventure tours",
+    "discount up 50%":"Discount up 50%",
+
+    "tour":"Tour",
+    "live your life through travel":"Live Your Life Through Travel",
+    "view all":"View All",
+
+    "why choose us":"Why choose us",
+    "let us show you the beauty of the world":"Let Us Show You The Beauty Of The World",
+    "contact us":"Contact Us",
+    "tour and travel":"Tour and Travel",
+    "campus":"Campus",
+    "adventure tour":"Adventure Tour",
+
+    "our services":"Our Services",
+    "join the adventure with stories":"Join The Adventure With Stories",
+    "custom destinations":"Custom Destinations",
+    "unforgettable moments":"Unforgettable Moments",
+    "competitive pricings":"Competitive Pricings",
+    "see all services":"See All Services",
+
+    "what we do":"What We Do",
+    "exploring the world without limits":"Exploring The World Without Limits",
+
+    "our team":"Our Team",
+    "experience the world with us":"Experience The World With Us",
+    "tour guide":"Tour Guide",
+
+    "have answers, will travel":"Have Answers, Will Travel",
+
+    "we are all about your satisfaction":"We're All About Your Satisfaction",
+    "tourist":"Tourist",
+
+    "start planning your trip now and get 30% discount":"Start Planning Your Trip Now and Get 30% Discount",
+    "our blogs":"Our Blogs",
+    "timeless adventures await with timeless stories":"Timeless Adventures Await with Timeless Stories",
+    "newsletter":"Newsletter",
+    "stay in the know, without having to do anything":"Stay In The Know, Without Having To Do Anything",
+    "enter your email address":"Enter Your Email Address",
+    "subscribe":"Subscribe",
+    "quick links":"Quick Links",
+    "contact info":"Contact Info",
+    "make a reservation":"Make A Reservation",
+    "our support & sales team is available 24/7 to answer your queries":"Our Support & Sales team is available 24/7 to answer your queries",
+    "copyright © 2023 viettravel by datu. all rights reserved.":"Copyright © 2023 Viettravel By DaTu. All Rights Reserved."
 }

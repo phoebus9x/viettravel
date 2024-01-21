@@ -1,16 +1,76 @@
 {
+    "home":"Trang Chủ",
+    "about":"Giới Thiệu",
+    "blog":"Blog",
+    "contact":"Liên Hệ",
+    "pages":"Trang",
+    "services":"Dịch Vụ",
+    "destinations":"Điểm Đến",
+    "testimonials":"Đánh Giá",
+    "faq":"Hỏi Đáp",
+    "team":"Đội Ngũ",
+
     "explore":"EXPLORE",
     "the world":"THE WORLD",
+    "discover now":"Khám Phá Ngay",
     "map location":"Vị Trí Bản Đồ",
-    "traveling bag":"Túi Du Lịch",
-    "photography":"Nhiếp Ảnh",
-    "affordable prices":"Giá Tốt",
-    "about us": {
-        "name":"Tên",
-        "destination":"Điểm Đến",
-        "tour days": "Ngày Tham Quan",
-        "book now": "Đặt Ngay",
-        "about us":"Về Chúng Tôi",
-        "happy customers": "Khách Hàng Hạnh Phúc"
-    }
+    "traveling bag":"Balo du lịch",
+    "photography":"Nhiếp ảnh",
+    "affordable prices":"Giá cả phải chăng",
+    "name":"Tên",
+    "destination":"Điểm đến",
+    "tour days": "Ngày du lịch",
+    "book now": "Đặt Ngay",
+    "about us":"Về Chúng Tôi",
+    "happy customers": "Khách Hàng Hài Lòng",
+    "years of experience":"Năm kinh nghiệm",
+    "with us, you are always in for a pleasant surprise":"Cùng Chúng Tôi, Bạn Luôn Được Trải Nghiệm Những Điều Bất Ngờ Thú Vị",
+    "learn more":"Tìm Hiểu Thêm",
+
+    "special offer for couples":"Ưu đãi đặc biệt dành cho cặp đôi",
+    "special offer on adventure tours":"Ưu đãi đặc biệt dành cho các tour phiêu lưu",
+    "discount up 50%":"Giảm giá 50%",
+
+    "tour":"Chuyến du lịch",
+    "live your life through travel":"Sống Cuộc Đời Của Bạn Qua Du Lịch",
+    "view all":"Xem Tất Cả",
+
+    "why choose us":"Tại sao chọn chúng tôi",
+    "let us show you the beauty of the world":"Hãy Để Chúng Tôi Cho Bạn Thấy Vẻ Đẹp Của Thế Giới",
+    "contact us":"Liên Hệ",
+    "tour and travel":"Du Lịch và Trải Nghiệm",
+    "campus":"Campus",
+    "adventure tour":"Phiêu Lưu",
+
+    "our services":"Dịch Vụ",
+    "join the adventure with stories":"Tham Gia Cuộc Phiêu Lưu Qua Những Câu Chuyện",
+    "custom destinations":"Điểm Đến Tùy Chỉnh",
+    "unforgettable moments":"Những Khoảnh Khắc Đáng Nhớ",
+    "competitive pricings":"Giá Cả Cạnh Tranh",
+    "see all services":"Xem Tất Cả",
+
+    "what we do":"Chúng Tôi Làm",
+    "exploring the world without limits":"Khám Phá Thế Giới Không Giới Hạn",
+
+    "our team":"Đội Ngũ",
+    "experience the world with us":"Khám Phá Thế Giới Cùng Chúng Tôi",
+    "tour guide":"Hướng Dẫn Viên",
+
+    "have answers, will travel":"Có câu trả lời, sẽ đi du lịch",
+
+    "we are all about your satisfaction":"Tất Cả Vì Sự Hài Lòng Của Bạn",
+    "tourist":"Khách Du Lịch",
+
+    "start planning your trip now and get 30% discount":"Bắt đầu lập kế hoạch cho chuyến đi của bạn ngay bây giờ và nhận ưu đãi giảm giá 30%",
+    "our blogs":"Blogs của chúng tôi",
+    "timeless adventures await with timeless stories":"Cuộc phiêu lưu vô tận đang chờ đợi với những câu chuyện bất diệt",
+    "newsletter":"Thư",
+    "stay in the know, without having to do anything":"Cập nhật thông tin mà không cần làm bất cứ điều gì",
+    "enter your email address":"Nhập địa chỉ email của bạn",
+    "subscribe":"Đăng Ký",
+    "quick links":"Liên Kết Nhanh",
+    "contact info":"Thông tin liên hệ",
+    "make a reservation":"Đặt Chỗ",
+    "our support & sales team is available 24/7 to answer your queries":"Đội ngũ Hỗ trợ và Bán hàng của chúng tôi có sẵn 24/7 để trả lời các câu hỏi của bạn",
+    "copyright © 2023 viettravel by datu. all rights reserved.":"Bản quyền © 2023 Viettravel bởi DaTu. Đã đăng ký bảo lưu mọi quyền."
 }
