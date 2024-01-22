@@ -207,7 +207,7 @@ function Destinations() {
             <section id="planning">
                 <div className="planningContent" data-aos="fade" data-aos-duration="2000">
                     <h3>
-                        Start Planning Your Trip Now and <span>Get 30% Discount</span>
+                        {t('start planning your trip now and ')} <span>{t('get 30% discount')}</span>
                     </h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
