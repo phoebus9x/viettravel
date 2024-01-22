@@ -37,16 +37,16 @@ function Team() {
                         <div className="row justify-content-center">
                             <div className="col-lg-11 col-md-12 text-center" data-aos="fade">
                                 <div>
-                                    <h2>Team</h2>
+                                    <h2>{t('team')}</h2>
                                     <div className="d-flex justify-content-center gap-4 pt-4">
                                         <nav aria-label="breadcrumb">
                                             <div className="breadcrumb d-flex gap-4 align-items-center">
                                                 <div className="breadcrumb-item">
-                                                    <Link to="/">Home</Link>
+                                                    <Link to="/">{t('home')}</Link>
                                                 </div>
                                                 <FontAwesomeIcon icon={faAnglesRight} />
                                                 <div className="breadcrumb-item" aria-current="page">
-                                                    Team
+                                                {t('team')}
                                                 </div>
                                             </div>
                                         </nav>
@@ -62,8 +62,8 @@ function Team() {
             <section id="team">
                 <div className="container">
                     <div data-aos="fade" data-aos-duration="2000">
-                        <h4>Our Team</h4>
-                        <h2>Experience The World With Us</h2>
+                        <h4>{t('our team')}</h4>
+                        <h2>{t('experience the world with us')}</h2>
                     </div>
                     <div className="row justify-content-md-between justify-content-center gap-md-0 gap-4">
                         <div
@@ -91,7 +91,7 @@ function Team() {
                             </div>
                             <div>
                                 <h6>James Bowel</h6>
-                                <p>Tour Guide</p>
+                                <p>{t('tour guide')}</p>
                             </div>
                         </div>
                         <div
@@ -119,7 +119,7 @@ function Team() {
                             </div>
                             <div>
                                 <h6>Lucy Amanda</h6>
-                                <p>Tour Guide</p>
+                                <p>{t('tour guide')}</p>
                             </div>
                         </div>
                         <div
@@ -147,7 +147,7 @@ function Team() {
                             </div>
                             <div>
                                 <h6>Victoria Bells</h6>
-                                <p>Tour Guide</p>
+                                <p>{t('tour guide')}</p>
                             </div>
                         </div>
                     </div>

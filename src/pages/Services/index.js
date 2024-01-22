@@ -41,16 +41,16 @@ function Services() {
                         <div className="row justify-content-center">
                             <div className="col-lg-11 col-md-12 text-center" data-aos="fade">
                                 <div>
-                                    <h2>Our Services</h2>
+                                    <h2>{t('our services')}</h2>
                                     <div className="d-flex justify-content-center gap-4 pt-4">
                                         <nav aria-label="breadcrumb">
                                             <div className="breadcrumb d-flex gap-4 align-items-center">
                                                 <div className="breadcrumb-item">
-                                                    <Link to="/">Home</Link>
+                                                    <Link to="/">{t('home')}</Link>
                                                 </div>
                                                 <FontAwesomeIcon icon={faAnglesRight} />
                                                 <div className="breadcrumb-item" aria-current="page">
-                                                    Services
+                                                {t('services')}
                                                 </div>
                                             </div>
                                         </nav>
@@ -69,8 +69,8 @@ function Services() {
                     <div className="row">
                         <div className="col-md-7">
                             <div data-aos="fade" data-aos-duration="2000">
-                                <h4>Our Services</h4>
-                                <h2>Join The Adventure With Stories</h2>
+                                <h4>{t('our services')}</h4>
+                                <h2>{t('join the adventure with stories')}</h2>
                                 <p>
                                     Lorem Ipsum is simply dummy text of the printing and
                                     typesetting industry. Lorem Ipsum has been the industry's
@@ -82,7 +82,7 @@ function Services() {
                                             <figure>
                                                 <img src={service1} alt="servicesIcon" />
                                             </figure>
-                                            <h6>Custom Destinations</h6>
+                                            <h6>{t('custom destinations')}</h6>
                                         </div>
                                     </div>
                                     <div className="col-md-3">
@@ -90,7 +90,7 @@ function Services() {
                                             <figure>
                                                 <img src={service3} alt="servicesIcon" />
                                             </figure>
-                                            <h6>Unforgettable Moments</h6>
+                                            <h6>{t('unforgettable moments')}</h6>
                                         </div>
                                     </div>
                                     <div className="col-md-3">
@@ -98,13 +98,13 @@ function Services() {
                                             <figure>
                                                 <img src={service2} alt="servicesIcon" />
                                             </figure>
-                                            <h6>Competitive Pricings</h6>
+                                            <h6>{t('competitive pricings')}</h6>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="d-flex justify-content-md-start justify-content-center mt-lg-3 mt-md-3 mt-4">
                                     <Button className="globalBtnActive" to="/services">
-                                        See all services
+                                    {t('see all services')}
                                     </Button>
                                 </div>
                             </div>
@@ -136,8 +136,8 @@ function Services() {
                         data-aos="fade"
                         data-aos-duration="2000"
                     >
-                        <h4>Why choose us</h4>
-                        <h2>Let Us Show You The Beauty Of The World</h2>
+                        <h4>{t('why choose us')}</h4>
+                        <h2>{t('let us show you the beauty of the world')}</h2>
                         <div className="mt-lg-5 mt-md-5">
                             <Button to="/contact">Contact Us</Button>
                         </div>
@@ -155,7 +155,7 @@ function Services() {
                                     <figure>
                                         <img src={choose1} alt="chooseIcon" />
                                     </figure>
-                                    <h6>Tour and Travel</h6>
+                                    <h6>{t('tour and travel')}</h6>
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit sed
                                         do eiusmod tempor incididunt
@@ -171,7 +171,7 @@ function Services() {
                                     <figure>
                                         <img src={choose2} alt="chooseIcon" />
                                     </figure>
-                                    <h6>campus</h6>
+                                    <h6>{t('campus')}</h6>
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit sed
                                         do eiusmod tempor incididunt
@@ -187,7 +187,7 @@ function Services() {
                                     <figure>
                                         <img src={choose3} alt="chooseIcon" />
                                     </figure>
-                                    <h6>Adventure Tour</h6>
+                                    <h6>{t('adventure tour')}</h6>
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit sed
                                         do eiusmod tempor incididunt
@@ -203,7 +203,7 @@ function Services() {
                                     <figure>
                                         <img src={choose4} alt="chooseIcon" />
                                     </figure>
-                                    <h6>photography</h6>
+                                    <h6>{t('photography')}</h6>
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit sed
                                         do eiusmod tempor incididunt
@@ -221,18 +221,15 @@ function Services() {
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-md-6" data-aos="fade-down">
-                            <h3>Special Offer for Couples</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt.
-                            </p>
+                            <h3>{t('special offer for couples')}</h3>
+                            <p>{t('Enjoy in a romantic getaway tailored exclusively for you and your loved one.')}</p>
                             <div className="offer">
                                 <img src={images.special1} alt="discount" />
                                 <div className="overlaytwo">
                                     <div className="overlay_text">
-                                        <h3>Discount up 50%</h3>
+                                        <h3>{t('discount up 50%')}</h3>
                                         <div className="mt-lg-5 mt-4">
-                                            <Button>Book Now</Button>
+                                            <Button>{t('book now')}</Button>
                                         </div>
                                     </div>
                                 </div>
@@ -243,17 +240,18 @@ function Services() {
                                 <img src={images.special2} alt="discount" />
                                 <div className="overlaytwo">
                                     <div className="overlay_text">
-                                        <h3>Discount up 50%</h3>
+                                        <h3>{t('discount up 50%')}</h3>
                                         <div className="mt-lg-5 mt-4">
-                                            <Button>Book Now</Button>
+                                            <Button>{t('book now')}</Button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <h3>Special Offer on Adventure tours</h3>
+                            <h3>{t('special offer on adventure tours')}</h3>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt.
+                                {t(
+                                    'Discover new horizons and surpass your limits with our discounted adventure tours.',
+                                )}
                             </p>
                         </div>
                     </div>

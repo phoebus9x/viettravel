@@ -38,16 +38,16 @@ function Testimonials() {
                         <div className="row justify-content-center">
                             <div className="col-lg-11 col-md-12 text-center" data-aos="fade">
                                 <div>
-                                    <h2>Testimonials</h2>
+                                    <h2>{t('testimonials')}</h2>
                                     <div className="d-flex justify-content-center gap-4 pt-4">
                                         <nav aria-label="breadcrumb">
                                             <div className="breadcrumb d-flex gap-4 align-items-center">
                                                 <div className="breadcrumb-item">
-                                                    <Link to="/">Home</Link>
+                                                    <Link to="/">{t('home')}</Link>
                                                 </div>
                                                 <FontAwesomeIcon icon={faAnglesRight} />
                                                 <div className="breadcrumb-item" aria-current="page">
-                                                    Testimonials
+                                                {t('testimonials')}
                                                 </div>
                                             </div>
                                         </nav>
@@ -65,8 +65,8 @@ function Testimonials() {
                 <div className="container">
                     <div className="row card-text justify-content-md-between justify-content-center gap-md-0 gap-3">
                         <div data-aos="fade" data-aos-duration="2000">
-                            <h4>Testimonials</h4>
-                            <h2>We're All About Your Satisfaction</h2>
+                            <h4>{t('testimonials')}</h4>
+                            <h2>{t('we are all about your satisfaction')}</h2>
                         </div>
                         <div
                             className="col-md-4 col-sm-8 col-11"
@@ -78,7 +78,7 @@ function Testimonials() {
                                     <img src={images.testimonials1} alt="testimonialsImg" />
                                 </figure>
                                 <h6>Raisa Barker</h6>
-                                <p>Tourist</p>
+                                <p>{t('tourist')}</p>
                                 <div className="d-flex gap-2 mt-3 mb-4 pb-2">
                                     <FontAwesomeIcon icon={faStar} />
                                     <FontAwesomeIcon icon={faStar} />
@@ -87,8 +87,7 @@ function Testimonials() {
                                     <FontAwesomeIcon icon={faStar} />
                                 </div>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                    do eiusmod tempor incididunt
+                                {t('cmt1')}
                                 </p>
                             </div>
                         </div>
@@ -102,7 +101,7 @@ function Testimonials() {
                                     <img src={images.testimonials2} alt="testimonialsImg" />
                                 </figure>
                                 <h6>Terrence Baker</h6>
-                                <p>Tourist</p>
+                                <p>{t('tourist')}</p>
                                 <div className="d-flex gap-2 mt-3 mb-4 pb-2">
                                     <FontAwesomeIcon icon={faStar} />
                                     <FontAwesomeIcon icon={faStar} />
@@ -111,8 +110,7 @@ function Testimonials() {
                                     <FontAwesomeIcon icon={faStar} />
                                 </div>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                    do eiusmod tempor incididunt
+                                {t('cmt2')}
                                 </p>
                             </div>
                         </div>
@@ -126,7 +124,7 @@ function Testimonials() {
                                     <img src={images.testimonials3} alt="testimonialsImg" />
                                 </figure>
                                 <h6>Xiong Lee</h6>
-                                <p>Tourist</p>
+                                <p>{t('tourist')}</p>
                                 <div className="d-flex gap-2 mt-3 mb-4 pb-2">
                                     <FontAwesomeIcon icon={faStar} />
                                     <FontAwesomeIcon icon={faStar} />
@@ -135,8 +133,7 @@ function Testimonials() {
                                     <FontAwesomeIcon icon={faStar} />
                                 </div>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                    do eiusmod tempor incididunt
+                                {t('cmt3')}
                                 </p>
                             </div>
                         </div>
