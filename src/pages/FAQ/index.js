@@ -23,7 +23,7 @@ function FAQ() {
 
     return (
         <div className={'site-wrapper'}>
-            <div className={'header-blog'}>
+            <div className={'header-faq'}>
                 <Navbar />
                 {/* <!-- ====== 1.2 hero section ====== --> */}
                 <section className="hero">

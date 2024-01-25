@@ -425,7 +425,7 @@ input[type="date"] {
 
 /* ====== 1.6 tours section ====== */
 #tour {
-    // background-image: url(../images/bg/bg-1.png);
+    background-image: url(../../assets/images/bg-1.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -521,7 +521,7 @@ input[type="date"] {
 
 .chooseBg::before {
     content: "";
-    // background: url("../images/index/choose-img.png") no-repeat center center/cover;
+     background: url("../../assets/images/choose-img.png") no-repeat center center/cover;
     background-attachment: fixed;
     width: 100%;
     height: 100%;
@@ -660,7 +660,7 @@ img[alt="ser-Camera"]:hover {
 }
 
 .services {
-    // background-image: url(../images/bg/bg-1.png);
+    background-image: url(../../assets/images/bg-1.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -908,7 +908,7 @@ img[alt="ser-Camera"]:hover {
 
 /* ====== 1.11 faq section ====== */
 #faq {
-    // background-image: url("../images/index/faq-img.png");
+    background-image: url("../../assets/images/bg-2.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
@@ -952,7 +952,7 @@ img[alt="ser-Camera"]:hover {
 }
 
 #faq .accordion-button:not(.collapsed)::after {
-    // background-image: url("../images/icon/line.png") !important;
+    background-image: url("../../assets/images/icon/line.png") !important;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 20px;
@@ -960,7 +960,7 @@ img[alt="ser-Camera"]:hover {
 }
 
 #faq .accordion-button::after {
-    // background-image: url("../images/icon/plus2.png");
+    background-image: url("../../assets/images/icon/plus2.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -1061,7 +1061,7 @@ img[alt="ser-Camera"]:hover {
 
 #planning::before {
     content: "";
-    // background: url("../images/index/planning-img.png") no-repeat center center/cover;
+    background: url("../../assets/images/bg-3.png") no-repeat center center/cover;
     background-attachment: fixed;
     width: 100%;
     height: 100%;
@@ -1263,7 +1263,7 @@ img[alt="ser-Camera"]:hover {
 
 .header-about::before {
     content: "";
-    // background: url('../images/about/about-hero-img.png') no-repeat center center/cover;
+    background: url('../../assets/images/bg-about.webp') no-repeat center center/cover;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -1328,7 +1328,7 @@ img[alt="ser-Camera"]:hover {
 
 .header-blog::before {
     content: "";
-    // background: url('../images/blog/blog-hero-img.png') no-repeat center center/cover;
+    background: url('../../assets/images/bg-blog.png') no-repeat center center/cover;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -1349,6 +1349,34 @@ img[alt="ser-Camera"]:hover {
 }
 
 /* ====== End 4.1 hero section ====== */
+
+/* ======9.1 hero section ====== */
+.header-contact {
+    position: relative;
+}
+
+.header-contact::before {
+    content: "";
+    background: url("../../assets/images/contact-hero-img.webp") no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+.header-contact::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+/* ====== End 9.1 hero section ====== */
 
 /* ====== 9.2 contact section ====== */
 #contact {
@@ -1538,3 +1566,90 @@ textarea {
 }
 
 /* ====== End 9.2 contact section ====== */
+
+/* ====== 10.1 hero section ====== */
+.header-destination {
+    position: relative;
+}
+
+.header-destination::before {
+    content: "";
+    background: url('../../assets/images/bg-450.png') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+.header-destination::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* ====== End 10.1 hero section ====== */
+
+/* ====== 11.1 hero section ====== */
+.header-service {
+    position: relative;
+}
+
+.header-service::before {
+    content: "";
+    background: url('../../assets/images/bg-450-1.png') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+.header-service::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* ====== End 11.1 hero section ====== */
+
+/* ====== 12.1 hero section ====== */
+.header-faq {
+    position: relative;
+}
+
+.header-faq::before {
+    content: "";
+    background: url('../../assets/images/faq-hero-img.webp') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+.header-faq::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* ====== End 12.1 hero section ====== */

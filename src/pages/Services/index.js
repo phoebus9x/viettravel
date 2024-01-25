@@ -33,7 +33,7 @@ function Services() {
 
     return (
         <div className={'site-wrapper'}>
-            <div className={'header-blog'}>
+            <div className={'header-service'}>
                 <Navbar />
                 {/* <!-- ====== 1.2 hero section ====== --> */}
                 <section className="hero">
@@ -50,7 +50,7 @@ function Services() {
                                                 </div>
                                                 <FontAwesomeIcon icon={faAnglesRight} />
                                                 <div className="breadcrumb-item" aria-current="page">
-                                                {t('services')}
+                                                    {t('services')}
                                                 </div>
                                             </div>
                                         </nav>
@@ -72,9 +72,8 @@ function Services() {
                                 <h4>{t('our services')}</h4>
                                 <h2>{t('join the adventure with stories')}</h2>
                                 <p>
-                                    Lorem Ipsum is simply dummy text of the printing and
-                                    typesetting industry. Lorem Ipsum has been the industry's
-                                    standard dummy text ever since the 1500s,
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s,
                                 </p>
                                 <div className="row align-items-center gap-lg-3 gap-md-4 text-lg-start text-center">
                                     <div className="col-md-3">
@@ -104,16 +103,12 @@ function Services() {
                                 </div>
                                 <div className="d-flex justify-content-md-start justify-content-center mt-lg-3 mt-md-3 mt-4">
                                     <Button className="globalBtnActive" to="/services">
-                                    {t('see all services')}
+                                        {t('see all services')}
                                     </Button>
                                 </div>
                             </div>
                         </div>
-                        <div
-                            className="col-md-5 mt-md-0 mt-5"
-                            data-aos="fade-up"
-                            data-aos-easing="ease-in-out-quad"
-                        >
+                        <div className="col-md-5 mt-md-0 mt-5" data-aos="fade-up" data-aos-easing="ease-in-out-quad">
                             <div>
                                 <figure>
                                     <img src={images.service1} alt="service-img" />
@@ -131,11 +126,7 @@ function Services() {
             {/* <!-- ====== 1.7 why choose us section ====== --> */}
             <section id="choose">
                 <div className="chooseBg">
-                    <div
-                        className="position-relative z-2"
-                        data-aos="fade"
-                        data-aos-duration="2000"
-                    >
+                    <div className="position-relative z-2" data-aos="fade" data-aos-duration="2000">
                         <h4>{t('why choose us')}</h4>
                         <h2>{t('let us show you the beauty of the world')}</h2>
                         <div className="mt-lg-5 mt-md-5">
@@ -146,51 +137,39 @@ function Services() {
                 <div className="chooseCrads position-relative z-2">
                     <div className="container">
                         <div className="row gap-md-0 gap-4 justify-content-center card-text">
-                            <div
-                                className="col-lg-3 col-md-4"
-                                data-aos="fade-up"
-                                data-aos-delay="100"
-                            >
+                            <div className="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="100">
                                 <div>
                                     <figure>
                                         <img src={choose1} alt="chooseIcon" />
                                     </figure>
                                     <h6>{t('tour and travel')}</h6>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit sed
-                                        do eiusmod tempor incididunt
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor
+                                        incididunt
                                     </p>
                                 </div>
                             </div>
-                            <div
-                                className="col-lg-3 col-md-4"
-                                data-aos="fade-up"
-                                data-aos-delay="500"
-                            >
+                            <div className="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="500">
                                 <div>
                                     <figure>
                                         <img src={choose2} alt="chooseIcon" />
                                     </figure>
                                     <h6>{t('campus')}</h6>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit sed
-                                        do eiusmod tempor incididunt
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor
+                                        incididunt
                                     </p>
                                 </div>
                             </div>
-                            <div
-                                className="col-lg-3 col-md-4"
-                                data-aos="fade-up"
-                                data-aos-delay="900"
-                            >
+                            <div className="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="900">
                                 <div>
                                     <figure>
                                         <img src={choose3} alt="chooseIcon" />
                                     </figure>
                                     <h6>{t('adventure tour')}</h6>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit sed
-                                        do eiusmod tempor incididunt
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor
+                                        incididunt
                                     </p>
                                 </div>
                             </div>
@@ -205,8 +184,8 @@ function Services() {
                                     </figure>
                                     <h6>{t('photography')}</h6>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit sed
-                                        do eiusmod tempor incididunt
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor
+                                        incididunt
                                     </p>
                                 </div>
                             </div>
