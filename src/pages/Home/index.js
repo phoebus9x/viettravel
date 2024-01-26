@@ -540,8 +540,9 @@ function Home() {
                                     <h4>{t('what we do')}</h4>
                                     <h2>{t('exploring the world without limits')}</h2>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                        {t(
+                                            'our mission is to help you transcend the limitations of traditional travel, explore the boundless possibilities of Vietnam, and unlock extraordinary experiences.',
+                                        )}
                                     </p>
                                 </div>
                                 <div className="mt-3" data-aos="fade" data-aos-duration="2000">
@@ -872,8 +873,9 @@ function Home() {
                         {t('start planning your trip now and ')} <span>{t('get 30% discount')}</span>
                     </h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam
+                        {t(
+                            'plan your dream vacation today and indulge in unforgettable experiences with an exclusive 30% discount!',
+                        )}
                     </p>
                     <div className="mt-lg-4 mt-3">
                         <Button to="/contact">{t('book now')}</Button>
@@ -966,8 +968,9 @@ function Home() {
                         <div className="col-md-5">
                             <div>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore
+                                    {t(
+                                        'subscribe to our newsletter and stay updated on the latest travel news , effortlessly!',
+                                    )}
                                 </p>
                             </div>
                         </div>

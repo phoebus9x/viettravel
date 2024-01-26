@@ -210,8 +210,9 @@ function Destinations() {
                         {t('start planning your trip now and ')} <span>{t('get 30% discount')}</span>
                     </h3>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam
+                        {t(
+                            'plan your dream vacation today and indulge in unforgettable experiences with an exclusive 30% discount!',
+                        )}
                     </p>
                     <div className="mt-lg-4 mt-3">
                         <Button to="/contact"> {t('book now')}</Button>
