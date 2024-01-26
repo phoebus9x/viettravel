@@ -13,8 +13,6 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 // import "~/components/GlobalStyles/GlobalStyles.scss";
 
-
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAnglesRight, faArrowRight, faPlay, faStar } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faPinterestP, faTwitter } from '@fortawesome/free-brands-svg-icons';
@@ -29,7 +27,7 @@ function Team() {
 
     return (
         <div className={'site-wrapper'}>
-            <div className={'header-blog'}>
+            <div className={'header-team'}>
                 <Navbar />
                 {/* <!-- ====== 1.2 hero section ====== --> */}
                 <section className="hero">
@@ -46,7 +44,7 @@ function Team() {
                                                 </div>
                                                 <FontAwesomeIcon icon={faAnglesRight} />
                                                 <div className="breadcrumb-item" aria-current="page">
-                                                {t('team')}
+                                                    {t('team')}
                                                 </div>
                                             </div>
                                         </nav>
@@ -66,11 +64,7 @@ function Team() {
                         <h2>{t('experience the world with us')}</h2>
                     </div>
                     <div className="row justify-content-md-between justify-content-center gap-md-0 gap-4">
-                        <div
-                            className="col-md-4 col-sm-8 col-10"
-                            data-aos="fade-up"
-                            data-aos-delay="100"
-                        >
+                        <div className="col-md-4 col-sm-8 col-10" data-aos="fade-up" data-aos-delay="100">
                             <div className="teamCard">
                                 <img src={images.team1} alt="team-img" />
                                 <div className="overlaythree">
@@ -94,11 +88,7 @@ function Team() {
                                 <p>{t('tour guide')}</p>
                             </div>
                         </div>
-                        <div
-                            className="col-md-4 col-sm-8 col-10"
-                            data-aos="fade-up"
-                            data-aos-delay="500"
-                        >
+                        <div className="col-md-4 col-sm-8 col-10" data-aos="fade-up" data-aos-delay="500">
                             <div className="teamCard">
                                 <img src={images.team2} alt="team-img" />
                                 <div className="overlaythree">
@@ -122,11 +112,7 @@ function Team() {
                                 <p>{t('tour guide')}</p>
                             </div>
                         </div>
-                        <div
-                            className="col-md-4 col-sm-8 col-10"
-                            data-aos="fade-up"
-                            data-aos-delay="900"
-                        >
+                        <div className="col-md-4 col-sm-8 col-10" data-aos="fade-up" data-aos-delay="900">
                             <div className="teamCard">
                                 <img src={images.team3} alt="team-img" />
                                 <div className="overlaythree">
@@ -154,7 +140,6 @@ function Team() {
                 </div>
             </section>
             {/* <!-- ====== End 1.10 our team section ====== --> */}
-
         </div>
     );
 }
