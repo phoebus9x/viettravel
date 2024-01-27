@@ -78,7 +78,7 @@ function Login() {
                     &mdash; Do not have an account? &mdash;
                   </p>
                   <div className={cx("form-group")}>
-                    <button
+                    <button 
                       className={cx("btn-primary", "form-control submit px-3")}
                     >
                       Sign Up
