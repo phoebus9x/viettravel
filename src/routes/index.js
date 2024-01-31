@@ -18,6 +18,10 @@ import FAQ from '~/pages/FAQ';
 import SinglePost from '~/pages/SinglePost';
 import SingleTour from '~/pages/SingleTour';
 
+import Step1 from '~/pages/step/Step1';
+import Step2 from '~/pages/step/Step2';
+import Step3 from '~/pages/step/Step3';
+import Step4 from '~/pages/step/Step4';
 // import LAYOUT
 import { HeaderOnly } from '~/Layout';
 
@@ -42,6 +46,11 @@ const publicRoutes = [
 
     { path: '/single-post', component: SinglePost },
     { path: '/single-tour', component: SingleTour },
+
+    { path: '/step1', component: Step1, layout: null },
+    { path: '/step2', component: Step2, layout: null },
+    { path: '/step3', component: Step3, layout: null },
+    { path: '/step4', component: Step4, layout: null },
 ];
 
 const privateRoutes = [];

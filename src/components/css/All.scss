@@ -116,7 +116,6 @@ header .nav-item {
 
 /* ====== End 1.2 Hero section ====== */
 
-
 /* ====== 1.3 features section ====== */
 #features {
     margin-top: -207px;
@@ -152,7 +151,7 @@ header .nav-item {
 }
 
 #features .col-md-3::after {
-    content: "";
+    content: '';
     position: absolute;
     bottom: -30px;
     left: 11px;
@@ -168,7 +167,7 @@ header .nav-item {
     transform: scaleY(1);
 }
 
-img[alt="featureIcon"]:hover {
+img[alt='featureIcon']:hover {
     position: relative;
     animation-name: animation;
     animation-duration: 0.5s;
@@ -199,7 +198,7 @@ img[alt="featureIcon"]:hover {
     outline: none;
     border: none;
     background-color: transparent;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     border-bottom: 1px solid #9b9b9b;
     color: #9b9b9b !important;
 }
@@ -227,11 +226,11 @@ img[alt="featureIcon"]:hover {
     padding: 5px 10px 5px 0;
 }
 
-input[type="date"]:hover {
+input[type='date']:hover {
     cursor: pointer;
 }
 
-input[type="date"] {
+input[type='date'] {
     color: #9b9b9b !important;
 }
 
@@ -373,10 +372,7 @@ input[type="date"] {
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(360deg,
-            #021f41 0%,
-            rgb(255 255 255 / 11%) 80%,
-            transparent 100%);
+    background: linear-gradient(360deg, #021f41 0%, rgb(255 255 255 / 11%) 80%, transparent 100%);
     overflow: hidden;
     width: 100%;
     height: 0;
@@ -469,8 +465,7 @@ input[type="date"] {
     background-color: #ffffff;
     padding: 0 !important;
     padding-bottom: 30px !important;
-    box-shadow: 0px 10px 39px -4px rgba(24, 39, 75, 0.1),
-        0px 6px 14px -6px rgba(24, 39, 75, 0.12);
+    box-shadow: 0px 10px 39px -4px rgba(24, 39, 75, 0.1), 0px 6px 14px -6px rgba(24, 39, 75, 0.12);
 }
 
 .tourCards h6 {
@@ -520,8 +515,8 @@ input[type="date"] {
 }
 
 .chooseBg::before {
-    content: "";
-     background: url("../../assets/images/choose-img.png") no-repeat center center/cover;
+    content: '';
+    background: url('../../assets/images/choose-img.png') no-repeat center center/cover;
     background-attachment: fixed;
     width: 100%;
     height: 100%;
@@ -533,7 +528,7 @@ input[type="date"] {
 }
 
 .chooseBg::after {
-    content: "";
+    content: '';
     background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
     height: 100%;
@@ -630,29 +625,29 @@ input[type="date"] {
     color: #262626;
 }
 
-img[alt="servicesIcon"] {
+img[alt='servicesIcon'] {
     width: 70px;
 }
 
-img[alt="servicesIcon"]:hover {
+img[alt='servicesIcon']:hover {
     position: relative;
     animation-name: animation;
     animation-duration: 0.5s;
     animation-iteration-count: 2;
 }
 
-img[alt="service-img"] {
+img[alt='service-img'] {
     width: 100%;
     position: relative;
     z-index: -1;
 }
 
-img[alt="ser-Camera"] {
+img[alt='ser-Camera'] {
     width: 70%;
     margin: -168px 0 0 -81px;
 }
 
-img[alt="ser-Camera"]:hover {
+img[alt='ser-Camera']:hover {
     position: relative;
     animation-name: animation;
     animation-duration: 0.5s;
@@ -713,7 +708,7 @@ img[alt="ser-Camera"]:hover {
 }
 
 .video-play-button:before {
-    content: "";
+    content: '';
     position: absolute;
     z-index: 0;
     left: 50%;
@@ -728,7 +723,7 @@ img[alt="ser-Camera"]:hover {
 }
 
 .video-play-button:after {
-    content: "";
+    content: '';
     position: absolute;
     z-index: 1;
     left: 50%;
@@ -843,10 +838,7 @@ img[alt="ser-Camera"]:hover {
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(356deg,
-            rgba(2, 0, 36, 1) 0%,
-            rgba(2, 31, 65, 0.6) 35%,
-            transparent 100%);
+    background: linear-gradient(356deg, rgba(2, 0, 36, 1) 0%, rgba(2, 31, 65, 0.6) 35%, transparent 100%);
     overflow: hidden;
     width: 100%;
     height: 0;
@@ -908,7 +900,7 @@ img[alt="ser-Camera"]:hover {
 
 /* ====== 1.11 faq section ====== */
 #faq {
-    background-image: url("../../assets/images/bg-2.png");
+    background-image: url('../../assets/images/bg-2.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
@@ -952,7 +944,7 @@ img[alt="ser-Camera"]:hover {
 }
 
 #faq .accordion-button:not(.collapsed)::after {
-    background-image: url("../../assets/images/icon/line.png") !important;
+    background-image: url('../../assets/images/icon/line.png') !important;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 20px;
@@ -960,7 +952,7 @@ img[alt="ser-Camera"]:hover {
 }
 
 #faq .accordion-button::after {
-    background-image: url("../../assets/images/icon/plus2.png");
+    background-image: url('../../assets/images/icon/plus2.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -1060,8 +1052,8 @@ img[alt="ser-Camera"]:hover {
 }
 
 #planning::before {
-    content: "";
-    background: url("../../assets/images/bg-3.png") no-repeat center center/cover;
+    content: '';
+    background: url('../../assets/images/bg-3.png') no-repeat center center/cover;
     background-attachment: fixed;
     width: 100%;
     height: 100%;
@@ -1072,7 +1064,7 @@ img[alt="ser-Camera"]:hover {
 }
 
 #planning::after {
-    content: "";
+    content: '';
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100%;
@@ -1262,7 +1254,7 @@ img[alt="ser-Camera"]:hover {
 }
 
 .header-about::before {
-    content: "";
+    content: '';
     background: url('../../assets/images/bg-about.webp') no-repeat center center/cover;
     width: 100%;
     height: 100%;
@@ -1273,7 +1265,7 @@ img[alt="ser-Camera"]:hover {
 }
 
 .header-about::after {
-    content: "";
+    content: '';
     background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
     height: 100%;
@@ -1288,38 +1280,35 @@ img[alt="ser-Camera"]:hover {
 }
 
 .hero h2 {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .hero a {
-    color: #FFFFFF;
+    color: #ffffff;
     padding: 0 !important;
 }
 
 .hero a:hover {
-    color: #FB8E26
+    color: #fb8e26;
 }
 
 .hero li {
-    color: #FFFFFF !important;
+    color: #ffffff !important;
     font-weight: 700;
 }
 
 .hero i {
-    color: #FB8E26;
+    color: #fb8e26;
     font-size: 18px;
 }
 
 .breadcrumb-item {
-    color: #FFFFFF;
+    color: #ffffff;
     font-weight: 600;
     font-size: 18px;
 }
 
 /* ====== End 2.1 hero section ====== */
-
-
-
 
 /* ====== 4.1 hero section ====== */
 .header-blog {
@@ -1327,7 +1316,7 @@ img[alt="ser-Camera"]:hover {
 }
 
 .header-blog::before {
-    content: "";
+    content: '';
     background: url('../../assets/images/bg-blog.png') no-repeat center center/cover;
     width: 100%;
     height: 100%;
@@ -1338,7 +1327,7 @@ img[alt="ser-Camera"]:hover {
 }
 
 .header-blog::after {
-    content: "";
+    content: '';
     background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
     height: 100%;
@@ -1356,8 +1345,8 @@ img[alt="ser-Camera"]:hover {
 }
 
 .header-contact::before {
-    content: "";
-    background: url("../../assets/images/contact-hero-img.webp") no-repeat center center/cover;
+    content: '';
+    background: url('../../assets/images/contact-hero-img.webp') no-repeat center center/cover;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -1367,7 +1356,7 @@ img[alt="ser-Camera"]:hover {
 }
 
 .header-contact::after {
-    content: "";
+    content: '';
     background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
     height: 100%;
@@ -1380,31 +1369,31 @@ img[alt="ser-Camera"]:hover {
 
 /* ====== 9.2 contact section ====== */
 #contact {
-    background: linear-gradient(to bottom, #021F41 70%, #FFFFFF 70%);
+    background: linear-gradient(to bottom, #021f41 70%, #ffffff 70%);
     padding: 70px 0 70px 0;
 }
 
 #contact h4 {
-    color: #FB8E26;
+    color: #fb8e26;
     padding-bottom: 25px;
 }
 
 #contact h2 {
-    color: #FFFFFF;
+    color: #ffffff;
     padding-bottom: 20px;
 }
 
 #contact p {
-    color: #FFFFFF;
+    color: #ffffff;
     padding: 0 500px 30px 0;
 }
 
 #contact h5 {
-    color: #FB8E26;
+    color: #fb8e26;
 }
 
 #contact .fa-regular {
-    color: #FB8E26;
+    color: #fb8e26;
     font-size: 30px;
 }
 
@@ -1419,18 +1408,17 @@ img[alt="ser-Camera"]:hover {
 #contact input {
     outline: none;
     border: none;
-    border-bottom: 1px solid #FB8E26;
+    border-bottom: 1px solid #fb8e26;
     width: 100%;
     color: #9b9b9b;
-    padding-bottom: 6px
+    padding-bottom: 6px;
 }
 
 #contact input,
 #contact input:hover,
 #contact input:focus,
 #contact input:active {
-    -webkit-text-fill-color: #9B9B9B !important;
-
+    -webkit-text-fill-color: #9b9b9b !important;
 }
 
 #contact form div {
@@ -1443,7 +1431,7 @@ img[alt="ser-Camera"]:hover {
 textarea {
     outline: none;
     border: none;
-    border-bottom: 1px solid #FB8E26;
+    border-bottom: 1px solid #fb8e26;
     width: 100%;
     color: #9b9b9b;
     padding-bottom: 0;
@@ -1462,17 +1450,17 @@ textarea {
 }
 
 #contact .col-md-4 {
-    background-color: #FB8E26;
+    background-color: #fb8e26;
     padding: 0 100px;
 }
 
 #contact .col-md-4 i {
-    color: #FFFFFF;
+    color: #ffffff;
     font-size: 17px;
 }
 
 #contact .col-md-4 i:hover {
-    color: #021F41;
+    color: #021f41;
 }
 
 #contact .address p {
@@ -1484,11 +1472,11 @@ textarea {
 }
 
 .address a:hover p {
-    color: #021F41 !important;
+    color: #021f41 !important;
 }
 
 #contact .col-md-4 h3 {
-    color: #FFFFFF;
+    color: #ffffff;
     padding-bottom: 20px;
     text-align: left;
 }
@@ -1498,19 +1486,20 @@ textarea {
 }
 
 #contact button {
-    color: #FFFFFF;
+    color: #ffffff;
     border-radius: 40px;
     background-color: transparent;
     transition: 0.7s ease-in-out;
 }
 
 #contact button:hover {
-    color: #FB8E26;
+    color: #fb8e26;
 }
 
 #contact .col-md-8,
 #contact .col-md-4 {
-    box-shadow: 0px 10px 39px -4px rgba(24, 39, 75, 0.10), 0px 5.747572422027588px 12.932037353515625px -4.310678958892822px rgba(24, 39, 75, 0.12);
+    box-shadow: 0px 10px 39px -4px rgba(24, 39, 75, 0.1),
+        0px 5.747572422027588px 12.932037353515625px -4.310678958892822px rgba(24, 39, 75, 0.12);
 }
 
 #contact .address {
@@ -1542,7 +1531,8 @@ textarea {
     display: none;
     background-color: rgba(255, 255, 255);
     color: #000000;
-    box-shadow: 0px 10px 39px -4px rgba(24, 39, 75, 0.10), 0px 5.747572422027588px 12.932037353515625px -4.310678958892822px rgba(24, 39, 75, 0.12);
+    box-shadow: 0px 10px 39px -4px rgba(24, 39, 75, 0.1),
+        0px 5.747572422027588px 12.932037353515625px -4.310678958892822px rgba(24, 39, 75, 0.12);
     text-align: center;
     width: 60%;
     padding: 103px 0 !important;
@@ -1573,7 +1563,7 @@ textarea {
 }
 
 .header-destination::before {
-    content: "";
+    content: '';
     background: url('../../assets/images/bg-450.png') no-repeat center center/cover;
     width: 100%;
     height: 100%;
@@ -1584,7 +1574,7 @@ textarea {
 }
 
 .header-destination::after {
-    content: "";
+    content: '';
     background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
     height: 100%;
@@ -1602,7 +1592,7 @@ textarea {
 }
 
 .header-service::before {
-    content: "";
+    content: '';
     background: url('../../assets/images/bg-450-1.png') no-repeat center center/cover;
     width: 100%;
     height: 100%;
@@ -1613,7 +1603,7 @@ textarea {
 }
 
 .header-service::after {
-    content: "";
+    content: '';
     background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
     height: 100%;
@@ -1631,7 +1621,7 @@ textarea {
 }
 
 .header-faq::before {
-    content: "";
+    content: '';
     background: url('../../assets/images/faq-hero-img.webp') no-repeat center center/cover;
     width: 100%;
     height: 100%;
@@ -1642,7 +1632,7 @@ textarea {
 }
 
 .header-faq::after {
-    content: "";
+    content: '';
     background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
     height: 100%;
@@ -1660,7 +1650,7 @@ textarea {
 }
 
 .header-team::before {
-    content: "";
+    content: '';
     background: url('../..//assets/images/team-hero-img.webp') no-repeat center center/cover;
     width: 100%;
     height: 100%;
@@ -1671,7 +1661,7 @@ textarea {
 }
 
 .header-team::after {
-    content: "";
+    content: '';
     background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
     height: 100%;
@@ -1681,59 +1671,11 @@ textarea {
     z-index: -1;
 }
 
-
 /* ====== End 12.1 hero section ====== */
 
 /* ====== Start 13.1 post-single ====== */
-.post-meta {
-    font-size: 11px;
-    letter-spacing: 0.07rem;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-family: var(--font-secondary);
-    color: rgba(var(--color-black-rgb), 0.4);
-    margin-bottom: 10px;
-  }
-
-  .post-content {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-  
-  @media (max-width: 768px) {
-    .post-content {
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-  }
-  
-  .post-content .firstcharacter {
-    float: left;
-    font-family: Georgia;
-    font-size: 75px;
-    line-height: 60px;
-    padding-top: 4px;
-    padding-right: 8px;
-    padding-left: 3px;
-  }
-  
-  .post-content figure {
-    position: relative;
-    left: 52%;
-    min-width: 990px;
-    transform: translateX(-50%);
-  }
-  
-  @media (max-width: 1255px) {
-    .post-content figure {
-      min-width: auto;
-      left: auto !important;
-      transform: none;
-    }
-  }
-  
-  .post-content figure figcaption {
-    font-family: var(--font-secondary);
-    font-size: 14px;
-    padding: 10px 0 0 0;
-  }
+.section-heading {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-top: 3.75rem;
+}

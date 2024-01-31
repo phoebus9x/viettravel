@@ -54,155 +54,98 @@ function SinglePost() {
                 </section>
                 {/* <!-- ====== End 1.2 hero section ====== --> */}
             </div>
-            <section class="single-post-content">
-            <div class="container">
-            <div class="row">
-            <div class="col-md-9 post-content" data-aos="fade-up">
-{/* <!-- ======= Single Post Content ======= --> */}
-<div class="single-post">
-                <div class="post-meta">
-                  <span class="date">Business</span>
-                  <span class="mx-1">&bullet;</span> <span>Jul 5th '22</span>
-                </div>
-                <h1 class="mb-5">
-                  13 Amazing Poems from Shel Silverstein with Valuable Life
-                  Lessons
-                </h1>
-                <p>
-                  <span class="firstcharacter">L</span>orem ipsum dolor sit,
-                  amet consectetur adipisicing elit. Ratione officia sed,
-                  suscipit distinctio, numquam omnis quo fuga ipsam quis
-                  inventore voluptatum recusandae culpa, unde doloribus saepe
-                  labore alias voluptate expedita? Dicta delectus beatae
-                  explicabo odio voluptatibus quas, saepe qui aperiam autem
-                  obcaecati, illo et! Incidunt voluptas culpa neque repellat
-                  sint, accusamus beatae, cumque autem tempore quisquam quam
-                  eligendi harum debitis.
-                </p>
 
-                <figure class="my-4">
-                  <img
-                    src="assets/img/post-landscape-1.jpg"
-                    alt=""
-                    class="img-fluid"
-                  />
-                  <figcaption>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Explicabo, odit?
-                  </figcaption>
-                </figure>
-                <p>
-                  Sunt reprehenderit, hic vel optio odit est dolore, distinctio
-                  iure itaque enim pariatur ducimus. Rerum soluta, perspiciatis
-                  voluptatum cupiditate praesentium repellendus quas expedita
-                  exercitationem tempora aliquam quaerat in eligendi adipisci
-                  harum non omnis reprehenderit quidem beatae modi. Ea fugiat
-                  enim libero, ipsam dicta explicabo nihil, tempore, nulla
-                  repellendus eos necessitatibus eligendi corporis cum? Eaque
-                  harum, eligendi itaque numquam aliquam soluta.
-                </p>
-                <p>
-                  Explicabo perspiciatis, laborum provident voluptates illum in
-                  nulla consectetur atque quaerat excepturi quisquam, veniam
-                  velit ex pariatur quos consequuntur? Excepturi reiciendis
-                  perferendis, cupiditate dolorem eos illum amet. Beatae
-                  voluptates nemo esse ratione voluptate, nesciunt fugit magnam
-                  veritatis voluptas dignissimos doloribus maiores? Aliquam,
-                  dolores natus exercitationem corrupti blanditiis, consequuntur
-                  nihil nobis sed voluptatibus maiores sunt, illo provident
-                  aliquid laborum. Vitae, ut.
-                </p>
-                <p>
-                  Reprehenderit aut sed doloribus blanditiis, aspernatur magni?
-                  In molestias rem, similique ut esse repudiandae quod
-                  recusandae dolores neque earum omnis at, suscipit fuga? Minima
-                  qui veniam deserunt quisquam error amet at ratione nesciunt
-                  porro quis placeat repudiandae voluptatibus officiis fuga
-                  necessitatibus, expedita officia adipisci eaque labore
-                  accusamus? Nesciunt repellat illo exercitationem facilis
-                  similique quaerat, quis sequi? Praesentium nulla ipsam dolor.
-                </p>
-                <p>
-                  Dolorum, incidunt! Adipisci harum itaque maxime dolores
-                  doloremque porro eligendi quis, doloribus vel sit rerum sunt
-                  obcaecati nam suscipit nulla vitae alias blanditiis aliquam
-                  debitis atque illo modi et placeat. Ratione iure eveniet
-                  provident. Culpa laboriosam sed ad quia. Corrupti, earum,
-                  perferendis dolore cupiditate sint nihil maiores iusto tempora
-                  nobis porro itaque est. Ut laborum culpa assumenda pariatur et
-                  perferendis?
-                </p>
-                <p>
-                  Est soluta veritatis laboriosam, consequuntur temporibus
-                  asperiores, fugit id a ullam sed, expedita sequi doloribus
-                  fugiat. Odio et necessitatibus enim nam, iste reprehenderit
-                  cupiditate omnis ut iure aliquid obcaecati, repellendus nemo
-                  provident eveniet tempora minus! Voluptates aut laboriosam,
-                  maiores nihil accusantium, a dolorum quaerat tenetur illo eum
-                  culpa cum laudantium sunt doloremque modi possimus magni?
-                  Perferendis cum repudiandae corrupti porro.
-                </p>
-                <figure class="my-4">
-                  <img
-                    src="assets/img/post-landscape-5.jpg"
-                    alt=""
-                    class="img-fluid"
-                  />
-                  <figcaption>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Explicabo, odit?
-                  </figcaption>
-                </figure>
-                <p>
-                  Quis molestiae, dolorem consequuntur labore perferendis enim
-                  accusantium commodi optio, sequi magnam ad consectetur iste
-                  omnis! Voluptatibus, quia officia esse necessitatibus magnam
-                  tempore reprehenderit quo aspernatur! Assumenda, minus dolorem
-                  repellendus corporis corrupti quia temporibus repudiandae in.
-                  Sit rem aut, consectetur repudiandae perferendis nemo alias,
-                  iure ipsam omnis quam soluta, nobis animi quis aliquam
-                  blanditiis at. Dicta nemo vero sequi exercitationem.
-                </p>
-                <p>
-                  Architecto ex id at illum aperiam corporis, quidem magnam
-                  doloribus non eligendi delectus laborum porro molestiae beatae
-                  eveniet dolor odit optio soluta dolores! Eaque odit a nihil
-                  recusandae, error repellendus debitis ex autem ab commodi,
-                  maiores officiis doloribus provident optio, architecto
-                  assumenda! Nihil cum laboriosam eos dolore aliquid perferendis
-                  amet doloremque quibusdam odio soluta vero odit, ipsa,
-                  quisquam quod nulla.
-                </p>
-                <p>
-                  Consequuntur corrupti fugiat quod! Ducimus sequi nemo illo ad
-                  necessitatibus amet nobis corporis et quasi. Optio cum neque
-                  fuga. Ad excepturi magnam quisquam ex voluptatibus vitae aut
-                  nam quidem doloribus, architecto perspiciatis sit consequatur
-                  pariatur alias animi expedita quas? Et doloribus voluptatibus
-                  perferendis qui fugiat voluptatum autem facere aspernatur
-                  quidem quae assumenda iste, sit similique, necessitatibus
-                  laborum magni. Ea, dolores!
-                </p>
-                <p>
-                  Possimus temporibus rerum illo quia repudiandae provident sed
-                  quas atque. Ipsam adipisci accusamus iste optio illo aliquam
-                  molestias? Voluptatibus, veniam recusandae facilis nobis
-                  perspiciatis rem similique, nisi ad explicabo ipsa voluptatum,
-                  inventore molestiae natus adipisci? Fuga delectus quia
-                  assumenda totam aspernatur. Nobis hic ea rem, quaerat
-                  voluptate vero illum laboriosam omnis aspernatur labore, natus
-                  ex iusto ducimus exercitationem a officia.
-                </p>
-              </div>
-              {/* <!-- End Single Post Content --> */}
-            </div>
-            </div>
-            </div>
-            </section>
-        
-          
-            
-            
+            <article class="mb-4">
+                <div class="container px-4 px-lg-5">
+                    <div class="row gx-4 gx-lg-5 justify-content-center">
+                        <div class="col-md-10 col-lg-8 col-xl-7">
+                            <h2 class="section-heading">Hà Nội ngày và đêm</h2>
+                            <p>
+                                There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and
+                                literally, it is a task to occupy the generations. And no matter how much progress one
+                                makes, there is always the thrill of just beginning.
+                            </p>
+                            <p>
+                                Never in all their history have men been able truly to conceive of the world as one: a
+                                single sphere, a globe, having the qualities of a globe, a round earth in which all the
+                                directions eventually meet, in which there is no center because every point, or none, is
+                                center — an equal earth which all men occupy as equals. The airman's earth, if free men
+                                make it, will be truly round: a globe in practice, not in theory.
+                            </p>
+                            <p>
+                                Science cuts two ways, of course; its products can be used for both good and evil. But
+                                there's no turning back from science. The early warnings about technological dangers
+                                also come from science.
+                            </p>
+                            <p>
+                                What was most significant about the lunar voyage was not that man set foot on the Moon
+                                but that they set eye on the earth.
+                            </p>
+                            <p>
+                                A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty,
+                                become her protectors rather than her violators. That's how I felt seeing the Earth for
+                                the first time. I could not help but love and cherish her.
+                            </p>
+                            <p>
+                                For those who have seen the Earth from space, and for the hundreds and perhaps thousands
+                                more who will, the experience most certainly changes your perspective. The things that
+                                we share in our world are far more valuable than those which divide us.
+                            </p>
+                            <h2 class="section-heading">The Final Frontier</h2>
+                            <p>
+                                There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and
+                                literally, it is a task to occupy the generations. And no matter how much progress one
+                                makes, there is always the thrill of just beginning.
+                            </p>
+                            <p>
+                                There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and
+                                literally, it is a task to occupy the generations. And no matter how much progress one
+                                makes, there is always the thrill of just beginning.
+                            </p>
+                            <blockquote class="blockquote">
+                                The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has
+                                not yet mastered prophecy. We predict too much for the next year and yet far too little
+                                for the next ten.
+                            </blockquote>
+                            <p>
+                                Spaceflights cannot be stopped. This is not the work of any one man or even a group of
+                                men. It is a historical process which mankind is carrying out in accordance with the
+                                natural laws of human development.
+                            </p>
+                            <h2 class="section-heading">Reaching for the Stars</h2>
+                            <p>
+                                As we got further and further away, it [the Earth] diminished in size. Finally it shrank
+                                to the size of a marble, the most beautiful you can imagine. That beautiful, warm,
+                                living object looked so fragile, so delicate, that if you touched it with a finger it
+                                would crumble and fall apart. Seeing this has to change a man.
+                            </p>
+                            <a href="#!">
+                                <img class="img-fluid" src="assets/img/post-sample-image.jpg" alt="..." />
+                            </a>
+                            <span class="caption text-muted">
+                                To go places and do things that have never been done before – that’s what living is all
+                                about.
+                            </span>
+                            <p>
+                                Space, the final frontier. These are the voyages of the Starship Enterprise. Its
+                                five-year mission: to explore strange new worlds, to seek out new life and new
+                                civilizations, to boldly go where no man has gone before.
+                            </p>
+                            <p>
+                                As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a
+                                fundamental truth to our nature, Man must explore, and this is exploration at its
+                                greatest.
+                            </p>
+                            <p>
+                                Placeholder text by
+                                <a href="http://spaceipsum.com/">Space Ipsum</a>
+                                &middot; Images by
+                                <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
         </div>
     );
 }
