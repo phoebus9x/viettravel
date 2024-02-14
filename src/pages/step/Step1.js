@@ -4,6 +4,7 @@ import { submit } from './clientSlice';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import './step.scss';
+import Button from '~/components/Button';
 function Step1() {
     const dispatch = useDispatch();
     const navigate = useNavigate();
@@ -49,51 +50,86 @@ function Step1() {
     };
     return (
         <div>
-            <form onSubmit={handleSubmit(onSubmit)}>
-                <h2 className="text-center">Step 1 - Client Information</h2>
-                <div>
-                    <label htmlFor="client.name">Tên</label>
-                    <input type="text" id="client.name" {...register('client.name', { required: true })} />
-                    {errors.name && <span>Tên là bắt buộc</span>}
-                </div>
-                <div>
-                    <label htmlFor="client.email">Email</label>
+            <form className="step-form" onSubmit={handleSubmit(onSubmit)}>
+                <h3 className="text-center">Step 1 - Client Information</h3>
+                <div className="form-group">
+                    <label className="form-label" htmlFor="client.name">
+                        Tên
+                    </label>
                     <input
+                        className="form-input"
+                        type="text"
+                        id="client.name"
+                        {...register('client.name', { required: true })}
+                    />
+                    {errors.name && <span className="form-error">Tên là bắt buộc</span>}
+                </div>
+                <div className="form-group">
+                    <label className="form-label" htmlFor="client.email">
+                        Email
+                    </label>
+                    <input
+                        className="form-input"
                         type="email"
                         id="client.email"
                         {...register('client.email', { required: true, pattern: /^\S+@\S+$/i })}
                     />
-                    {errors.email && <span>Email không hợp lệ</span>}
+                    {errors.email && <span className="form-error">Email không hợp lệ</span>}
                 </div>
-                <div>
-                    <label htmlFor="client.gender">Gender</label>
-                    <input type="text" id="client.gender" {...register('client.gender', { required: true })} />
-                    {errors.gender && <span>Gender không hợp lệ</span>}
+                <div className="form-group">
+                    <label className="form-label" htmlFor="client.gender">
+                        Gender
+                    </label>
+                    <input
+                        className="form-input"
+                        type="text"
+                        id="client.gender"
+                        {...register('client.gender', { required: true })}
+                    />
+                    {errors.gender && <span className="form-error">Gender không hợp lệ</span>}
                 </div>
 
-                <div>
-                    <label htmlFor="client.phoneNumber">Số điện thoại</label>
+                <div className="form-group">
+                    <label className="form-label" htmlFor="client.phoneNumber">
+                        Số điện thoại
+                    </label>
                     <input
+                        className="form-input"
                         type="tel"
                         id="client.phoneNumber"
                         {...register('client.phoneNumber', { required: true, pattern: /^[0-9]{10}$/ })}
                     />
-                    {errors.phoneNumber && <span>Số điện thoại không hợp lệ</span>}
+                    {errors.phoneNumber && <span className="form-error">Số điện thoại không hợp lệ</span>}
                 </div>
 
-                <div>
-                    <label htmlFor="client.dob">Ngày sinh</label>
-                    <input type="date" id="client.dob" {...register('client.dob', { required: true })} />
-                    {errors.dateOfBirth && <span>Ngày sinh là bắt buộc</span>}
+                <div className="form-group">
+                    <label className="form-label" htmlFor="client.dob">
+                        Ngày sinh
+                    </label>
+                    <input
+                        className="form-input"
+                        type="date"
+                        id="client.dob"
+                        {...register('client.dob', { required: true })}
+                    />
+                    {errors.dateOfBirth && <span className="form-error">Ngày sinh là bắt buộc</span>}
                 </div>
 
-                <div>
-                    <label htmlFor="client.address">Địa chỉ</label>
-                    <textarea id="client.address" {...register('client.address', { required: true })}></textarea>
-                    {errors.address && <span>Địa chỉ là bắt buộc</span>}
+                <div className="form-group">
+                    <label className="form-label" htmlFor="client.address">
+                        Địa chỉ
+                    </label>
+                    <textarea
+                        className="form-input"
+                        id="client.address"
+                        {...register('client.address', { required: true })}
+                    ></textarea>
+                    {errors.address && <span className="form-error">Địa chỉ là bắt buộc</span>}
                 </div>
 
-                <button type="submit">Submit</button>
+                <button className="form-button" type="submit">
+                    Submit
+                </button>
             </form>
         </div>
     );

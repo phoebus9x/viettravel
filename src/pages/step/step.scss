@@ -1,31 +1,26 @@
-// form {
+// .step-form {
 //     display: flex;
 //     flex-direction: column;
 //     max-width: 400px;
 //     margin: 0 auto;
 // }
 
-
-// div {
+// .form-group {
 //     margin-bottom: 20px;
 // }
 
-
-// label {
+// .form-label {
 //     font-weight: bold;
 // }
 
-
-// input,
-// textarea {
+// .form-input{
 //     width: 100%;
 //     padding: 8px;
 //     border: 1px solid #ccc;
 //     border-radius: 4px;
 // }
 
-
-// input[type="submit"] {
+// .form-button {
 //     background-color: #4CAF50;
 //     color: white;
 //     border: none;
@@ -34,8 +29,52 @@
 //     font-size: 16px;
 // }
 
-
-// span {
+// .form-error {
 //     color: red;
 //     font-size: 12px;
 // }
+
+/* CSS for the form */
+.step-form {
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-error {
+    color: red;
+    font-size: 12px;
+}
+
+.form-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    background-color: #0056b3;
+}
