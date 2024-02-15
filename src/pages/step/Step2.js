@@ -102,13 +102,13 @@ function Step2() {
 
     return (
         <div>
-            <div class="container-fluid">
+            <div class="container-fluid form-payment">
                 <div class="row justify-content-center">
                     <div class=" col-lg-6 col-md-8">
                         <div class="card p-3">
                             <div class="row justify-content-center">
                                 <div class="col-12">
-                                    <h2 class="heading text-center">BBBootstrap</h2>
+                                    <h2 class="form-payment-heading text-center">Step 2 - payment</h2>
                                 </div>
                             </div>
                             <form onsubmit="event.preventDefault()" class="form-card">
@@ -158,35 +158,6 @@ function Step2() {
                                         </div>
                                     </div>{' '}
                                     <br />
-                                </div>
-                                <div class="row justify-content-center form-group">
-                                    <div class="col-12 px-auto">
-                                        <div class="custom-control custom-radio custom-control-inline">
-                                            {' '}
-                                            <input
-                                                id="customRadioInline1"
-                                                type="radio"
-                                                name="customRadioInline1"
-                                                class="custom-control-input"
-                                                checked="true"
-                                            />{' '}
-                                            <label for="customRadioInline1" class="custom-control-label label-radio">
-                                                Private
-                                            </label>{' '}
-                                        </div>
-                                        <div class="custom-control custom-radio custom-control-inline">
-                                            {' '}
-                                            <input
-                                                id="customRadioInline2"
-                                                type="radio"
-                                                name="customRadioInline1"
-                                                class="custom-control-input"
-                                            />{' '}
-                                            <label for="customRadioInline2" class="custom-control-label label-radio">
-                                                Business
-                                            </label>{' '}
-                                        </div>
-                                    </div>
                                 </div>
                                 <div class="row justify-content-center">
                                     <div class="col-12">
@@ -248,7 +219,7 @@ function Step2() {
                                 <div class="row justify-content-center">
                                     <div class="col-md-12">
                                         {' '}
-                                        <input type="submit" value="Pay 100 EUR" class="btn btn-pay placeicon" />{' '}
+                                        <input type="submit" value="Pay" class="btn btn-pay placeicon" />{' '}
                                     </div>
                                 </div>
                             </form>
