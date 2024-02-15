@@ -50,54 +50,51 @@ function Step2() {
         navigate('/');
     };
 
-    const [valueExp, setValueExp] = useState('');
-    const [lastValueExp, setLastValueExp] = useState('');
+    // handle ngày hết hạn thẻ
+    const [expiryDate, setExpiryDate] = useState('');
 
-    // const handleChangeExp = (e) => {
-    //     if (e.target.value === lastValueExp) return;
-    //     let caretPosition = e.target.selectionStart;
-    //     let sanitizedValue = e.target.value.replace(/[^0-9]/gi, '');
-    //     let parts = [];
+    const handleExpiryDateChange = (event) => {
+        const inputDate = event.target.value;
+        const formattedDate = formatExpiryDate(inputDate);
+        setExpiryDate(formattedDate);
+    };
 
-    //     for (let i = 0, len = sanitizedValue.length; i < len; i += 2) {
-    //         parts.push(sanitizedValue.substring(i, i + 2));
-    //     }
-
-    //     for (let i = caretPosition - 1; i >= 0; i--) {
-    //         let c = e.target.value[i];
-    //         if (c < '0' || c > '9') {
-    //             caretPosition--;
-    //         }
-    //     }
-    //     caretPosition += Math.floor(caretPosition / 2);
-
-    //     e.target.value = parts.join('/');
-    //     setValueExp(parts.join('/'));
-    //     setLastValueExp(parts.join('/'));
-    //     e.target.setSelectionRange(caretPosition, caretPosition);
-    // };
-    const handleChangeExp = (e) => {
-        if (e.target.value === lastValueExp) return;
-        let caretPosition = e.target.selectionStart;
-        let sanitizedValue = e.target.value.replace(/[^0-9]/gi, '');
-        let parts = [];
-
-        for (let i = 0, len = sanitizedValue.length; i < len; i += 2) {
-            parts.push(sanitizedValue.substring(i, i + 2));
+    const formatExpiryDate = (inputDate) => {
+        let formattedDate = inputDate;
+        // Xoá các ký tự không phải số
+        formattedDate = formattedDate.replace(/\D/g, '');
+        // Thêm dấu "/"
+        if (formattedDate.length > 2) {
+            formattedDate = formattedDate.replace(/(\d{2})(\d)/, '$1/$2');
         }
+        return formattedDate;
+    };
 
-        for (let i = caretPosition - 1; i >= 0; i--) {
-            let c = e.target.value[i];
-            if (c < '0' || c > '9') {
-                caretPosition--;
-            }
+
+    // handle card numbers
+    const [cardNumber, setCardNumber] = useState('');
+
+    const handleCardNumberChange = (event) => {
+        const inputNumber = event.target.value;
+        const formattedNumber = formatCardNumber(inputNumber);
+        setCardNumber(formattedNumber);
+    };
+
+    const formatCardNumber = (inputNumber) => {
+        let formattedNumber = inputNumber;
+        // Xoá các ký tự không phải số
+        formattedNumber = formattedNumber.replace(/\D/g, '');
+        // Thêm dấu " " sau mỗi 4 chữ số
+        if (formattedNumber.length > 4) {
+            formattedNumber = formattedNumber.replace(/(\d{4})(\d)/, '$1 $2');
         }
-        caretPosition += Math.floor(caretPosition / 2);
-
-        e.target.value = parts.join('/');
-        setValueExp(parts.join('/'));
-        setLastValueExp(parts.join('/'));
-        e.target.setSelectionRange(caretPosition, caretPosition);
+        if (formattedNumber.length > 9) {
+            formattedNumber = formattedNumber.replace(/(\d{4})\s(\d{4})(\d)/, '$1 $2 $3');
+        }
+        if (formattedNumber.length > 14) {
+            formattedNumber = formattedNumber.replace(/(\d{4})\s(\d{4})\s(\d{4})(\d)/, '$1 $2 $3 $4');
+        }
+        return formattedNumber;
     };
 
     return (
@@ -175,9 +172,9 @@ function Step2() {
                                                 type="text"
                                                 id="cr_no"
                                                 name="card-no"
+                                                value={cardNumber}
+                                                onChange={handleCardNumberChange}
                                                 placeholder="0000 0000 0000 0000"
-                                                minlength="19"
-                                                maxlength="19"
                                             />{' '}
                                             <label>Card Number</label>{' '}
                                         </div>
@@ -194,8 +191,8 @@ function Step2() {
                                                         id="exp"
                                                         name="expdate"
                                                         placeholder="MM/YY"
-                                                        minlength="5"
-                                                        maxlength="5"
+                                                        onChange={handleExpiryDateChange}
+                                                        value={expiryDate}
                                                     />{' '}
                                                     <label>Expiry Date</label>{' '}
                                                 </div>
