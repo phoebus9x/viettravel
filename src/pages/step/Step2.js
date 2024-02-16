@@ -70,7 +70,6 @@ function Step2() {
         return formattedDate;
     };
 
-
     // handle card numbers
     const [cardNumber, setCardNumber] = useState('');
 
@@ -175,6 +174,8 @@ function Step2() {
                                                 value={cardNumber}
                                                 onChange={handleCardNumberChange}
                                                 placeholder="0000 0000 0000 0000"
+                                                maxLength={19}
+                                                minLength={19}
                                             />{' '}
                                             <label>Card Number</label>{' '}
                                         </div>
@@ -193,6 +194,8 @@ function Step2() {
                                                         placeholder="MM/YY"
                                                         onChange={handleExpiryDateChange}
                                                         value={expiryDate}
+                                                        maxLength={5}
+                                                        minLength={5}
                                                     />{' '}
                                                     <label>Expiry Date</label>{' '}
                                                 </div>
