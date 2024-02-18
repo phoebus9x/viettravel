@@ -1,4 +1,3 @@
-// import PAGE
 import Home from '~/pages/Home';
 import About from '~/pages/About';
 import Blog from '~/pages/Blog';
@@ -24,6 +23,7 @@ import Step3 from '~/pages/step/Step3';
 import Step4 from '~/pages/step/Step4';
 // import LAYOUT
 import { HeaderOnly } from '~/Layout';
+import CKEditor from '~/pages/MyCKEditor';
 
 const publicRoutes = [
     { path: '/', component: Home },
@@ -37,7 +37,7 @@ const publicRoutes = [
     { path: '/faq', component: FAQ },
     { path: '/following', component: Following },
     { path: '/profile', component: Profile, layout: null },
-    { path: '/upload', component: Upload, layout: HeaderOnly },
+    { path: '/upload', component: Upload, layout: null },
     { path: '*', component: Page404, layout: null },
     { path: '/login', component: Login, layout: null },
     { path: '/signup', component: Signup, layout: null },
@@ -51,6 +51,9 @@ const publicRoutes = [
     { path: '/step2', component: Step2, layout: null },
     { path: '/step3', component: Step3, layout: null },
     { path: '/step4', component: Step4, layout: null },
+
+    { path: '/editor', component: CKEditor, layout: null },
+
 ];
 
 const privateRoutes = [];

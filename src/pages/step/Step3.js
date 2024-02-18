@@ -28,10 +28,15 @@ function Step3({ order }) {
         //         </div>
         //     </div>
         // </div>
-        <div>
+        <div style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+        }}
+            className="d-flex justify-content-center align-items-center">
             <table align="center" border="0" cellPadding="0" cellSpacing="0" width="100%" style={{ maxWidth: '600px' }}>
                 <tr>
-                    <td align="center" valign="top" style={{ fontSize: 0, padding: '35px' }} bgcolor="#ff7361">
+                    <td align="center" valign="top" style={{ display: 'flex', fontSize: 0, padding: '35px' }} bgcolor="#ff7361">
                         <div
                             style={{
                                 display: 'inline-block',
@@ -82,7 +87,7 @@ function Step3({ order }) {
                                 display: 'inline-block',
                                 maxWidth: '50%',
                                 minWidth: '100px',
-                                verticalAlign: 'top',
+                                verticalAlign: 'middle',
                                 width: '100%',
                             }}
                             className="mobile-hide"
@@ -93,18 +98,21 @@ function Step3({ order }) {
                                 cellPadding="0"
                                 cellSpacing="0"
                                 width="100%"
-                                style={{ maxWidth: '300px' }}
+                                style={{
+                                    maxWidth: '300px',
+                                    verticalAlign: 'middle',
+                                }}
                             >
                                 <tbody>
                                     <tr>
                                         <td
                                             align="right"
-                                            valign="top"
+                                            valign="center"
                                             style={{
                                                 fontFamily: 'Open Sans, Helvetica, Arial, sans-serif',
                                                 fontSize: '48px',
                                                 fontWeight: 400,
-                                                lineHeight: '48px',
+                                                lineHeight: '116px',
                                             }}
                                         >
                                             <table cellSpacing="0" cellPadding="0" border="0" align="right">
