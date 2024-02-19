@@ -3,7 +3,7 @@ import { CKEditor } from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 import axios from 'axios';
 
-function MyCKEditor() {
+function AddNewBlog() {
     const [content, setContent] = useState('');
 
     const handleEditorChange = (event, editor) => {
@@ -41,7 +41,7 @@ function MyCKEditor() {
 
     return (
         <div>
-            <h2>CKEditor Example</h2>
+            <h2>New Blog</h2>
             <CKEditor
                 editor={ClassicEditor}
                 data="<p>Enter your blog&nbsp;!</p>"
@@ -63,4 +63,4 @@ function MyCKEditor() {
     );
 }
 
-export default MyCKEditor;
+export default AddNewBlog;

@@ -8,7 +8,6 @@ import Upload from '~/pages/Upload';
 import Page404 from '~/pages/Page404';
 import Login from '~/pages/Login';
 import Signup from '~/pages/Signup';
-import Test from '~/pages/Test';
 import Destinations from '~/pages/Destinations';
 import Services from '~/pages/Services';
 import Testimonials from '~/pages/Testimonials';
@@ -23,7 +22,8 @@ import Step3 from '~/pages/step/Step3';
 import Step4 from '~/pages/step/Step4';
 // import LAYOUT
 import { HeaderOnly } from '~/Layout';
-import CKEditor from '~/pages/MyCKEditor';
+import MyCKEditor from '~/pages/MyCKEditor';
+import TestPost from '~/pages/testPost';
 
 const publicRoutes = [
     { path: '/', component: Home },
@@ -42,8 +42,6 @@ const publicRoutes = [
     { path: '/login', component: Login, layout: null },
     { path: '/signup', component: Signup, layout: null },
 
-    { path: '/test', component: Test, layout: null },
-
     { path: '/single-post', component: SinglePost },
     { path: '/single-tour', component: SingleTour },
 
@@ -52,8 +50,8 @@ const publicRoutes = [
     { path: '/step3', component: Step3, layout: null },
     { path: '/step4', component: Step4, layout: null },
 
-    { path: '/editor', component: CKEditor, layout: null },
-
+    { path: '/editor', component: MyCKEditor, layout: null },
+    { path: '/test', component: TestPost, layout: null },
 ];
 
 const privateRoutes = [];

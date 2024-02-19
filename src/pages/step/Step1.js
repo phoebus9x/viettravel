@@ -48,6 +48,7 @@ function Step1() {
         console.log(data.client);
         navigate('/step2');
     };
+
     return (
         <div>
             <form className="step-form" onSubmit={handleSubmit(onSubmit)}>
