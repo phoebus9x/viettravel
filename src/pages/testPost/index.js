@@ -9,9 +9,9 @@ function TestPost() {
     }, []);
 
     const fetchData = async () => {
-        const id = '65d206b4846a964effcd2b1d';
+        const id = '65d5f426577e4f9ec4a866a7';
         axios
-            .get(`http://localhost:1110/v1/api/post/${id}`)
+            .get(`http://localhost:1110/v1/api/blog/${id}`)
             .then((response) => {
                 setData(response.data.data.content);
                 // Xử lý dữ liệu được lấy về ở đây

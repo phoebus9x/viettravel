@@ -1,10 +1,10 @@
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-function Blog (){
+function Blog() {
     return <section id="blog">
-    <div className="container">
-        <div data-aos="fade" data-aos-duration="2000">
-        <div className="col-md-4 col-sm-9 col-11" data-aos="fade-up" data-aos-delay="900">
+        <div className="container">
+            <div data-aos="fade" data-aos-duration="2000">
+                <div className="col-md-4 col-sm-9 col-11" data-aos="fade-up" data-aos-delay="900">
                     <div>
                         <figure>
                             <img src={images.blog3} alt="tour-img" />
@@ -22,10 +22,10 @@ function Blog (){
                             Read More <FontAwesomeIcon icon={faArrowRight} />
                         </a>
                     </div>
-                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 }
 
 export default Blog;
