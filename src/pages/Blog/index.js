@@ -15,6 +15,8 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAnglesRight, faArrowRight, faPlay, faStar } from '@fortawesome/free-solid-svg-icons';
 
+import BlogComponent from '~/components/BlogComponent';
+
 function Blog() {
     const { t } = useTranslation('home');
     // {t("key")}
@@ -64,7 +66,7 @@ function Blog() {
                     </div>
                     <div className="blogCards mt-lg-5 mt-md-4">
                         <div className="row gap-4 justify-content-center card-text">
-                            <div className="col-md-4 col-sm-9 col-11" data-aos="fade-up" data-aos-delay="100">
+                            {/* <div className="col-md-4 col-sm-9 col-11" data-aos="fade-up" data-aos-delay="100">
                                 <div>
                                     <figure>
                                         <img src={images.blog1} alt="tour-img" />
@@ -82,7 +84,8 @@ function Blog() {
                                         Read More <FontAwesomeIcon icon={faArrowRight} />
                                     </a>
                                 </div>
-                            </div>
+                            </div> */}
+                            <BlogComponent />
                             <div className="col-md-4 col-sm-9 col-11" data-aos="fade-up" data-aos-delay="500">
                                 <div>
                                     <figure>

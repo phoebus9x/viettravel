@@ -15,6 +15,8 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAnglesRight, faArrowRight, faPlay, faStar } from '@fortawesome/free-solid-svg-icons';
 
+import TourComponent from '~/components/TourComponent';
+
 function Destinations() {
     const { t } = useTranslation('home');
     // {t("key")}
@@ -124,18 +126,7 @@ function Destinations() {
                     </div>
                     <div className="tourCards card-text mt-5">
                         <div className="row gap-4">
-                            <div className="col-md-4 col-sm-5 col-11" data-aos="fade-up" data-aos-delay="100">
-                                <div>
-                                    <figure>
-                                        <img src={images.tour1} alt="tour-img" />
-                                    </figure>
-                                    <h6>Explore beauty of Turkey</h6>
-                                    <p>Lorem ipsum dolor sit amet, sit consecte adipiscing elit, sed</p>
-                                    <a href="#">
-                                        Learn More <FontAwesomeIcon icon={faArrowRight} />
-                                    </a>
-                                </div>
-                            </div>
+                            <TourComponent />
                             <div className="col-md-4 col-sm-5 col-11" data-aos="fade-up" data-aos-delay="500">
                                 <div>
                                     <figure>
