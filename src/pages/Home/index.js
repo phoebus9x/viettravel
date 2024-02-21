@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState, useEffect } from 'react';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
+import axios from 'axios';
 
 import '~/components/css/All.scss';
 import '~/components/css/Reponsive.scss';
@@ -82,6 +83,28 @@ function Home() {
     }
 
     // const backgroundImageChooseSection = "~/assets/images/choose-img.png";
+
+    // handle sent data to server email client subscribe
+    const [emailSub, setEmailSub] = useState('');
+
+    const handleChangeEmailSub = (event) => {
+        setEmailSub(event.target.value);
+    };
+
+    const handleSubmitEmailSub = (event) => {
+        event.preventDefault();
+        const email = emailSub;
+        console.log(email);
+        axios
+            .post('http://localhost:1110/v1/api/email-subscribe', { email: email })
+            .then((response) => {
+                console.log(response.data);
+            })
+            .catch((error) => {
+                console.error(error);
+            });
+        alert('bạn đã đăng ký thành công!');
+    };
 
     return (
         <div className={'site-wrapper'}>
@@ -983,9 +1006,11 @@ function Home() {
                                         name="email"
                                         id="email"
                                         placeholder={t('enter your email address')}
+                                        value={emailSub}
+                                        onChange={handleChangeEmailSub}
                                         required
                                     />
-                                    <div className="globalBtnActive">
+                                    {/* <div className="globalBtnActive">
                                         <ul>
                                             <li>
                                                 <button type="submit">
@@ -996,8 +1021,10 @@ function Home() {
                                                 </button>
                                             </li>
                                         </ul>
-                                    </div>
-                                    {/* <Button className="globalBtnActive">Subscribe</Button> */}
+                                    </div> */}
+                                    <Button onClick={handleSubmitEmailSub} className="globalBtnActive">
+                                        Subscribe
+                                    </Button>
                                 </form>
                             </div>
                         </div>
