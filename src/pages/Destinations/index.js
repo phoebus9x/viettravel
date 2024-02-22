@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState, useEffect } from 'react';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
+import axios from 'axios';
 
 import '~/components/css/All.scss';
 import '~/components/css/Reponsive.scss';
@@ -24,6 +25,26 @@ function Destinations() {
     useEffect(() => {
         AOS.init();
     }, []);
+
+    const [dataTour, setDataTour] = useState([]);
+
+    useEffect(() => {
+        fetchData();
+    }, []);
+
+    const fetchData = async () => {
+        axios
+            .get(`http://localhost:1110/v1/api/tours`)
+            .then((response) => {
+                setDataTour(response.data.data);
+                // Xử lý dữ liệu được lấy về ở đây
+                console.log('TourData: ', response.data.data);
+            })
+            .catch((error) => {
+                console.error('Error fetching Tour:', error);
+                // Xử lý lỗi ở đây
+            });
+    };
 
     return (
         <div className={'site-wrapper'}>
@@ -126,13 +147,15 @@ function Destinations() {
                     </div>
                     <div className="tourCards card-text mt-5">
                         <div className="row gap-4">
-                            <TourComponent />
+                            {dataTour.map((result, index) => (
+                                <TourComponent key={index} data={result} />
+                            ))}
                             <div className="col-md-4 col-sm-5 col-11" data-aos="fade-up" data-aos-delay="500">
                                 <div>
                                     <figure>
                                         <img src={images.tour2} alt="tour-img" />
                                     </figure>
-                                    <h6>Explore beauty of Sweden</h6>
+                                    <h6>Explore beauty of Sweden cc</h6>
                                     <p>Lorem ipsum dolor sit amet, sit consecte adipiscing elit, sed</p>
                                     <a href="#">
                                         Learn More <FontAwesomeIcon icon={faArrowRight} />
