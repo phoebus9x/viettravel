@@ -7,4 +7,5 @@ export const store = configureStore({
         client: clientReducer,
         blog: blogReducer,
     },
+    devTools: process.env.NODE_ENV !== 'production',
 });

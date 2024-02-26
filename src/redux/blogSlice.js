@@ -14,7 +14,7 @@ const blogSlice = createSlice({
     reducers: {
         submit: (state, action) => {
             state.blog = action.payload;
-            console.log("state.blog", state.blog);
+            console.log("state.blog", action.payload);
         },
     },
 });
