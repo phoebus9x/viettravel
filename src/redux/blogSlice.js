@@ -1,15 +1,14 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const blogSlice = createSlice({
-    name: 'blogs',
+    name: 'blog',
     initialState: {
-        client: {
-            name: '',
-            dob: '',
-            email: '',
-            phoneNumber: '',
-            address: '',
-            gender: '',
+        blog: {
+            tag: '',
+            title: '',
+            short: '',
+            img: '',
+            content: '',
         },
     },
     reducers: {

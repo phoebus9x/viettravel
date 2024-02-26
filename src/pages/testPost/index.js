@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './testPost.scss';
+import { useSelector } from 'react-redux';
 function TestPost() {
     const [data, setData] = useState('');
 
@@ -15,13 +16,16 @@ function TestPost() {
             .then((response) => {
                 setData(response.data.data.content);
                 // Xử lý dữ liệu được lấy về ở đây
-                console.log('blogData: ', response.data.data.content);
+                // console.log('blogData: ', response.data.data.content);
             })
             .catch((error) => {
                 console.error('Error fetching blog:', error);
                 // Xử lý lỗi ở đây
             });
     };
+
+    const blogState = useSelector((state) => state.blog)
+    console.log("blogState: ", blogState)
 
     return (
         <div class="blog container px-4 px-lg-5">

@@ -5,9 +5,14 @@ import { useDispatch, useSelector } from 'react-redux';
 import { submit } from '~/redux/blogSlice';
 
 function BlogComponent({ data }) {
+    // console.log("data in blogcomponent: " + JSON.stringify(data));
+    // const dataSubmit = JSON.stringify(data);
+    // console.log("dataSubmit: " + dataSubmit)
+
     const dispatch = useDispatch();
 
     const handleReadMore = async (data) => {
+        console.log("data on submit: " + data);
         dispatch(submit(data));
         // console.log("data: ", state.blog);
     };
@@ -24,7 +29,7 @@ function BlogComponent({ data }) {
                     <h6>{data.title}</h6>
                 </a>
                 <p>{data.short}</p>
-                <a href="#" onClick={handleReadMore}>
+                <a href="#" onClick={() => { handleReadMore(data) }}>
                     Read More&nbsp;&nbsp;&nbsp;
                     <FontAwesomeIcon icon={faArrowRight} />
                 </a>
