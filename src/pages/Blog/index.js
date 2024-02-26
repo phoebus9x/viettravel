@@ -17,6 +17,11 @@ import { faAnglesRight, faArrowRight, faPlay, faStar } from '@fortawesome/free-s
 
 import BlogComponent from '~/components/BlogComponent';
 
+import { useDispatch, useSelector } from 'react-redux';
+import { submit } from '~/redux/blogSlice';
+import { changeLanguage } from 'i18next';
+
+
 function Blog() {
     const { t } = useTranslation('home');
     // {t("key")}
@@ -43,6 +48,13 @@ function Blog() {
                 console.error('Error fetching blog:', error);
                 // Xử lý lỗi ở đây
             });
+    };
+
+    const dispatch = useDispatch();
+
+    const handleReadMore = async (data) => {
+        dispatch(submit(data));
+        console.log("data: ", data);
     };
 
     return (
