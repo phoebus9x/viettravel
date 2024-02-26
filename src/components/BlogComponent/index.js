@@ -17,7 +17,7 @@ function BlogComponent({ data }) {
         console.log("data on submit: " + data);
         dispatch(submit(data));
         // console.log("data: ", state.blog);
-        navigate('/test')
+        navigate('/single-post')
     };
     return (
         <div className="col-md-4 col-sm-9 col-11" data-aos="fade-up" data-aos-delay="100">

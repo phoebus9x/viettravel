@@ -15,7 +15,7 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAnglesRight} from '@fortawesome/free-solid-svg-icons';
+import { faAnglesRight } from '@fortawesome/free-solid-svg-icons';
 
 function SinglePost() {
     const { t } = useTranslation('home');
@@ -60,12 +60,12 @@ function SinglePost() {
                 {/* <!-- ====== End 1.2 hero section ====== --> */}
             </div>
 
-            <article class="mb-4">
+            <article class="single-blog mb-4">
                 <div class="container px-4 px-lg-5">
                     <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class=" blog col-md-10 col-lg-8 col-xl-7">
-                    <p dangerouslySetInnerHTML={{ __html: blogState.content }}></p>
-                </div>
+                        <div class="col-md-10 col-lg-8 col-xl-7">
+                            <p dangerouslySetInnerHTML={{ __html: blogState.content }}></p>
+                        </div>
                     </div>
                 </div>
             </article>
