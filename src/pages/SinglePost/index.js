@@ -43,11 +43,11 @@ function SinglePost() {
                                         <nav aria-label="breadcrumb">
                                             <div className="breadcrumb d-flex gap-4 align-items-center">
                                                 <div className="breadcrumb-item">
-                                                    <Link to="/">{t('home')}</Link>
+                                                    <Link to="/">{t('blog')}</Link>
                                                 </div>
                                                 <FontAwesomeIcon icon={faAnglesRight} />
                                                 <div className="breadcrumb-item" aria-current="page">
-                                                    {t('blog')}
+                                                    {blogState.title}
                                                 </div>
                                             </div>
                                         </nav>
