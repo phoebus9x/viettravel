@@ -14,16 +14,17 @@ function BlogComponent({ data }) {
     const dispatch = useDispatch();
 
     const handleReadMore = async (data) => {
-        console.log("data on submit: " + data);
+        console.log('data on submit: ' + data);
         dispatch(submit(data));
         // console.log("data: ", state.blog);
-        navigate('/single-post')
+        navigate('/single-post');
     };
+    console.log('data.img', data.img);
     return (
         <div className="col-md-4 col-sm-9 col-11" data-aos="fade-up" data-aos-delay="100">
             <div>
                 <figure>
-                    <img src={images.blog1} alt="tour-img" />
+                    <img src={data.img === 'no-image' ? images.blog10 : data.img} alt="tour-img" />
                 </figure>
                 <a href="#">
                     <p className="blogCategory">{data.tag}</p>
@@ -32,7 +33,12 @@ function BlogComponent({ data }) {
                     <h6>{data.title}</h6>
                 </a>
                 <p>{data.short}</p>
-                <a href="#" onClick={() => { handleReadMore(data) }}>
+                <a
+                    href="#"
+                    onClick={() => {
+                        handleReadMore(data);
+                    }}
+                >
                     Read More&nbsp;&nbsp;&nbsp;
                     <FontAwesomeIcon icon={faArrowRight} />
                 </a>

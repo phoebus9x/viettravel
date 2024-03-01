@@ -5,10 +5,9 @@ import 'aos/dist/aos.css';
 import AOS from 'aos';
 import { useSelector } from 'react-redux';
 
-
 import '~/components/css/All.scss';
 import '~/components/css/Reponsive.scss';
-import './singlePost.scss'
+import './singlePost.scss';
 
 import Navbar from '~/Layout/components/Navbar';
 import { useTranslation } from 'react-i18next';
@@ -25,8 +24,8 @@ function SinglePost() {
         AOS.init();
     }, []);
 
-    const blogState = useSelector((state) => state.blog.blog)
-    console.log("blogState: ", blogState)
+    const blogState = useSelector((state) => state.blog.blog);
+    console.log('blogState: ', blogState);
 
     return (
         <div className={'site-wrapper'}>

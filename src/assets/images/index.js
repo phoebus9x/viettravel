@@ -3,6 +3,7 @@ const images = {
     blog1: require('~/assets/images/blog-1.png'),
     blog2: require('~/assets/images/blog-2.png'),
     blog3: require('~/assets/images/blog-3.png'),
+    blog10: require('~/assets/images/blog10.webp'),
     headerSlider1: require('~/assets/images/header-slider1.png'),
     headerSlider2: require('~/assets/images/header-slider2.png'),
     headerSlider3: require('~/assets/images/header-slider3.png'),
