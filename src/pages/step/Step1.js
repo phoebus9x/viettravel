@@ -50,7 +50,7 @@ function Step1() {
     };
 
     return (
-        <div>
+        <div className="step-1">
             <form className="step-form" onSubmit={handleSubmit(onSubmit)}>
                 <h3 className="text-center">Step 1 - Client Information</h3>
                 <div className="form-group">

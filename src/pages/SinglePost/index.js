@@ -27,6 +27,10 @@ function SinglePost() {
     const blogState = useSelector((state) => state.blog.blog);
     console.log('blogState: ', blogState);
 
+    const blogState1 = {
+        content: '<p><strong>This </strong> is the HTML content.</p>',
+    };
+
     return (
         <div className={'site-wrapper'}>
             <div className={'header-blog'}>

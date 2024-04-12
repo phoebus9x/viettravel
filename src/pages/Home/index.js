@@ -72,7 +72,7 @@ function Home() {
 
     function showSlide() {
         return slides.map((slide, index) => (
-            <div key={index} className={`slide ${index === currentSlide ? 'active' : 'inactive'}`}>
+            <div key={index} className={`slide1 ${index === currentSlide ? 'active' : 'inactive'}`}>
                 <img src={slide.image} alt={slide.alt} />
             </div>
         ));
