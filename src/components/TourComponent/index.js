@@ -3,11 +3,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import images from '~/assets/images';
 
 function TourComponent({ data }) {
+    console.log('data: ', data);
     return (
         <div className="col-md-4 col-sm-5 col-11" data-aos="fade-up" data-aos-delay="100">
             <div>
                 <figure>
-                    <img src={images.tour1} alt="tour-img" />
+                    <img src={data.img1} alt="tour-img" />
                 </figure>
                 <h6>{data.title}</h6>
                 <p>{data.short}</p>
