@@ -64,7 +64,7 @@ function SingleTour() {
     };
 
     return (
-        <div className={'site-wrapper'}>
+        <div className={'site-wrapper1'}>
             <div className={'header-blog'}>
                 <Navbar />
                 {/* <!-- ====== 1.2 hero section ====== --> */}
