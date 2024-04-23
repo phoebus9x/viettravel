@@ -123,36 +123,11 @@ function Step3({ order }) {
                                                                 fontFamily: 'Open Sans, Helvetica, Arial, sans-serif',
                                                                 fontSize: '18px',
                                                                 fontWeight: 400,
-                                                            }}
-                                                        >
-                                                            <p
-                                                                style={{
-                                                                    fontSize: '18px',
-                                                                    fontWeight: 400,
-                                                                    margin: 0,
-                                                                    color: '#ffffff',
-                                                                }}
-                                                            >
-                                                                <a
-                                                                    href="#"
-                                                                    target="_blank"
-                                                                    style={{ color: '#ffffff', textDecoration: 'none' }}
-                                                                >
-                                                                    Home &nbsp;
-                                                                </a>
-                                                            </p>
-                                                        </td>
-                                                        <td
-                                                            style={{
-                                                                fontFamily: 'Open Sans, Helvetica, Arial, sans-serif',
-                                                                fontSize: '18px',
-                                                                fontWeight: 400,
                                                                 lineHeight: '24px',
                                                             }}
                                                         >
                                                             <a
-                                                                href="#"
-                                                                target="_blank"
+                                                                href="/"
                                                                 style={{ color: '#ffffff', textDecoration: 'none' }}
                                                             >
                                                                 <img

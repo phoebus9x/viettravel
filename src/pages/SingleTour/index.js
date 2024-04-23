@@ -73,7 +73,7 @@ function SingleTour() {
                         <div className="row justify-content-center">
                             <div className="col-lg-11 col-md-12 text-center" data-aos="fade">
                                 <div>
-                                    <h2>{t('our blogs')}</h2>
+                                    <h2>{t('tour')}</h2>
                                     <div className="d-flex justify-content-center gap-4 pt-4">
                                         <nav aria-label="breadcrumb">
                                             <div className="breadcrumb d-flex gap-4 align-items-center">
@@ -82,7 +82,7 @@ function SingleTour() {
                                                 </div>
                                                 <FontAwesomeIcon icon={faAnglesRight} />
                                                 <div className="breadcrumb-item" aria-current="page">
-                                                    {t('blog')}
+                                                    {t('tour')}
                                                 </div>
                                             </div>
                                         </nav>
@@ -214,7 +214,9 @@ function SingleTour() {
                             <div style={{ backgroundColor: '#CCCED1', borderRadius: '4px' }}>
                                 <div style={{ padding: '20px', textAlign: 'center' }}>
                                     <p style={{ margin: '10px 0 15px 0' }}>Giá chỉ từ 100$</p>
-                                    <span></span>
+                                    <div style={{ maxWidth: '60%', height: 'auto', margin: '0 auto', paddingBottom:'20px'}}>
+                                        <img src={images.picPayment1} alt="Feature 1" style={{ maxWidth: '100%', height: 'auto' }} />
+                                    </div>
                                     <Button className="globalBtnActive">Đặt ngay Tour</Button>
                                 </div>
                             </div>

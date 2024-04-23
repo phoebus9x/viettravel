@@ -25,7 +25,9 @@ const images = {
     testimonials1: require('~/assets/images/testimonials-1.png'),
     testimonials2: require('~/assets/images/testimonials-2.png'),
     testimonials3: require('~/assets/images/testimonials-3.png'),
-
+    travelling: require('~/assets/images/travelling.png'),
+    picPayment1: require('~/assets/images/pic-payment.png'),
+    picPayment2: require('~/assets/images/pic-payment1.png'),
     feature1: require('~/assets/images/icon/feature-1.svg'),
     feature2: require('~/assets/images/icon/feature-2.svg'),
     feature3: require('~/assets/images/icon/feature-3.svg'),

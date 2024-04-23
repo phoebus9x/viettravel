@@ -2,9 +2,11 @@ import { useForm } from 'react-hook-form';
 import { useDispatch, useSelector } from 'react-redux';
 import { submit } from './clientSlice';
 import { useNavigate } from 'react-router-dom';
+import Navbar from '~/Layout/components/Navbar';
 import axios from 'axios';
 import './step.scss';
 import Button from '~/components/Button';
+import images from '~/assets/images';
 import { useState } from 'react';
 function Step2() {
     const dispatch = useDispatch();
@@ -98,7 +100,168 @@ function Step2() {
 
     return (
         <div>
-            <div class="container-fluid form-payment">
+            <div className='header-single-tour' style={{ position: 'sticky', top: 0, width: '100%', zIndex: 100 }}>
+                <Navbar  />
+            </div>
+            <div className='container' style={{ padding: '40px 0' }}>
+                 <div className="row justify-content-center" style={{ margin: '20px 0' }}>
+                    <div className="col-lg-6 col-md-12" style={{ padding: '0 80px' }}>
+                        <h3 className="text-center">thông tin đơn hàng</h3>
+                        <hr />
+                        <table style={{ width: '100%' }}>
+                            <tr>
+                                <td style={{ textAlign: 'left' }}>Order confirmation</td>
+                                <td style={{ textAlign: 'right' }}>#123456</td>
+                            </tr>
+                            <tr>
+                                <td style={{ textAlign: 'left' }}>purchased item</td>
+                                <td style={{ textAlign: 'right' }}>100.00$</td>
+                            </tr>
+                            <tr>
+                                <td style={{ textAlign: 'left' }}>surcharge</td>
+                                <td style={{ textAlign: 'right' }}>5.00$</td>
+                            </tr>
+                            <tr>
+                                <td style={{ textAlign: 'left' }}>discount</td>
+                                <td style={{ textAlign: 'right' }}>0.00</td>
+                            </tr>
+                        </table>
+                        <hr />
+                        <table style={{ width: '100%' }}>
+                            <tr>
+                                <td style={{ textAlign: 'left' }}>TOTAL</td>
+                                <td style={{ textAlign: 'right' }}>105.00$</td>
+                            </tr>
+                        </table>
+                        <hr />
+
+                        <div style={{ maxWidth: '80%', height: 'auto', margin: '0 auto' }}>
+                            <img src={images.picPayment2} alt="Feature 1" style={{ maxWidth: '100%', height: 'auto' }} />
+                        </div>
+                    </div>
+                    <div className=" col-lg-6 col-md-12">
+                        <div class="card p-3">
+                            <form onsubmit="event.preventDefault()" class="form-card">
+                                <div class="row justify-content-center mb-4 radio-group">
+                                    <div class="col-sm-3 col-5">
+                                        <div class="radio selected mx-auto" data-value="dk">
+                                            {' '}
+                                            <img
+                                                class="fit-image"
+                                                src="https://i.imgur.com/5TqiRQV.jpg"
+                                                width="105px"
+                                                height="55px"
+                                            />{' '}
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-5">
+                                        <div class="radio mx-auto" data-value="visa">
+                                            {' '}
+                                            <img
+                                                class="fit-image"
+                                                src="https://i.imgur.com/OdxcctP.jpg"
+                                                width="105px"
+                                                height="55px"
+                                            />{' '}
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-5">
+                                        <div class="radio mx-auto" data-value="master">
+                                            {' '}
+                                            <img
+                                                class="fit-image"
+                                                src="https://i.imgur.com/WIAP9Ku.jpg"
+                                                width="105px"
+                                                height="55px"
+                                            />{' '}
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 col-5">
+                                        <div class="radio mx-auto" data-value="paypal">
+                                            {' '}
+                                            <img
+                                                class="fit-image"
+                                                src="https://i.imgur.com/cMk1MtK.jpg"
+                                                width="105px"
+                                                height="55px"
+                                            />{' '}
+                                        </div>
+                                    </div>{' '}
+                                    <br />
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-12">
+                                        <div class="input-group">
+                                            {' '}
+                                            <input type="text" name="Name" placeholder="John Doe" /> <label>Name</label>{' '}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-12">
+                                        <div class="input-group">
+                                            {' '}
+                                            <input
+                                                type="text"
+                                                id="cr_no"
+                                                name="card-no"
+                                                value={cardNumber}
+                                                onChange={handleCardNumberChange}
+                                                placeholder="0000 0000 0000 0000"
+                                                maxLength={19}
+                                                minLength={19}
+                                            />{' '}
+                                            <label>Card Number</label>{' '}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="input-group">
+                                                    {' '}
+                                                    <input
+                                                        type="text"
+                                                        id="exp"
+                                                        name="expdate"
+                                                        placeholder="MM/YY"
+                                                        onChange={handleExpiryDateChange}
+                                                        value={expiryDate}
+                                                        maxLength={5}
+                                                        minLength={5}
+                                                    />{' '}
+                                                    <label>Expiry Date</label>{' '}
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="input-group">
+                                                    {' '}
+                                                    <input
+                                                        type="password"
+                                                        name="cvv"
+                                                        placeholder="&#9679;&#9679;&#9679;"
+                                                        minlength="3"
+                                                        maxlength="3"
+                                                    />{' '}
+                                                    <label>CVV</label>{' '}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-md-12">
+                                        {' '}
+                                        <input type="submit" value="Pay" class="btn btn-pay placeicon" />{' '}
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+            {/* <div class="container-fluid form-payment">
                 <div class="row justify-content-center">
                     <div class=" col-lg-6 col-md-8">
                         <div class="card p-3">
@@ -226,7 +389,7 @@ function Step2() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }
