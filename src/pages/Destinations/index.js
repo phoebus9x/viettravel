@@ -18,6 +18,7 @@ import { faAnglesRight, faArrowRight, faPlay, faStar } from '@fortawesome/free-s
 
 import TourComponent from '~/components/TourComponent';
 
+
 function Destinations() {
     const { t } = useTranslation('home');
     // {t("key")}
@@ -45,6 +46,8 @@ function Destinations() {
                 // Xử lý lỗi ở đây
             });
     };
+
+
 
     return (
         <div className={'site-wrapper'}>
@@ -98,9 +101,9 @@ function Destinations() {
                                         <option value="destination" selected disabled>
                                             {t('destination')}
                                         </option>
-                                        <option value="turkey">Turkey</option>
-                                        <option value="sweden">Sweden</option>
-                                        <option value="indonesia">Indonesia</option>
+                                        <option value="turkey">Ha Noi City</option>
+                                        <option value="sweden">Da Nang City</option>
+                                        <option value="indonesia">Ho Chi Minh City</option>
                                     </select>
                                 </div>
                                 <div>
@@ -128,6 +131,7 @@ function Destinations() {
             {/* <!-- ====== End 1.14 about section ====== --> */}
 
             {/* <!-- ====== 1.6 tours section ====== --> */}
+
             <section id="tour">
                 <div className="container">
                     <div data-aos="fade" data-aos-duration="2000">
@@ -150,6 +154,7 @@ function Destinations() {
                             {dataTour.map((result, index) => (
                                 <TourComponent key={index} data={result} />
                             ))}
+                             
                             <div className="col-md-4 col-sm-5 col-11" data-aos="fade-up" data-aos-delay="500">
                                 <div>
                                     <figure>

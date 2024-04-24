@@ -45,9 +45,9 @@ const publicRoutes = [
     { path: '/single-post', component: SinglePost },
     { path: '/single-tour', component: SingleTour },
 
-    { path: '/step1', component: Step1, layout: null },
-    { path: '/step2', component: Step2, layout: null },
-    { path: '/step3', component: Step3, layout: null },
+    { path: '/step1', component: Step1 },
+    { path: '/step2', component: Step2 },
+    { path: '/step3', component: Step3 },
     { path: '/step4', component: Step4, layout: null },
 
     { path: '/editor', component: MyCKEditor, layout: null },

@@ -4,11 +4,12 @@ const bookingSlice = createSlice({
     name: 'booking',
     initialState: {
         booking: {
-            tag: '',
-            title: '',
-            short: '',
-            img: '',
-            content: '',
+            tour_id: '',
+            client_id: '',
+            number_adults: '',
+            number_children: '',
+            total: '',
+            status: '',
         },
     },
     reducers: {

@@ -190,7 +190,7 @@ function Step1() {
                                     {errors.address && <span className="form-error">Địa chỉ là bắt buộc</span>}
                                 </div>
 
-                                <button className="form-button" type="submit">
+                                <button style={{margin:'0 auto'}} className="form-button" type="submit">
                                     Submit
                                 </button>
                             </form>
