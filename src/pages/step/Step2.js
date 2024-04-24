@@ -100,43 +100,47 @@ function Step2() {
 
     return (
         <div>
-            <div className='header-single-tour' style={{ position: 'sticky', top: 0, width: '100%', zIndex: 100 }}>
-                <Navbar  />
+            <div className="header-single-tour" style={{ position: 'sticky', top: 0, width: '100%', zIndex: 100 }}>
+                <Navbar />
             </div>
-            <div className='container' style={{ padding: '40px 0' }}>
-                 <div className="row justify-content-center" style={{ margin: '20px 0' }}>
+            <div className="container" style={{ padding: '40px 0' }}>
+                <div className="row justify-content-center" style={{ margin: '20px 0' }}>
                     <div className="col-lg-6 col-md-12" style={{ padding: '0 80px' }}>
-                        <h3 className="text-center">thông tin đơn hàng</h3>
+                        <h3 className="text-center">PAYMENT INVOICE</h3>
                         <hr />
-                        <table style={{ width: '100%' }}>
+                        <table style={{ width: '100%', borderSpacing: '0 10px' }}>
                             <tr>
-                                <td style={{ textAlign: 'left' }}>Order confirmation</td>
-                                <td style={{ textAlign: 'right' }}>#123456</td>
+                                <td style={{ textAlign: 'left', paddingBottom: '10px' }}>Order confirmation</td>
+                                <td style={{ textAlign: 'right', paddingBottom: '10px' }}>#123456</td>
                             </tr>
                             <tr>
-                                <td style={{ textAlign: 'left' }}>purchased item</td>
-                                <td style={{ textAlign: 'right' }}>100.00$</td>
+                                <td style={{ textAlign: 'left', paddingBottom: '10px' }}>Purchased item</td>
+                                <td style={{ textAlign: 'right', paddingBottom: '10px' }}>200.00$</td>
                             </tr>
                             <tr>
-                                <td style={{ textAlign: 'left' }}>surcharge</td>
-                                <td style={{ textAlign: 'right' }}>5.00$</td>
+                                <td style={{ textAlign: 'left', paddingBottom: '10px' }}>Surcharge</td>
+                                <td style={{ textAlign: 'right', paddingBottom: '10px' }}>10.00$</td>
                             </tr>
                             <tr>
-                                <td style={{ textAlign: 'left' }}>discount</td>
-                                <td style={{ textAlign: 'right' }}>0.00</td>
+                                <td style={{ textAlign: 'left', paddingBottom: '10px' }}>Discount</td>
+                                <td style={{ textAlign: 'right', paddingBottom: '10px' }}>0.00$</td>
                             </tr>
                         </table>
                         <hr />
                         <table style={{ width: '100%' }}>
                             <tr>
                                 <td style={{ textAlign: 'left' }}>TOTAL</td>
-                                <td style={{ textAlign: 'right' }}>105.00$</td>
+                                <td style={{ textAlign: 'right' }}>210.00$</td>
                             </tr>
                         </table>
                         <hr />
 
                         <div style={{ maxWidth: '80%', height: 'auto', margin: '0 auto' }}>
-                            <img src={images.picPayment2} alt="Feature 1" style={{ maxWidth: '100%', height: 'auto' }} />
+                            <img
+                                src={images.picPayment2}
+                                alt="Feature 1"
+                                style={{ maxWidth: '100%', height: 'auto' }}
+                            />
                         </div>
                     </div>
                     <div className=" col-lg-6 col-md-12">
@@ -259,7 +263,7 @@ function Step2() {
                             </form>
                         </div>
                     </div>
-                 </div>
+                </div>
             </div>
             {/* <div class="container-fluid form-payment">
                 <div class="row justify-content-center">

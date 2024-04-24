@@ -96,7 +96,9 @@ function SingleTour() {
             </div>
             <div className="site-wrapper">
                 <div className="container">
-                    <h1>Tour name</h1>
+                    <h3 style={{ margin: '50px 0 20px 0', textAlign: 'center' }}>
+                        Путешествие в Да Нанг - Город достойной жизни
+                    </h3>
                     <div
                         style={{
                             width: '1000px',
@@ -141,7 +143,7 @@ function SingleTour() {
                     <div className="row justify-content-center" style={{ margin: '20px 0' }}>
                         <div className="col-lg-8 col-md-12">
                             {/* Images of the tour */}
-                            <h2>#1 Điểm nhấn của tour</h2>
+                            <h4 style={{ marginBottom: '15px' }}>№1 Обзор тура</h4>
                             <table style={{ width: '100%', textAlign: 'left', border: '1px solid black' }}>
                                 <tr>
                                     <td
@@ -213,11 +215,22 @@ function SingleTour() {
                             {/* button đặt ngay Tour */}
                             <div style={{ backgroundColor: '#CCCED1', borderRadius: '4px' }}>
                                 <div style={{ padding: '20px', textAlign: 'center' }}>
-                                    <p style={{ margin: '10px 0 15px 0' }}>Giá chỉ từ 100$</p>
-                                    <div style={{ maxWidth: '60%', height: 'auto', margin: '0 auto', paddingBottom:'20px'}}>
-                                        <img src={images.picPayment1} alt="Feature 1" style={{ maxWidth: '100%', height: 'auto' }} />
+                                    <h4 style={{ margin: '10px 0 15px 0' }}>Цена начинается от $200</h4>
+                                    <div
+                                        style={{
+                                            maxWidth: '60%',
+                                            height: 'auto',
+                                            margin: '0 auto',
+                                            paddingBottom: '20px',
+                                        }}
+                                    >
+                                        <img
+                                            src={images.picPayment1}
+                                            alt="Feature 1"
+                                            style={{ maxWidth: '100%', height: 'auto' }}
+                                        />
                                     </div>
-                                    <Button className="globalBtnActive">Đặt ngay Tour</Button>
+                                    <Button className="globalBtnActive">{t('book now')}</Button>
                                 </div>
                             </div>
                             {/* một tour khác */}
