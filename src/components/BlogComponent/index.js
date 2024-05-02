@@ -2,7 +2,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import images from '~/assets/images';
 import { useDispatch, useSelector } from 'react-redux';
-import { submit } from '~/redux/blogSlice';
+import { submitBlog } from '~/redux/blogSlice';
 import { useNavigate } from 'react-router-dom';
 
 function BlogComponent({ data }) {
@@ -15,7 +15,7 @@ function BlogComponent({ data }) {
 
     const handleReadMore = async (data) => {
         console.log('data on submit: ' + data);
-        dispatch(submit(data));
+        dispatch(submitBlog(data));
         // console.log("data: ", state.blog);
         navigate('/single-post');
     };

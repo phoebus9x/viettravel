@@ -13,12 +13,12 @@ const bookingSlice = createSlice({
         },
     },
     reducers: {
-        submit: (state, action) => {
+        submitBooking: (state, action) => {
             state.booking = action.payload;
-            console.ooking("state.booking", action.payload);
+            console.log('state.booking', action.payload);
         },
     },
 });
 
 export const bookingReducer = bookingSlice.reducer;
-export const { submit } = bookingSlice.actions;
+export const { submitBooking } = bookingSlice.actions;

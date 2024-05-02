@@ -18,7 +18,6 @@ import { faAnglesRight, faArrowRight, faPlay, faStar } from '@fortawesome/free-s
 
 import TourComponent from '~/components/TourComponent';
 
-
 function Destinations() {
     const { t } = useTranslation('home');
     // {t("key")}
@@ -46,8 +45,6 @@ function Destinations() {
                 // Xử lý lỗi ở đây
             });
     };
-
-
 
     return (
         <div className={'site-wrapper'}>
@@ -151,10 +148,10 @@ function Destinations() {
                     </div>
                     <div className="tourCards card-text mt-5">
                         <div className="row gap-4">
+                            {/* // loading data tour */}
                             {dataTour.map((result, index) => (
                                 <TourComponent key={index} data={result} />
                             ))}
-                             
                             <div className="col-md-4 col-sm-5 col-11" data-aos="fade-up" data-aos-delay="500">
                                 <div>
                                     <figure>

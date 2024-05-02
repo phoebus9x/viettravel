@@ -13,11 +13,11 @@ const clientSlice = createSlice({
         },
     },
     reducers: {
-        submit: (state, action) => {
+        submitClient: (state, action) => {
             state.client = action.payload;
         },
     },
 });
 
 export const clientReducer = clientSlice.reducer;
-export const { submit } = clientSlice.actions;
+export const { submitClient } = clientSlice.actions;

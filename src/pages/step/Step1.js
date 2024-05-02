@@ -1,7 +1,9 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useForm } from 'react-hook-form';
 import { useDispatch, useSelector } from 'react-redux';
-import { submit } from './clientSlice';
+import { submitClient } from '~/redux/clientSlice';
+import { submitBooking } from '~/redux/bookingSlice';
+
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import Navbar from '~/Layout/components/Navbar';
@@ -15,17 +17,30 @@ import './step.scss';
 import Button from '~/components/Button';
 function Step1() {
     const { t } = useTranslation('home');
-
+    const tourState = useSelector((state) => state.tour.tour);
+    console.log('tourState trong step1', tourState);
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const client = useSelector((state) => state.client);
+    const booking = useSelector((state) => state.booking);
+
     const {
         register,
         handleSubmit,
         formState: { errors },
-    } = useForm({ defaultValues: { client } });
+    } = useForm({ defaultValues: { client, booking } });
 
     const onSubmit = async (data) => {
+        const adultsCount = parseInt(data.booking.number_adults, 10);
+        console.log(adultsCount);
+        const childrenCount = parseInt(data.booking.number_children, 10);
+        console.log(childrenCount);
+        const adultPrice = parseInt(tourState.price_adults, 10); // Assuming each adult ticket costs $100
+        const childPrice = parseInt(tourState.price_children, 10); // Assuming each child ticket costs $50
+        const total = adultsCount * adultPrice + childrenCount * childPrice;
+        console.log(`Total amount: $${total}`);
+        data.booking.total = total;
+        data.booking.tour_id = tourState.id;
         try {
             const response1 = await axios.post('http://localhost:1110/v1/api/client', {
                 name: data.client.name,
@@ -54,34 +69,68 @@ function Step1() {
         } catch (error) {
             console.error(error);
         }
-        dispatch(submit(data.client));
+
+        dispatch(submitClient(data.client));
+        dispatch(submitBooking(data.booking));
+
         console.log(data.client);
         navigate('/step2');
     };
 
     return (
         <div className={'site-wrapper'}>
-            <div className='header-single-tour' style={{ position: 'sticky', top: 0, width: '100%', zIndex: 100 }}>
-                <Navbar  />
+            <div className="header-single-tour" style={{ position: 'sticky', top: 0, width: '100%', zIndex: 100 }}>
+                <Navbar />
             </div>
             <div className="container">
                 <div className="row justify-content-center" style={{ margin: '20px 0' }}>
-                    
                     {/* cột 1 */}
                     <div className="col-lg-6 col-md-12">
                         {' '}
                         <div className="step-1">
-                                <h3 className="text-center">Du lịch Hà Nội</h3>
-                                <p className="text-center">Hành trình: Vịnh Hạ Long - Bãi Cháy - Hà Nội</p>
-                                <p className="text-center">Lịch trình: 4 ngày</p>
-                                <p className="text-center">Số người tham gia: 30</p>
-                                <p className="text-center">Đã đăng ký: 10</p>
-                                <p className="text-center">1 ô số điện thoại hỗ trợ</p>
-                                <p className="text-center">1 ảnh travel </p>
-                                <div style={{ maxWidth: '70%', height: 'auto', margin: '0 auto' }}>
-                                    <img src={images.travelling} alt="Feature 1" style={{ maxWidth: '100%', height: 'auto' }} />
-                                </div>
-                                <p className="text-center">1 bảng giá người lớn trẻ em</p>
+                            <h3 className="text-center">{tourState.title}</h3>
+                            <p className="text-center">
+                                {t('trip')}: {tourState.trip}
+                            </p>
+                            <p className="text-center">
+                                {t('duration')}: {tourState.duration} {t('days')}
+                            </p>
+                            <p className="text-center">
+                                {t('the number of participants')}: {tourState.number_of_participants}
+                            </p>
+                            <p className="text-center">{t('the number of tour bookings')}: 10</p>
+                            <p className="text-center">{t('support phone number')}: +375-25-513-89-93</p>
+                            <div style={{ maxWidth: '70%', height: 'auto', margin: '0 auto' }}>
+                                <img
+                                    src={images.travelling}
+                                    alt="Feature 1"
+                                    style={{ maxWidth: '100%', height: 'auto' }}
+                                />
+                            </div>
+                            <table
+                                className="text-center"
+                                style={{
+                                    width: '100%',
+                                    padding: '3px',
+                                    border: '1px solid black',
+                                    borderCollapse: 'collapse',
+                                }}
+                            >
+                                <tr>
+                                    <th style={{ padding: '3px', border: '1px solid black' }}>{t('ticket type')}</th>
+                                    <th style={{ padding: '3px', border: '1px solid black' }}>{t('adult')}</th>
+                                    <th style={{ padding: '3px', border: '1px solid black' }}>{t('children')}</th>
+                                </tr>
+                                <tr>
+                                    <td style={{ padding: '3px', border: '1px solid black' }}>{t('fare')}</td>
+                                    <td style={{ padding: '3px', border: '1px solid black' }}>
+                                        {tourState.price_adults} $
+                                    </td>
+                                    <td style={{ padding: '3px', border: '1px solid black' }}>
+                                        {tourState.price_children} $
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
 
@@ -91,7 +140,7 @@ function Step1() {
                             <form className="step-form" onSubmit={handleSubmit(onSubmit)}>
                                 <div className="form-group">
                                     <label className="form-label" htmlFor="client.name">
-                                        Tên
+                                        {t('name')}
                                     </label>
                                     <input
                                         className="form-input"
@@ -103,7 +152,7 @@ function Step1() {
                                 </div>
                                 <div className="form-group">
                                     <label className="form-label" htmlFor="client.email">
-                                        Email
+                                        {t('email address')}
                                     </label>
                                     <input
                                         className="form-input"
@@ -115,7 +164,7 @@ function Step1() {
                                 </div>
                                 <div className="form-group">
                                     <label className="form-label" htmlFor="client.gender">
-                                        Gender
+                                        {t('gender')}
                                     </label>
                                     <input
                                         className="form-input"
@@ -128,7 +177,7 @@ function Step1() {
 
                                 <div className="form-group">
                                     <label className="form-label" htmlFor="client.phoneNumber">
-                                        Số điện thoại
+                                        {t('phone number')}
                                     </label>
                                     <input
                                         className="form-input"
@@ -143,7 +192,7 @@ function Step1() {
 
                                 <div className="form-group">
                                     <label className="form-label" htmlFor="client.dob">
-                                        Ngày sinh
+                                        {t('date of birth')}
                                     </label>
                                     <input
                                         className="form-input"
@@ -154,33 +203,33 @@ function Step1() {
                                     {errors.dateOfBirth && <span className="form-error">Ngày sinh là bắt buộc</span>}
                                 </div>
                                 <div className="form-group">
-                                    <label className="form-label" htmlFor="client.dob">
-                                        số người lớn
-                                    </label>
-                                    <input
-                                        className="form-input"
-                                        type="texy"
-                                        id="client.dob"
-                                        {...register('client.dob', { required: true })}
-                                    />
-                                    {errors.dateOfBirth && <span className="form-error">Ngày sinh là bắt buộc</span>}
-                                </div>
-                                <div className="form-group">
-                                    <label className="form-label" htmlFor="client.dob">
-                                        số trẻ em (6 -12)
+                                    <label className="form-label" htmlFor="booking.number_adults">
+                                        {t('number of adults')}
                                     </label>
                                     <input
                                         className="form-input"
                                         type="text"
-                                        id="client.dob"
-                                        {...register('client.dob', { required: true })}
+                                        id="booking.number_adults"
+                                        {...register('booking.number_adults', { required: true })}
+                                    />
+                                    {errors.dateOfBirth && <span className="form-error">Ngày sinh là bắt buộc</span>}
+                                </div>
+                                <div className="form-group">
+                                    <label className="form-label" htmlFor="booking.number_children">
+                                        {t('number of children')} (6 -12)
+                                    </label>
+                                    <input
+                                        className="form-input"
+                                        type="text"
+                                        id="booking.number_children"
+                                        {...register('booking.number_children', { required: true })}
                                     />
                                     {errors.dateOfBirth && <span className="form-error">Ngày sinh là bắt buộc</span>}
                                 </div>
 
                                 <div className="form-group">
                                     <label className="form-label" htmlFor="client.address">
-                                        Địa chỉ
+                                        {t('address')}
                                     </label>
                                     <textarea
                                         className="form-input"
@@ -190,8 +239,8 @@ function Step1() {
                                     {errors.address && <span className="form-error">Địa chỉ là bắt buộc</span>}
                                 </div>
 
-                                <button style={{margin:'0 auto'}} className="form-button" type="submit">
-                                    Submit
+                                <button style={{ margin: '0 auto' }} className="form-button" type="submit">
+                                    {t('submit')}
                                 </button>
                             </form>
                         </div>

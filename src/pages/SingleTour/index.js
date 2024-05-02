@@ -3,13 +3,14 @@ import { Carousel } from 'react-bootstrap';
 import React, { useState, useEffect } from 'react';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
-
+import { format } from 'date-fns';
 import '~/components/css/All.scss';
 import '~/components/css/Reponsive.scss';
 import images from '~/assets/images';
 import Navbar from '~/Layout/components/Navbar';
 import Button from '~/components/Button';
-import TourComponent from '~/components/TourComponent';
+import { useSelector } from 'react-redux';
+
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
@@ -17,7 +18,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAnglesRight, faArrowRight, faPlay, faStar } from '@fortawesome/free-solid-svg-icons';
 
 import axios from 'axios';
-import { useDispatch, useSelector } from 'react-redux';
 
 function SingleTour() {
     const { t } = useTranslation('home');
@@ -63,6 +63,11 @@ function SingleTour() {
         // Các thuộc tính khác cho trạng thái không hover
     };
 
+    const tourState = useSelector((state) => state.tour.tour);
+    const start_date_string = tourState.start_date.toString();
+    const start_date = format(new Date(start_date_string), 'dd/MM/yyyy');
+    const end_date_string = tourState.end_date.toString();
+    const end_date = format(new Date(end_date_string), 'dd/MM/yyyy');
     return (
         <div className={'site-wrapper1'}>
             <div className={'header-blog'}>
@@ -96,9 +101,7 @@ function SingleTour() {
             </div>
             <div className="site-wrapper">
                 <div className="container">
-                    <h3 style={{ margin: '50px 0 20px 0', textAlign: 'center' }}>
-                        Путешествие в Да Нанг - Город достойной жизни
-                    </h3>
+                    <h2 style={{ margin: '50px 0 20px 0', textAlign: 'center' }}>{tourState.title}</h2>
                     <div
                         style={{
                             width: '1000px',
@@ -119,7 +122,7 @@ function SingleTour() {
                         >
                             <Carousel.Item style={{ textAlign: 'center', height: '400px' }}>
                                 <img
-                                    src={images.blog1}
+                                    src={tourState.img1}
                                     alt="First slide"
                                     style={{ display: 'inline-block', height: '100%', width: 'auto' }}
                                 />
@@ -143,7 +146,7 @@ function SingleTour() {
                     <div className="row justify-content-center" style={{ margin: '20px 0' }}>
                         <div className="col-lg-8 col-md-12">
                             {/* Images of the tour */}
-                            <h4 style={{ marginBottom: '15px' }}>№1 Обзор тура</h4>
+                            <h3 style={{ marginBottom: '15px' }}>№1 {t('tour overview')}</h3>
                             <table style={{ width: '100%', textAlign: 'left', border: '1px solid black' }}>
                                 <tr>
                                     <td
@@ -153,61 +156,77 @@ function SingleTour() {
                                             border: '1px solid black',
                                         }}
                                     >
-                                        Tour Detail
+                                        {t('trip')}
                                     </td>
                                     <td style={{ padding: '3px', width: '65%', border: '1px solid black' }}>
-                                        A - B - C - D - E
+                                        {tourState.trip}
                                     </td>
                                 </tr>
                                 <tr>
                                     <td style={{ padding: '3px', width: '35%', border: '1px solid black' }}>
-                                        Duration
-                                    </td>
-                                    <td style={{ padding: '3px', width: '65%', border: '1px solid black' }}>3 days</td>
-                                </tr>
-                                <tr>
-                                    <td style={{ padding: '3px', width: '35%', border: '1px solid black' }}>
-                                        Price for adults
-                                    </td>
-                                    <td style={{ padding: '3px', width: '65%', border: '1px solid black' }}>100$</td>
-                                </tr>
-                                <tr>
-                                    <td style={{ padding: '3px', width: '35%', border: '1px solid black' }}>
-                                        Price for children
-                                    </td>
-                                    <td style={{ padding: '3px', width: '65%', border: '1px solid black' }}>70$</td>
-                                </tr>
-                                <tr>
-                                    <td style={{ padding: '3px', width: '35%', border: '1px solid black' }}>
-                                        Start day
+                                        {t('duration')}
                                     </td>
                                     <td style={{ padding: '3px', width: '65%', border: '1px solid black' }}>
-                                        24/04/2024
+                                        {tourState.duration} {t('days')}
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style={{ padding: '3px', width: '35%', border: '1px solid black' }}>End day</td>
+                                    <td style={{ padding: '3px', width: '35%', border: '1px solid black' }}>
+                                        {t('price for adults')}
+                                    </td>
                                     <td style={{ padding: '3px', width: '65%', border: '1px solid black' }}>
-                                        27/04/2024
+                                        {tourState.price_adults}$
                                     </td>
                                 </tr>
                                 <tr>
                                     <td style={{ padding: '3px', width: '35%', border: '1px solid black' }}>
-                                        The number of participants
+                                        {t('price for children')}
                                     </td>
-                                    <td style={{ padding: '3px', width: '65%', border: '1px solid black' }}>30</td>
+                                    <td style={{ padding: '3px', width: '65%', border: '1px solid black' }}>
+                                        {tourState.price_children}$
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td style={{ padding: '3px', width: '35%', border: '1px solid black' }}>
-                                        The number of tour bookings
+                                        {t('start day')}
+                                    </td>
+                                    <td style={{ padding: '3px', width: '65%', border: '1px solid black' }}>
+                                        {start_date}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style={{ padding: '3px', width: '35%', border: '1px solid black' }}>
+                                        {t('end day')}
+                                    </td>
+                                    <td style={{ padding: '3px', width: '65%', border: '1px solid black' }}>
+                                        {end_date}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style={{ padding: '3px', width: '35%', border: '1px solid black' }}>
+                                        {t('place start')}
+                                    </td>
+                                    <td style={{ padding: '3px', width: '65%', border: '1px solid black' }}>
+                                        {tourState.place_start}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style={{ padding: '3px', width: '35%', border: '1px solid black' }}>
+                                        {t('the number of participants')}
+                                    </td>
+                                    <td style={{ padding: '3px', width: '65%', border: '1px solid black' }}>
+                                        {tourState.number_of_participants}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style={{ padding: '3px', width: '35%', border: '1px solid black' }}>
+                                        {t('the number of tour bookings')}
                                     </td>
                                     <td style={{ padding: '3px', width: '65%', border: '1px solid black' }}>20</td>
                                 </tr>
                             </table>
 
-                            <h2>#2 Lịch trình cụ thể</h2>
-
-                            <h2>#3 1 Số hình ảnh về tour</h2>
+                            <h3 style={{ marginTop: '40px' }}>#2 {t('specific schedule')}</h3>
                         </div>
 
                         <div className="col-lg-4 col-md-12 ">
@@ -215,7 +234,7 @@ function SingleTour() {
                             {/* button đặt ngay Tour */}
                             <div style={{ backgroundColor: '#CCCED1', borderRadius: '4px' }}>
                                 <div style={{ padding: '20px', textAlign: 'center' }}>
-                                    <h4 style={{ margin: '10px 0 15px 0' }}>Цена начинается от $200</h4>
+                                    <h4 style={{ margin: '10px 0 15px 0' }}>{t('price starts from')} $200</h4>
                                     <div
                                         style={{
                                             maxWidth: '60%',
@@ -230,7 +249,9 @@ function SingleTour() {
                                             style={{ maxWidth: '100%', height: 'auto' }}
                                         />
                                     </div>
-                                    <Button className="globalBtnActive">{t('book now')}</Button>
+                                    <Button className="globalBtnActive" to="/step1">
+                                        {t('book now')}
+                                    </Button>
                                 </div>
                             </div>
                             {/* một tour khác */}
@@ -256,7 +277,7 @@ function SingleTour() {
                                             onMouseEnter={handleMouseEnter}
                                             onMouseLeave={handleMouseLeave}
                                         >
-                                            learn more <FontAwesomeIcon icon={faArrowRight} />
+                                            {t('learn more')} <FontAwesomeIcon icon={faArrowRight} />
                                         </a>
                                     </div>
                                 </div>

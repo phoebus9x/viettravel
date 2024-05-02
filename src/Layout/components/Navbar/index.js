@@ -157,7 +157,7 @@ function Navbar() {
                     </a>
                   </li> */}
                             </ul>
-                            <Button to="">{t('book now')}</Button>
+                            <Button to="/destinations">{t('book now')}</Button>
                             {/* <form className="d-flex")} role="search">
                   <input
                     className="form-control me-2")}

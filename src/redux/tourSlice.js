@@ -4,20 +4,30 @@ const tourSlice = createSlice({
     name: 'tour',
     initialState: {
         tour: {
-            tag: '',
+            id: '',
             title: '',
+            trip: '',
             short: '',
-            img: '',
-            content: '',
+            img1: '',
+            img2: '',
+            img3: '',
+            duration: '',
+            price_adults: '',
+            price_children: '',
+            start_date: '',
+            end_date: '',
+            place_start: '',
+            number_of_participants: '',
+            detail: '',
         },
     },
     reducers: {
-        submit: (state, action) => {
+        submitTour: (state, action) => {
             state.tour = action.payload;
-            console.log("state.tour", action.payload);
+            console.log('state.tour', action.payload);
         },
     },
 });
 
 export const tourReducer = tourSlice.reducer;
-export const { submit } = tourSlice.actions;
+export const { submitTour } = tourSlice.actions;

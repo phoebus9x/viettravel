@@ -122,7 +122,7 @@ function Home() {
                                         <h1>THE WORLD</h1>
                                         <p>{t('unlock the wonders of the world')}</p>
                                         <div className="mt-4">
-                                            <Button>{t('discover now')}</Button>
+                                            <Button to="/destinations">{t('discover now')}</Button>
                                         </div>
                                     </div>
                                 </div>

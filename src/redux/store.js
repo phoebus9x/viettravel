@@ -8,6 +8,8 @@ export const store = configureStore({
     reducer: {
         client: clientReducer,
         blog: blogReducer,
+        tour: tourReducer,
+        booking: bookingReducer,
     },
     devTools: process.env.NODE_ENV !== 'production',
 });

@@ -1,6 +1,6 @@
 import { useForm } from 'react-hook-form';
 import { useDispatch, useSelector } from 'react-redux';
-import { submit } from './clientSlice';
+import { submitClient } from '~/redux/clientSlice';
 import { useNavigate } from 'react-router-dom';
 import Navbar from '~/Layout/components/Navbar';
 import axios from 'axios';
@@ -8,10 +8,16 @@ import './step.scss';
 import Button from '~/components/Button';
 import images from '~/assets/images';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+
 function Step2() {
+    const { t } = useTranslation('home');
+
     const dispatch = useDispatch();
     const navigate = useNavigate();
+    const booking = useSelector((state) => state.booking);
     const client = useSelector((state) => state.client);
+
     const {
         register,
         handleSubmit,
@@ -47,7 +53,7 @@ function Step2() {
         } catch (error) {
             console.error(error);
         }
-        dispatch(submit(data.client));
+        dispatch(submitClient(data.client));
         console.log(data.client);
         navigate('/');
     };
@@ -106,30 +112,30 @@ function Step2() {
             <div className="container" style={{ padding: '40px 0' }}>
                 <div className="row justify-content-center" style={{ margin: '20px 0' }}>
                     <div className="col-lg-6 col-md-12" style={{ padding: '0 80px' }}>
-                        <h3 className="text-center">PAYMENT INVOICE</h3>
+                        <h3 className="text-center">{t('PAYMENT INVOICE')}</h3>
                         <hr />
                         <table style={{ width: '100%', borderSpacing: '0 10px' }}>
                             <tr>
-                                <td style={{ textAlign: 'left', paddingBottom: '10px' }}>Order confirmation</td>
+                                <td style={{ textAlign: 'left', paddingBottom: '10px' }}>{t('order confirmation')}</td>
                                 <td style={{ textAlign: 'right', paddingBottom: '10px' }}>#123456</td>
                             </tr>
                             <tr>
-                                <td style={{ textAlign: 'left', paddingBottom: '10px' }}>Purchased item</td>
-                                <td style={{ textAlign: 'right', paddingBottom: '10px' }}>200.00$</td>
+                                <td style={{ textAlign: 'left', paddingBottom: '10px' }}>{t('purchased item')}</td>
+                                <td style={{ textAlign: 'right', paddingBottom: '10px' }}>{booking.total}$</td>
                             </tr>
                             <tr>
-                                <td style={{ textAlign: 'left', paddingBottom: '10px' }}>Surcharge</td>
+                                <td style={{ textAlign: 'left', paddingBottom: '10px' }}>{t('surcharge')}</td>
                                 <td style={{ textAlign: 'right', paddingBottom: '10px' }}>10.00$</td>
                             </tr>
                             <tr>
-                                <td style={{ textAlign: 'left', paddingBottom: '10px' }}>Discount</td>
+                                <td style={{ textAlign: 'left', paddingBottom: '10px' }}>{t('discount')}</td>
                                 <td style={{ textAlign: 'right', paddingBottom: '10px' }}>0.00$</td>
                             </tr>
                         </table>
                         <hr />
                         <table style={{ width: '100%' }}>
                             <tr>
-                                <td style={{ textAlign: 'left' }}>TOTAL</td>
+                                <td style={{ textAlign: 'left' }}>{t('TOTAL')}</td>
                                 <td style={{ textAlign: 'right' }}>210.00$</td>
                             </tr>
                         </table>
