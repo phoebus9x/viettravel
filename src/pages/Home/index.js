@@ -276,7 +276,7 @@ function Home() {
                                     <div className="overlay_text">
                                         <h3>{t('discount up 50%')}</h3>
                                         <div className="mt-lg-5 mt-4">
-                                            <Button>{t('book now')}</Button>
+                                            <Button to="/destinations">{t('book now')}</Button>
                                         </div>
                                     </div>
                                 </div>
@@ -289,7 +289,7 @@ function Home() {
                                     <div className="overlay_text">
                                         <h3>{t('discount up 50%')}</h3>
                                         <div className="mt-lg-5 mt-4">
-                                            <Button>{t('book now')}</Button>
+                                            <Button to="/destinations">{t('book now')}</Button>
                                         </div>
                                     </div>
                                 </div>
@@ -901,7 +901,7 @@ function Home() {
                         )}
                     </p>
                     <div className="mt-lg-4 mt-3">
-                        <Button to="/contact">{t('book now')}</Button>
+                        <Button to="/destinations">{t('book now')}</Button>
                     </div>
                 </div>
             </section>
