@@ -226,7 +226,10 @@ function SingleTour() {
                                 </tr>
                             </table>
 
-                            <h3 style={{ marginTop: '40px' }}>#2 {t('specific schedule')}</h3>
+                            <h3 style={{ marginTop: '40px', marginBottom: '30px' }}>#2 {t('specific schedule')}</h3>
+                            <div >
+                                <p dangerouslySetInnerHTML={{ __html: tourState.detail }}></p>
+                            </div>
                         </div>
 
                         <div className="col-lg-4 col-md-12 ">
