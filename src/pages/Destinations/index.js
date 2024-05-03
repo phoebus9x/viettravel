@@ -160,7 +160,7 @@ function Destinations() {
                                     <h6>Explore beauty of Sweden cc</h6>
                                     <p>Lorem ipsum dolor sit amet, sit consecte adipiscing elit, sed</p>
                                     <a href="#">
-                                        Learn More <FontAwesomeIcon icon={faArrowRight} />
+                                    {t('learn more')} <FontAwesomeIcon icon={faArrowRight} />
                                     </a>
                                 </div>
                             </div>
@@ -172,7 +172,7 @@ function Destinations() {
                                     <h6>Explore beauty of Indonesia</h6>
                                     <p>Lorem ipsum dolor sit amet, sit consecte adipiscing elit, sed</p>
                                     <a href="#">
-                                        Learn More <FontAwesomeIcon icon={faArrowRight} />
+                                    {t('learn more')} <FontAwesomeIcon icon={faArrowRight} />
                                     </a>
                                 </div>
                             </div>
@@ -184,7 +184,7 @@ function Destinations() {
                                     <h6>Explore beauty of Pakistan</h6>
                                     <p>Lorem ipsum dolor sit amet, sit consecte adipiscing elit, sed</p>
                                     <a href="#">
-                                        Learn More
+                                    {t('learn more')}
                                         <FontAwesomeIcon icon={faArrowRight} />
                                     </a>
                                 </div>
@@ -197,7 +197,7 @@ function Destinations() {
                                     <h6>Explore beauty of Dubai</h6>
                                     <p>Lorem ipsum dolor sit amet, sit consecte adipiscing elit, sed</p>
                                     <a href="#">
-                                        Learn More <FontAwesomeIcon icon={faArrowRight} />
+                                    {t('learn more')} <FontAwesomeIcon icon={faArrowRight} />
                                     </a>
                                 </div>
                             </div>
@@ -209,7 +209,7 @@ function Destinations() {
                                     <h6>Explore beauty of Paris</h6>
                                     <p>Lorem ipsum dolor sit amet, sit consecte adipiscing elit, sed</p>
                                     <a href="#">
-                                        Learn More <FontAwesomeIcon icon={faArrowRight} />
+                                    {t('learn more')} <FontAwesomeIcon icon={faArrowRight} />
                                     </a>
                                 </div>
                             </div>
