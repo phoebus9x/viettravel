@@ -4,6 +4,7 @@ const clientSlice = createSlice({
     name: 'client',
     initialState: {
         client: {
+            _id: '',
             name: '',
             dob: '',
             email: '',

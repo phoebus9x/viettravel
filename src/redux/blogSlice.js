@@ -4,6 +4,7 @@ const blogSlice = createSlice({
     name: 'blog',
     initialState: {
         blog: {
+            _id: '',
             tag: '',
             title: '',
             short: '',

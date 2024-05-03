@@ -594,13 +594,13 @@ function Home() {
                                 <div className="overlaythree">
                                     <div className="overlay_text">
                                         <div className="d-flex justify-content-center gap-2">
-                                            <a href="#">
+                                            <a href="https://www.facebook.com/doanhtu0512" target='_blank'>
                                                 <FontAwesomeIcon icon={faFacebookF} />
                                             </a>
-                                            <a href="#">
+                                            <a href="https://www.facebook.com/doanhtu0512" target='_blank'>
                                                 <FontAwesomeIcon icon={faTwitter} />
                                             </a>
-                                            <a href="#">
+                                            <a href="https://www.facebook.com/doanhtu0512" target='_blank'>
                                                 <FontAwesomeIcon icon={faPinterestP} />
                                             </a>
                                         </div>
@@ -618,13 +618,13 @@ function Home() {
                                 <div className="overlaythree">
                                     <div className="overlay_text">
                                         <div className="d-flex justify-content-center gap-2">
-                                            <a href="#">
+                                            <a href="https://www.facebook.com/doanhtu0512" target='_blank'>
                                                 <FontAwesomeIcon icon={faFacebookF} />
                                             </a>
-                                            <a href="#">
+                                            <a href="https://www.facebook.com/doanhtu0512" target='_blank'>
                                                 <FontAwesomeIcon icon={faTwitter} />
                                             </a>
-                                            <a href="#">
+                                            <a href="https://www.facebook.com/doanhtu0512" target='_blank'>
                                                 <FontAwesomeIcon icon={faPinterestP} />
                                             </a>
                                         </div>
@@ -642,13 +642,13 @@ function Home() {
                                 <div className="overlaythree">
                                     <div className="overlay_text">
                                         <div className="d-flex justify-content-center gap-2">
-                                            <a href="#">
+                                            <a href="https://www.facebook.com/anh24122003" target='_blank'>
                                                 <FontAwesomeIcon icon={faFacebookF} />
                                             </a>
-                                            <a href="#">
+                                            <a href="https://www.facebook.com/anh24122003" target='_blank'>
                                                 <FontAwesomeIcon icon={faTwitter} />
                                             </a>
-                                            <a href="#">
+                                            <a href="https://www.facebook.com/anh24122003" target='_blank'>
                                                 <FontAwesomeIcon icon={faPinterestP} />
                                             </a>
                                         </div>

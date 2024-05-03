@@ -9,7 +9,8 @@ import '~/components/css/Reponsive.scss';
 import images from '~/assets/images';
 import Navbar from '~/Layout/components/Navbar';
 import Button from '~/components/Button';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { submitTour } from '~/redux/tourSlice';
 
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
@@ -22,6 +23,7 @@ import axios from 'axios';
 function SingleTour() {
     const { t } = useTranslation('home');
     // {t("key")}
+    const dispatch = useDispatch();
 
     useEffect(() => {
         AOS.init();
@@ -37,9 +39,26 @@ function SingleTour() {
         axios
             .get(`http://localhost:1110/v1/api/tours`)
             .then((response) => {
-                setDataTour(response.data.data[0]);
+                const data = {};
+                data._id = response.data.data[0]._id;
+                data.title = response.data.data[0].title;
+                data.trip = response.data.data[0].trip;
+                data.short = response.data.data[0].short;
+                data.img1 = response.data.data[0].img1;
+                data.img2 = response.data.data[0].img2;
+                data.img3 = response.data.data[0].img3;
+                data.duration = response.data.data[0].duration;
+                data.price_adults = response.data.data[0].price_adults;
+                data.price_children = response.data.data[0].price_children;
+                data.start_date = response.data.data[0].start_date;
+                data.end_date = response.data.data[0].end_date;
+                data.place_start = response.data.data[0].place_start;
+                data.number_of_participants = response.data.data[0].number_of_participants;
+                data.detail = response.data.data[0].detail;
+                setDataTour(data);
+
                 // Xử lý dữ liệu được lấy về ở đây
-                console.log('dataTour: ', response.data.data[0]);
+                console.log('dataTour: ', data);
             })
             .catch((error) => {
                 console.error('Error fetching tour:', error);
@@ -57,13 +76,21 @@ function SingleTour() {
         setIsHovered(false);
     };
 
+    const handleClickLearnMore = async (dataTour) => {
+        dispatch(submitTour(dataTour));
+        console.log("đã dispatch lại data", dataTour);
+        // fetchData();
+    }
+
     const linkStyle = {
         color: isHovered ? '#fb8e26' : 'black',
+        marginTop: '20px',
         // textDecoration: 'underline',
         // Các thuộc tính khác cho trạng thái không hover
     };
 
     const tourState = useSelector((state) => state.tour.tour);
+    console.log('tourState', tourState);
     const start_date_string = tourState.start_date.toString();
     const start_date = format(new Date(start_date_string), 'dd/MM/yyyy');
     const end_date_string = tourState.end_date.toString();
@@ -279,6 +306,7 @@ function SingleTour() {
                                             style={linkStyle}
                                             onMouseEnter={handleMouseEnter}
                                             onMouseLeave={handleMouseLeave}
+                                            onClick={() => handleClickLearnMore(dataTour)}
                                         >
                                             {t('learn more')} <FontAwesomeIcon icon={faArrowRight} />
                                         </a>

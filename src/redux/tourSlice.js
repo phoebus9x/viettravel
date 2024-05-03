@@ -4,7 +4,7 @@ const tourSlice = createSlice({
     name: 'tour',
     initialState: {
         tour: {
-            id: '',
+            _id: '',
             title: '',
             trip: '',
             short: '',
