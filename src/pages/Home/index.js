@@ -142,7 +142,7 @@ function Home() {
                                     <img src={feature1} alt="featureIcon" />
                                 </figure>
                                 <h6>{t('map location')}</h6>
-                                <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                                <p>{t('Discover the stunning location of your destination')}</p>
                             </div>
                         </div>
                         <div className="col-md-3" data-aos="fade-up" data-aos-delay="500">
@@ -151,7 +151,9 @@ function Home() {
                                     <img src={feature2} alt="featureIcon" />
                                 </figure>
                                 <h6>{t('traveling bag')}</h6>
-                                <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                                <p>
+                                    {t('Prepare for your journey to explore the world with convenience and confidence')}
+                                </p>
                             </div>
                         </div>
                         <div className="col-md-3" data-aos="fade-up" data-aos-delay="900">
@@ -160,7 +162,7 @@ function Home() {
                                     <img src={feature3} alt="featureIcon" />
                                 </figure>
                                 <h6>{t('photography')}</h6>
-                                <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                                <p>{t('Helps you store memorable moments with wonderful experiences')}</p>
                             </div>
                         </div>
                         <div className="col-md-3" data-aos="fade-up" data-aos-delay="1300">
@@ -169,7 +171,7 @@ function Home() {
                                     <img src={feature4} alt="featureIcon" />
                                 </figure>
                                 <h6>{t('affordable prices')}</h6>
-                                <p>Lorem Ipsum is simply dummy text of the printing.</p>
+                                <p>{t('Discover our wide range of affordable prices')}</p>
                             </div>
                         </div>
                     </div>
@@ -594,13 +596,13 @@ function Home() {
                                 <div className="overlaythree">
                                     <div className="overlay_text">
                                         <div className="d-flex justify-content-center gap-2">
-                                            <a href="https://www.facebook.com/doanhtu0512" target='_blank'>
+                                            <a href="https://www.facebook.com/doanhtu0512" target="_blank">
                                                 <FontAwesomeIcon icon={faFacebookF} />
                                             </a>
-                                            <a href="https://www.facebook.com/doanhtu0512" target='_blank'>
+                                            <a href="https://www.facebook.com/doanhtu0512" target="_blank">
                                                 <FontAwesomeIcon icon={faTwitter} />
                                             </a>
-                                            <a href="https://www.facebook.com/doanhtu0512" target='_blank'>
+                                            <a href="https://www.facebook.com/doanhtu0512" target="_blank">
                                                 <FontAwesomeIcon icon={faPinterestP} />
                                             </a>
                                         </div>
@@ -618,13 +620,13 @@ function Home() {
                                 <div className="overlaythree">
                                     <div className="overlay_text">
                                         <div className="d-flex justify-content-center gap-2">
-                                            <a href="https://www.facebook.com/doanhtu0512" target='_blank'>
+                                            <a href="https://www.facebook.com/doanhtu0512" target="_blank">
                                                 <FontAwesomeIcon icon={faFacebookF} />
                                             </a>
-                                            <a href="https://www.facebook.com/doanhtu0512" target='_blank'>
+                                            <a href="https://www.facebook.com/doanhtu0512" target="_blank">
                                                 <FontAwesomeIcon icon={faTwitter} />
                                             </a>
-                                            <a href="https://www.facebook.com/doanhtu0512" target='_blank'>
+                                            <a href="https://www.facebook.com/doanhtu0512" target="_blank">
                                                 <FontAwesomeIcon icon={faPinterestP} />
                                             </a>
                                         </div>
@@ -642,13 +644,13 @@ function Home() {
                                 <div className="overlaythree">
                                     <div className="overlay_text">
                                         <div className="d-flex justify-content-center gap-2">
-                                            <a href="https://www.facebook.com/anh24122003" target='_blank'>
+                                            <a href="https://www.facebook.com/anh24122003" target="_blank">
                                                 <FontAwesomeIcon icon={faFacebookF} />
                                             </a>
-                                            <a href="https://www.facebook.com/anh24122003" target='_blank'>
+                                            <a href="https://www.facebook.com/anh24122003" target="_blank">
                                                 <FontAwesomeIcon icon={faTwitter} />
                                             </a>
-                                            <a href="https://www.facebook.com/anh24122003" target='_blank'>
+                                            <a href="https://www.facebook.com/anh24122003" target="_blank">
                                                 <FontAwesomeIcon icon={faPinterestP} />
                                             </a>
                                         </div>

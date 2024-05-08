@@ -28,26 +28,33 @@ function Step3({ order }) {
         //         </div>
         //     </div>
         // </div>
-        <div style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-        }}
-            className="d-flex justify-content-center align-items-center">
+        <div
+            style={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+            }}
+            className="d-flex justify-content-center align-items-center"
+        >
             <table align="center" border="0" cellPadding="0" cellSpacing="0" width="100%" style={{ maxWidth: '600px' }}>
                 <tr>
-                    <td align="center" valign="top" style={{ display: 'flex', fontSize: 0, padding: '35px' }} bgcolor="#ff7361">
+                    <td
+                        align="center"
+                        valign="top"
+                        style={{ display: 'flex', fontSize: 0, padding: '35px' }}
+                        bgcolor="#ff7361"
+                    >
                         <div
                             style={{
                                 display: 'inline-block',
-                                maxWidth: '50%',
-                                minWidth: '100px',
+                                // maxWidth: '100%',
+                                // minWidth: '100%',
                                 verticalAlign: 'top',
                                 width: '100%',
                             }}
                         >
                             <table
-                                align="left"
+                                align="center"
                                 border="0"
                                 cellPadding="0"
                                 cellSpacing="0"
@@ -69,6 +76,7 @@ function Step3({ order }) {
                                         >
                                             <h1
                                                 style={{
+                                                    textAlign: 'center',
                                                     fontSize: '36px',
                                                     fontWeight: 800,
                                                     margin: 0,
@@ -82,7 +90,7 @@ function Step3({ order }) {
                                 </tbody>
                             </table>
                         </div>
-                        <div
+                        {/* <div
                             style={{
                                 display: 'inline-block',
                                 maxWidth: '50%',
@@ -146,7 +154,7 @@ function Step3({ order }) {
                                     </tr>
                                 </tbody>
                             </table>
-                        </div>
+                        </div> */}
                     </td>
                 </tr>
 
