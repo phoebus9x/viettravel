@@ -1,6 +1,9 @@
 import "./Page404.scss";
 import Button from "~/components/Button";
+import { useTranslation } from 'react-i18next';
+
 function Page404() {
+  const { t } = useTranslation('home');
   return (
     <div className="site-wrapper">
       <section className="page404 pg">
@@ -10,9 +13,7 @@ function Page404() {
               <h3>404</h3>
               <h4>Page Not Found</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna
-                molestie at elementum eu facilisis.
+                  {t('Were sorry, the page you are looking for does not exist. Please check the link or return to the homepage to explore more exciting content. Were here to assist you')}
               </p>
               <div className="mt-4 d-flex justify-content-start">
                 <Button className={"globalBtnActive"}>Back To Home</Button>

@@ -210,8 +210,7 @@ function About() {
                                     </figure>
                                     <h6>{t('tour and travel')}</h6>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor
-                                        incididunt
+                                    {t('Unparalleled service quality, committed to providing an exceptional experience for our customers')}
                                     </p>
                                 </div>
                             </div>
@@ -222,8 +221,7 @@ function About() {
                                     </figure>
                                     <h6>{t('campus')}</h6>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor
-                                        incididunt
+                                        {t('Unparalleled service quality, committed to providing an exceptional experience for our customers')}
                                     </p>
                                 </div>
                             </div>
@@ -234,8 +232,7 @@ function About() {
                                     </figure>
                                     <h6>{t('adventure tour')}</h6>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor
-                                        incididunt
+                                        {t('Unparalleled service quality, committed to providing an exceptional experience for our customers')}
                                     </p>
                                 </div>
                             </div>
@@ -250,8 +247,7 @@ function About() {
                                     </figure>
                                     <h6>{t('photography')}</h6>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor
-                                        incididunt
+                                        {t('Unparalleled service quality, committed to providing an exceptional experience for our customers')}
                                     </p>
                                 </div>
                             </div>

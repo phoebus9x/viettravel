@@ -97,25 +97,6 @@ function Blog() {
                     </div>
                     <div className="blogCards mt-lg-5 mt-md-4">
                         <div className="row gap-4 justify-content-center card-text">
-                            {/* <div className="col-md-4 col-sm-9 col-11" data-aos="fade-up" data-aos-delay="100">
-                                <div>
-                                    <figure>
-                                        <img src={images.blog1} alt="tour-img" />
-                                    </figure>
-                                    <a href="#">
-                                        <p className="blogCategory">Traveller</p>
-                                    </a>
-                                    <a href="#">
-                                        <h6>Lorem ipsum dolor sit amet consectetur adipisicing.</h6>
-                                    </a>
-                                    <p>
-                                        Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Dolore Magna Aliqua….
-                                    </p>
-                                    <a href="#">
-                                        Read More <FontAwesomeIcon icon={faArrowRight} />
-                                    </a>
-                                </div>
-                            </div> */}
                             {dataBlog.map((result, index) => (
                                 <BlogComponent key={index} data={result} />
                             ))}

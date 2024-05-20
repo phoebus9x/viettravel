@@ -137,8 +137,7 @@ function Destinations() {
                         <div className="d-flex flex-md-row flex-column gap-3 justify-content-between align-items-center mt-3">
                             <div className="tourPara">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.
+                                    {t('Experience the worlds wonders and live your life to the fullest through immersive travel adventures')}
                                 </p>
                             </div>
                             <Button className="globalBtnActive" to="/destinations">
@@ -152,67 +151,6 @@ function Destinations() {
                             {dataTour.map((result, index) => (
                                 <TourComponent key={index} data={result} />
                             ))}
-                            <div className="col-md-4 col-sm-5 col-11" data-aos="fade-up" data-aos-delay="500">
-                                <div>
-                                    <figure>
-                                        <img src={images.tour2} alt="tour-img" />
-                                    </figure>
-                                    <h6>Explore beauty of Sweden cc</h6>
-                                    <p>Lorem ipsum dolor sit amet, sit consecte adipiscing elit, sed</p>
-                                    <a href="#">
-                                    {t('learn more')} <FontAwesomeIcon icon={faArrowRight} />
-                                    </a>
-                                </div>
-                            </div>
-                            <div className="col-md-4 col-sm-5 col-11" data-aos="fade-up" data-aos-delay="900">
-                                <div>
-                                    <figure>
-                                        <img src={images.tour3} alt="tour-img" />
-                                    </figure>
-                                    <h6>Explore beauty of Indonesia</h6>
-                                    <p>Lorem ipsum dolor sit amet, sit consecte adipiscing elit, sed</p>
-                                    <a href="#">
-                                    {t('learn more')} <FontAwesomeIcon icon={faArrowRight} />
-                                    </a>
-                                </div>
-                            </div>
-                            <div className="col-md-4 col-sm-5 col-11" data-aos="fade-up" data-aos-delay="100">
-                                <div>
-                                    <figure>
-                                        <img src={images.tour4} alt="tour-img" />
-                                    </figure>
-                                    <h6>Explore beauty of Pakistan</h6>
-                                    <p>Lorem ipsum dolor sit amet, sit consecte adipiscing elit, sed</p>
-                                    <a href="#">
-                                    {t('learn more')}
-                                        <FontAwesomeIcon icon={faArrowRight} />
-                                    </a>
-                                </div>
-                            </div>
-                            <div className="col-md-4 col-sm-5 col-11" data-aos="fade-up" data-aos-delay="500">
-                                <div>
-                                    <figure>
-                                        <img src={images.tour5} alt="tour-img" />
-                                    </figure>
-                                    <h6>Explore beauty of Dubai</h6>
-                                    <p>Lorem ipsum dolor sit amet, sit consecte adipiscing elit, sed</p>
-                                    <a href="#">
-                                    {t('learn more')} <FontAwesomeIcon icon={faArrowRight} />
-                                    </a>
-                                </div>
-                            </div>
-                            <div className="col-md-4 col-sm-5 col-11" data-aos="fade-up" data-aos-delay="900">
-                                <div>
-                                    <figure>
-                                        <img src={images.tour6} alt="tour-img" />
-                                    </figure>
-                                    <h6>Explore beauty of Paris</h6>
-                                    <p>Lorem ipsum dolor sit amet, sit consecte adipiscing elit, sed</p>
-                                    <a href="#">
-                                    {t('learn more')} <FontAwesomeIcon icon={faArrowRight} />
-                                    </a>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>

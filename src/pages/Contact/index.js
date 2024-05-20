@@ -70,8 +70,7 @@ function Contact() {
                         <h4>{t('contact us')}</h4>
                         <h2>{t('get in touch')}</h2>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            tempor ipsum dolor sit amet. labore
+                        {t('Reach out to our team of experts to receive dedicated guidance and support, helping you craft the ideal travel plan')}
                         </p>
                     </div>
                     <div className="row">

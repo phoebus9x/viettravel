@@ -83,10 +83,7 @@ function FAQ() {
                                 >
                                     <div className="accordion-body">
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua. In vitae turpis massa
-                                            sed elementum tempus egestas sed. Diam in arcu cursus euismod. Dolor sed
-                                            viverra ipsum nunc aliquet bibendum enim facilisis gravida
+                                        The number of people on your trip will vary depending on factors such as the destination, type of tour, and availability. We strive to provide you with the best experience possible while considering your preferences. Once you have chosen a specific tour or package, we can provide you with more information about the expected group size.
                                         </p>
                                     </div>
                                 </div>
@@ -112,10 +109,7 @@ function FAQ() {
                                 >
                                     <div className="accordion-body">
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua. In vitae turpis massa
-                                            sed elementum tempus egestas sed. Diam in arcu cursus euismod. Dolor sed
-                                            viverra ipsum nunc aliquet bibendum enim facilisis gravida
+                                        Absolutely! We offer special discounts for family bookings. We believe in the joy of traveling together as a family and want to make it more affordable for you. Please reach out to our team to discuss the details and available discounts for your family booking.
                                         </p>
                                     </div>
                                 </div>
@@ -141,10 +135,7 @@ function FAQ() {
                                 >
                                     <div className="accordion-body">
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua. In vitae turpis massa
-                                            sed elementum tempus egestas sed. Diam in arcu cursus euismod. Dolor sed
-                                            viverra ipsum nunc aliquet bibendum enim facilisis gravida
+                                        Our most booked destinations in Vietnam vary depending on the preferences and interests of our customers. However, some of the popular destinations that are frequently booked by travelers include Hanoi, Ho Chi Minh City, Ha Long Bay, Hoi An, Da Nang, Nha Trang, and Mekong Delta. These destinations offer a diverse range of experiences, from cultural immersion to natural beauty and historical landmarks. We have a wide selection of itineraries and packages available for these destinations, tailored to suit different travel styles and durations. Feel free to explore our website further to find more information on these destinations and the experiences they offer.
                                         </p>
                                     </div>
                                 </div>
@@ -170,10 +161,7 @@ function FAQ() {
                                 >
                                     <div className="accordion-body">
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                            tempor incididunt ut labore et dolore magna aliqua. In vitae turpis massa
-                                            sed elementum tempus egestas sed. Diam in arcu cursus euismod. Dolor sed
-                                            viverra ipsum nunc aliquet bibendum enim facilisis gravida
+                                        Our refund policy is designed to provide our customers with clarity and fairness in case they need to cancel or modify their bookings. However, specific refund policies can vary depending on the type of service booked, such as flights, hotels, or tour packages. We recommend reviewing the terms and conditions provided during the booking process or contacting our customer support directly for detailed information on our refund policy.
                                         </p>
                                     </div>
                                 </div>

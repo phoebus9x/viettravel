@@ -12,6 +12,8 @@ import Navbar from '~/Layout/components/Navbar';
 import Button from '~/components/Button';
 import { useTranslation } from 'react-i18next';
 // import "~/components/GlobalStyles/GlobalStyles.scss";
+import TourComponent from '~/components/TourComponent';
+import BlogComponent from '~/components/BlogComponent';
 
 import feature1 from '~/assets/images/icon/feature-1.svg';
 import feature2 from '~/assets/images/icon/feature-2.svg';
@@ -105,6 +107,40 @@ function Home() {
             });
         alert('bạn đã đăng ký thành công!');
     };
+
+    const [dataTour, setDataTour] = useState([]);
+    const [dataBlog, setDataBlog] = useState([]);
+
+    useEffect(() => {
+        fetchData();
+    }, []);
+
+    const fetchData = async () => {
+        axios
+            .get(`http://localhost:1110/v1/api/tours`)
+            .then((response) => {
+                setDataTour(response.data.data);
+                // Xử lý dữ liệu được lấy về ở đây
+                console.log('TourData: ', response.data.data);
+            })
+            .catch((error) => {
+                console.error('Error fetching Tour:', error);
+                // Xử lý lỗi ở đây
+            });
+        axios
+            .get(`http://localhost:1110/v1/api/blogs`)
+            .then((response) => {
+                setDataBlog(response.data.data);
+                // Xử lý dữ liệu được lấy về ở đây
+                console.log('blogData: ', response.data.data);
+            })
+            .catch((error) => {
+                console.error('Error fetching blog:', error);
+                // Xử lý lỗi ở đây
+            });
+    };
+
+
 
     return (
         <div className={'site-wrapper'}>
@@ -201,9 +237,9 @@ function Home() {
                                         <option value="destination" selected disabled>
                                             {t('destination')}
                                         </option>
-                                        <option value="turkey">Turkey</option>
-                                        <option value="sweden">Sweden</option>
-                                        <option value="indonesia">Indonesia</option>
+                                        <option value="turkey">Ha Noi City</option>
+                                        <option value="sweden">Ho Chi Minh City</option>
+                                        <option value="indonesia">Da Nang City</option>
                                     </select>
                                 </div>
                                 <div>
@@ -317,8 +353,7 @@ function Home() {
                         <div className="d-flex flex-md-row flex-column gap-3 justify-content-between align-items-center mt-3">
                             <div className="tourPara">
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.
+                                    {t('Experience the worlds wonders and live your life to the fullest through immersive travel adventures')}
                                 </p>
                             </div>
                             <Button className="globalBtnActive" to="/destinations">
@@ -327,84 +362,11 @@ function Home() {
                         </div>
                     </div>
                     <div className="tourCards card-text mt-5">
-                        <div className="row gap-4">
-                            <div className="col-md-4 col-sm-5 col-11" data-aos="fade-up" data-aos-delay="100">
-                                <div>
-                                    <figure>
-                                        <img src={images.tour1} alt="tour-img" />
-                                    </figure>
-                                    <h6>Explore beauty of Turkey</h6>
-                                    <p>Lorem ipsum dolor sit amet, sit consecte adipiscing elit, sed</p>
-                                    <a href="#">
-                                        {t('learn more')} <FontAwesomeIcon icon={faArrowRight} />
-                                    </a>
-                                </div>
-                            </div>
-                            <div className="col-md-4 col-sm-5 col-11" data-aos="fade-up" data-aos-delay="500">
-                                <div>
-                                    <figure>
-                                        <img src={images.tour2} alt="tour-img" />
-                                    </figure>
-                                    <h6>Explore beauty of Sweden</h6>
-                                    <p>Lorem ipsum dolor sit amet, sit consecte adipiscing elit, sed</p>
-                                    <a href="#">
-                                        {t('learn more')}
-                                        <FontAwesomeIcon icon={faArrowRight} />
-                                    </a>
-                                </div>
-                            </div>
-                            <div className="col-md-4 col-sm-5 col-11" data-aos="fade-up" data-aos-delay="900">
-                                <div>
-                                    <figure>
-                                        <img src={images.tour3} alt="tour-img" />
-                                    </figure>
-                                    <h6>Explore beauty of Indonesia</h6>
-                                    <p>Lorem ipsum dolor sit amet, sit consecte adipiscing elit, sed</p>
-                                    <a href="#">
-                                        {t('learn more')}
-                                        <FontAwesomeIcon icon={faArrowRight} />
-                                    </a>
-                                </div>
-                            </div>
-                            <div className="col-md-4 col-sm-5 col-11" data-aos="fade-up" data-aos-delay="100">
-                                <div>
-                                    <figure>
-                                        <img src={images.tour4} alt="tour-img" />
-                                    </figure>
-                                    <h6>Explore beauty of Pakistan</h6>
-                                    <p>Lorem ipsum dolor sit amet, sit consecte adipiscing elit, sed</p>
-                                    <a href="#">
-                                        {t('learn more')}
-                                        <FontAwesomeIcon icon={faArrowRight} />
-                                    </a>
-                                </div>
-                            </div>
-                            <div className="col-md-4 col-sm-5 col-11" data-aos="fade-up" data-aos-delay="500">
-                                <div>
-                                    <figure>
-                                        <img src={images.tour5} alt="tour-img" />
-                                    </figure>
-                                    <h6>Explore beauty of Dubai</h6>
-                                    <p>Lorem ipsum dolor sit amet, sit consecte adipiscing elit, sed</p>
-                                    <a href="#">
-                                        {t('learn more')}
-                                        <FontAwesomeIcon icon={faArrowRight} />
-                                    </a>
-                                </div>
-                            </div>
-                            <div className="col-md-4 col-sm-5 col-11" data-aos="fade-up" data-aos-delay="900">
-                                <div>
-                                    <figure>
-                                        <img src={images.tour6} alt="tour-img" />
-                                    </figure>
-                                    <h6>Explore beauty of Paris</h6>
-                                    <p>Lorem ipsum dolor sit amet, sit consecte adipiscing elit, sed</p>
-                                    <a href="#">
-                                        {t('learn more')}
-                                        <FontAwesomeIcon icon={faArrowRight} />
-                                    </a>
-                                </div>
-                            </div>
+                    <div className="row gap-4">
+                            {/* // loading data tour */}
+                            {dataTour.map((result, index) => (
+                                <TourComponent key={index} data={result} />
+                            ))}
                         </div>
                     </div>
                 </div>
@@ -432,8 +394,7 @@ function Home() {
                                     </figure>
                                     <h6>{t('tour and travel')}</h6>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor
-                                        incididunt
+                                        {t('Unparalleled service quality, committed to providing an exceptional experience for our customers')}
                                     </p>
                                 </div>
                             </div>
@@ -444,8 +405,7 @@ function Home() {
                                     </figure>
                                     <h6>{t('campus')}</h6>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor
-                                        incididunt
+                                        {t('Unparalleled service quality, committed to providing an exceptional experience for our customers')}
                                     </p>
                                 </div>
                             </div>
@@ -456,8 +416,7 @@ function Home() {
                                     </figure>
                                     <h6>{t('adventure tour')}</h6>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor
-                                        incididunt
+                                        {t('Unparalleled service quality, committed to providing an exceptional experience for our customers')}
                                     </p>
                                 </div>
                             </div>
@@ -472,8 +431,7 @@ function Home() {
                                     </figure>
                                     <h6>{t('photography')}</h6>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor
-                                        incididunt
+                                        {t('Unparalleled service quality, committed to providing an exceptional experience for our customers')}
                                     </p>
                                 </div>
                             </div>
@@ -492,8 +450,7 @@ function Home() {
                                 <h4>{t('our services')}</h4>
                                 <h2>{t('join the adventure with stories')}</h2>
                                 <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                    {t('Join the adventure with captivating stories, exploring and sharing memorable experiences from the worlds most wonderful travel destinationsJoin the adventure with captivating stories, exploring and sharing memorable experiences from the worlds most wonderful travel destinations')}
                                 </p>
                                 <div className="row align-items-center gap-lg-3 gap-md-4 text-lg-start text-center">
                                     <div className="col-md-3">
@@ -918,64 +875,9 @@ function Home() {
                     </div>
                     <div className="blogCards mt-lg-5 mt-md-4">
                         <div className="row gap-4 justify-content-center card-text">
-                            <div className="col-md-4 col-sm-9 col-11" data-aos="fade-up" data-aos-delay="100">
-                                <div>
-                                    <figure>
-                                        <img src={images.blog1} alt="tour-img" />
-                                    </figure>
-                                    <a href="#">
-                                        <p className="blogCategory">Traveller</p>
-                                    </a>
-                                    <a href="#">
-                                        <h6>Lorem ipsum dolor sit amet consectetur adipisicing.</h6>
-                                    </a>
-                                    <p>
-                                        Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Dolore Magna Aliqua….
-                                    </p>
-                                    <a href="#">
-                                        Read More <FontAwesomeIcon icon={faArrowRight} />
-                                    </a>
-                                </div>
-                            </div>
-                            <div className="col-md-4 col-sm-9 col-11" data-aos="fade-up" data-aos-delay="500">
-                                <div>
-                                    <figure>
-                                        <img src={images.blog2} alt="tour-img" />
-                                    </figure>
-                                    <a href="#">
-                                        <p className="blogCategory">Vacation</p>
-                                    </a>
-                                    <a href="#">
-                                        <h6>Lorem ipsum dolor sit amet consectetur adipisicing.</h6>
-                                    </a>
-                                    <p>
-                                        Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Dolore Magna Aliqua….
-                                    </p>
-                                    <a href="#">
-                                        Read More
-                                        <FontAwesomeIcon icon={faArrowRight} />
-                                    </a>
-                                </div>
-                            </div>
-                            <div className="col-md-4 col-sm-9 col-11" data-aos="fade-up" data-aos-delay="900">
-                                <div>
-                                    <figure>
-                                        <img src={images.blog3} alt="tour-img" />
-                                    </figure>
-                                    <a href="#">
-                                        <p className="blogCategory">Boating</p>
-                                    </a>
-                                    <a href="#">
-                                        <h6>Lorem ipsum dolor sit amet consectetur adipisicing.</h6>
-                                    </a>
-                                    <p>
-                                        Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Dolore Magna Aliqua….
-                                    </p>
-                                    <a href="#">
-                                        Read More <FontAwesomeIcon icon={faArrowRight} />
-                                    </a>
-                                </div>
-                            </div>
+                        {dataBlog.map((result, index) => (
+                                <BlogComponent key={index} data={result} />
+                            ))}
                         </div>
                     </div>
                 </div>

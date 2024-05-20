@@ -72,8 +72,7 @@ function Services() {
                                 <h4>{t('our services')}</h4>
                                 <h2>{t('join the adventure with stories')}</h2>
                                 <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-                                    Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                {t('Join the adventure with captivating stories, exploring and sharing memorable experiences from the worlds most wonderful travel destinationsJoin the adventure with captivating stories, exploring and sharing memorable experiences from the worlds most wonderful travel destinations')}s
                                 </p>
                                 <div className="row align-items-center gap-lg-3 gap-md-4 text-lg-start text-center">
                                     <div className="col-md-3">
@@ -144,8 +143,7 @@ function Services() {
                                     </figure>
                                     <h6>{t('tour and travel')}</h6>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor
-                                        incididunt
+                                        {t('Unparalleled service quality, committed to providing an exceptional experience for our customers')}
                                     </p>
                                 </div>
                             </div>
@@ -156,8 +154,7 @@ function Services() {
                                     </figure>
                                     <h6>{t('campus')}</h6>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor
-                                        incididunt
+                                        {t('Unparalleled service quality, committed to providing an exceptional experience for our customers')}
                                     </p>
                                 </div>
                             </div>
@@ -168,8 +165,7 @@ function Services() {
                                     </figure>
                                     <h6>{t('adventure tour')}</h6>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor
-                                        incididunt
+                                        {t('Unparalleled service quality, committed to providing an exceptional experience for our customers')}
                                     </p>
                                 </div>
                             </div>
@@ -184,8 +180,7 @@ function Services() {
                                     </figure>
                                     <h6>{t('photography')}</h6>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor
-                                        incididunt
+                                        {t('Unparalleled service quality, committed to providing an exceptional experience for our customers')}
                                     </p>
                                 </div>
                             </div>
