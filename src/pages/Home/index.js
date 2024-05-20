@@ -140,8 +140,6 @@ function Home() {
             });
     };
 
-
-
     return (
         <div className={'site-wrapper'}>
             <div className={'header-slider'}>{showSlide()}</div>
@@ -353,7 +351,9 @@ function Home() {
                         <div className="d-flex flex-md-row flex-column gap-3 justify-content-between align-items-center mt-3">
                             <div className="tourPara">
                                 <p>
-                                    {t('Experience the worlds wonders and live your life to the fullest through immersive travel adventures')}
+                                    {t(
+                                        'Experience the worlds wonders and live your life to the fullest through immersive travel adventures',
+                                    )}
                                 </p>
                             </div>
                             <Button className="globalBtnActive" to="/destinations">
@@ -362,7 +362,7 @@ function Home() {
                         </div>
                     </div>
                     <div className="tourCards card-text mt-5">
-                    <div className="row gap-4">
+                        <div className="row gap-4">
                             {/* // loading data tour */}
                             {dataTour.map((result, index) => (
                                 <TourComponent key={index} data={result} />
@@ -394,7 +394,9 @@ function Home() {
                                     </figure>
                                     <h6>{t('tour and travel')}</h6>
                                     <p>
-                                        {t('Unparalleled service quality, committed to providing an exceptional experience for our customers')}
+                                        {t(
+                                            'Unparalleled service quality, committed to providing an exceptional experience for our customers',
+                                        )}
                                     </p>
                                 </div>
                             </div>
@@ -405,7 +407,9 @@ function Home() {
                                     </figure>
                                     <h6>{t('campus')}</h6>
                                     <p>
-                                        {t('Unparalleled service quality, committed to providing an exceptional experience for our customers')}
+                                        {t(
+                                            'Unparalleled service quality, committed to providing an exceptional experience for our customers',
+                                        )}
                                     </p>
                                 </div>
                             </div>
@@ -416,7 +420,9 @@ function Home() {
                                     </figure>
                                     <h6>{t('adventure tour')}</h6>
                                     <p>
-                                        {t('Unparalleled service quality, committed to providing an exceptional experience for our customers')}
+                                        {t(
+                                            'Unparalleled service quality, committed to providing an exceptional experience for our customers',
+                                        )}
                                     </p>
                                 </div>
                             </div>
@@ -431,7 +437,9 @@ function Home() {
                                     </figure>
                                     <h6>{t('photography')}</h6>
                                     <p>
-                                        {t('Unparalleled service quality, committed to providing an exceptional experience for our customers')}
+                                        {t(
+                                            'Unparalleled service quality, committed to providing an exceptional experience for our customers',
+                                        )}
                                     </p>
                                 </div>
                             </div>
@@ -450,7 +458,9 @@ function Home() {
                                 <h4>{t('our services')}</h4>
                                 <h2>{t('join the adventure with stories')}</h2>
                                 <p>
-                                    {t('Join the adventure with captivating stories, exploring and sharing memorable experiences from the worlds most wonderful travel destinationsJoin the adventure with captivating stories, exploring and sharing memorable experiences from the worlds most wonderful travel destinations')}
+                                    {t(
+                                        'Join the adventure with captivating stories, exploring and sharing memorable experiences from the worlds most wonderful travel destinationsJoin the adventure with captivating stories, exploring and sharing memorable experiences from the worlds most wonderful travel destinations',
+                                    )}
                                 </p>
                                 <div className="row align-items-center gap-lg-3 gap-md-4 text-lg-start text-center">
                                     <div className="col-md-3">
@@ -875,7 +885,7 @@ function Home() {
                     </div>
                     <div className="blogCards mt-lg-5 mt-md-4">
                         <div className="row gap-4 justify-content-center card-text">
-                        {dataBlog.map((result, index) => (
+                            {dataBlog.map((result, index) => (
                                 <BlogComponent key={index} data={result} />
                             ))}
                         </div>

@@ -40,7 +40,8 @@ function Step1() {
         const total = adultsCount * adultPrice + childrenCount * childPrice;
         console.log(`Total amount: $${total}`);
         data.booking.total = total;
-        data.booking.tour_id = tourState.id;
+        data.booking.tour_id = tourState._id;
+        console.log('tour_id trong step 1 la: ', tourState._id);
         try {
             const response1 = await axios.post('http://localhost:1110/v1/api/client', {
                 name: data.client.name,
@@ -53,19 +54,6 @@ function Step1() {
             const response2 = await axios.post('http://localhost:1110/v1/api/email-confirmation', {
                 email: data.client.email,
             });
-            // axios({
-            //   method: 'POST',
-            //   url: 'http://localhost:1110/v1/api/clients',
-            //   data: {
-            //     name: "do anh tu",
-            //     email: "tu051220@gmail.com",
-            //     dob: "2000-12-05",
-            //     phoneNumber: "0987654321",
-            //     address: "an ninh an bai"
-            //   }
-            // })
-            // const response = await axios.get('http://localhost:1110/v1/api/clients');
-            // console.log(response);
         } catch (error) {
             console.error(error);
         }

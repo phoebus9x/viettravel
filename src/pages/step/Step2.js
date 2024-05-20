@@ -16,46 +16,28 @@ function Step2() {
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const booking = useSelector((state) => state.booking);
+    console.log('booking step 2', booking);
     const client = useSelector((state) => state.client);
-
-    const {
-        register,
-        handleSubmit,
-        formState: { errors },
-    } = useForm({ defaultValues: { client } });
 
     const onSubmit = async (data) => {
         try {
-            const response1 = await axios.post('http://localhost:1110/v1/api/client', {
-                name: data.client.name,
-                email: data.client.email,
-                dob: data.client.dob,
-                phoneNumber: data.client.phoneNumber,
-                address: data.client.address,
-                gender: data.client.gender,
+            const response1 = await axios.post('http://localhost:1110/v1/api/booking', {
+                client_id: 'a',
+                tour_id: booking.booking.tour_id,
+                number_adults: booking.booking.number_adults,
+                number_children: booking.booking.number_children,
+                total: booking.booking.total,
+                status: 'wait',
             });
             const response2 = await axios.post('http://localhost:1110/v1/api/email-confirmation', {
                 email: data.client.email,
             });
-            // axios({
-            //   method: 'POST',
-            //   url: 'http://localhost:1110/v1/api/clients',
-            //   data: {
-            //     name: "do anh tu",
-            //     email: "tu051220@gmail.com",
-            //     dob: "2000-12-05",
-            //     phoneNumber: "0987654321",
-            //     address: "an ninh an bai"
-            //   }
-            // })
-            // const response = await axios.get('http://localhost:1110/v1/api/clients');
-            // console.log(response);
         } catch (error) {
             console.error(error);
         }
         dispatch(submitClient(data.client));
         console.log(data.client);
-        navigate('/');
+        navigate('/step3');
     };
 
     // handle ngày hết hạn thẻ
@@ -121,11 +103,11 @@ function Step2() {
                             </tr>
                             <tr>
                                 <td style={{ textAlign: 'left', paddingBottom: '10px' }}>{t('purchased item')}</td>
-                                <td style={{ textAlign: 'right', paddingBottom: '10px' }}>{booking.total}$</td>
+                                <td style={{ textAlign: 'right', paddingBottom: '10px' }}>{booking.booking.total}$</td>
                             </tr>
                             <tr>
                                 <td style={{ textAlign: 'left', paddingBottom: '10px' }}>{t('surcharge')}</td>
-                                <td style={{ textAlign: 'right', paddingBottom: '10px' }}>10.00$</td>
+                                <td style={{ textAlign: 'right', paddingBottom: '10px' }}>0.00$</td>
                             </tr>
                             <tr>
                                 <td style={{ textAlign: 'left', paddingBottom: '10px' }}>{t('discount')}</td>
@@ -136,7 +118,7 @@ function Step2() {
                         <table style={{ width: '100%' }}>
                             <tr>
                                 <td style={{ textAlign: 'left' }}>{t('TOTAL')}</td>
-                                <td style={{ textAlign: 'right' }}>210.00$</td>
+                                <td style={{ textAlign: 'right' }}>{booking.booking.total}$</td>
                             </tr>
                         </table>
                         <hr />
@@ -263,7 +245,7 @@ function Step2() {
                                 <div class="row justify-content-center">
                                     <div class="col-md-12">
                                         {' '}
-                                        <input type="submit" value="Pay" class="btn btn-pay placeicon" />{' '}
+                                        <input onClick={onSubmit} value="Pay" class="btn btn-pay placeicon" />{' '}
                                     </div>
                                 </div>
                             </form>
@@ -271,135 +253,6 @@ function Step2() {
                     </div>
                 </div>
             </div>
-            {/* <div class="container-fluid form-payment">
-                <div class="row justify-content-center">
-                    <div class=" col-lg-6 col-md-8">
-                        <div class="card p-3">
-                            <div class="row justify-content-center">
-                                <div class="col-12">
-                                    <h2 class="form-payment-heading text-center">Step 2 - payment</h2>
-                                </div>
-                            </div>
-                            <form onsubmit="event.preventDefault()" class="form-card">
-                                <div class="row justify-content-center mb-4 radio-group">
-                                    <div class="col-sm-3 col-5">
-                                        <div class="radio selected mx-auto" data-value="dk">
-                                            {' '}
-                                            <img
-                                                class="fit-image"
-                                                src="https://i.imgur.com/5TqiRQV.jpg"
-                                                width="105px"
-                                                height="55px"
-                                            />{' '}
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-3 col-5">
-                                        <div class="radio mx-auto" data-value="visa">
-                                            {' '}
-                                            <img
-                                                class="fit-image"
-                                                src="https://i.imgur.com/OdxcctP.jpg"
-                                                width="105px"
-                                                height="55px"
-                                            />{' '}
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-3 col-5">
-                                        <div class="radio mx-auto" data-value="master">
-                                            {' '}
-                                            <img
-                                                class="fit-image"
-                                                src="https://i.imgur.com/WIAP9Ku.jpg"
-                                                width="105px"
-                                                height="55px"
-                                            />{' '}
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-3 col-5">
-                                        <div class="radio mx-auto" data-value="paypal">
-                                            {' '}
-                                            <img
-                                                class="fit-image"
-                                                src="https://i.imgur.com/cMk1MtK.jpg"
-                                                width="105px"
-                                                height="55px"
-                                            />{' '}
-                                        </div>
-                                    </div>{' '}
-                                    <br />
-                                </div>
-                                <div class="row justify-content-center">
-                                    <div class="col-12">
-                                        <div class="input-group">
-                                            {' '}
-                                            <input type="text" name="Name" placeholder="John Doe" /> <label>Name</label>{' '}
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row justify-content-center">
-                                    <div class="col-12">
-                                        <div class="input-group">
-                                            {' '}
-                                            <input
-                                                type="text"
-                                                id="cr_no"
-                                                name="card-no"
-                                                value={cardNumber}
-                                                onChange={handleCardNumberChange}
-                                                placeholder="0000 0000 0000 0000"
-                                                maxLength={19}
-                                                minLength={19}
-                                            />{' '}
-                                            <label>Card Number</label>{' '}
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row justify-content-center">
-                                    <div class="col-12">
-                                        <div class="row">
-                                            <div class="col-6">
-                                                <div class="input-group">
-                                                    {' '}
-                                                    <input
-                                                        type="text"
-                                                        id="exp"
-                                                        name="expdate"
-                                                        placeholder="MM/YY"
-                                                        onChange={handleExpiryDateChange}
-                                                        value={expiryDate}
-                                                        maxLength={5}
-                                                        minLength={5}
-                                                    />{' '}
-                                                    <label>Expiry Date</label>{' '}
-                                                </div>
-                                            </div>
-                                            <div class="col-6">
-                                                <div class="input-group">
-                                                    {' '}
-                                                    <input
-                                                        type="password"
-                                                        name="cvv"
-                                                        placeholder="&#9679;&#9679;&#9679;"
-                                                        minlength="3"
-                                                        maxlength="3"
-                                                    />{' '}
-                                                    <label>CVV</label>{' '}
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row justify-content-center">
-                                    <div class="col-md-12">
-                                        {' '}
-                                        <input type="submit" value="Pay" class="btn btn-pay placeicon" />{' '}
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div> */}
         </div>
     );
 }
